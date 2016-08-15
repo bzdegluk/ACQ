@@ -1,0 +1,1687 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.2.8542/W32 for ARM        20/Nov/2015  05:04:51
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\STM32L\STM32L1xx_StdPeriph_Lib\Source\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.c
+#    Command line =  
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\STM32L\STM32L1xx_StdPeriph_Lib\Source\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.c
+#        -D USE_STDPERIPH_DRIVER -D VECT_TAB_FLASH -D STM32L1XX_MD -D
+#        IAR_ARM_CM3 -D USE_FULL_ASSERT -D SPIRIT_USE_FULL_ASSERT -D
+#        USE_SYSTICK_DELAY -D SDK -lC
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\List\
+#        -o
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Normal.h" -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\.\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\Application\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\Application\examples\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\Application\runtime\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\SDK_Eval_STM32L\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\SPIRIT1_Library\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\SDK_Eval_Util\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\STM32L1xx_StdPeriph_Lib\Source\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\STM32L1xx_StdPeriph_Lib\Source\STM32L1xx_StdPeriph_Driver\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\SDK_Virtual_Com\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\STM32_USB-FS-Device_Lib\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\ACQ\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\List\stm32l1xx_dma.lst
+#    Object file  =  
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_dma.o
+#
+###############################################################################
+
+E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\STM32L\STM32L1xx_StdPeriph_Lib\Source\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32l1xx_dma.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.0
+      6            * @date    31-December-2010
+      7            * @brief   This file provides firmware functions to manage the following 
+      8            *          functionalities of the Direct Memory Access controller (DMA):           
+      9            *           - Initialization and Configuration
+     10            *           - Data Counter
+     11            *           - Interrupts and flags management
+     12            *           
+     13            *  @verbatim
+     14            *      
+     15            *          ===================================================================      
+     16            *                                 How to use this driver
+     17            *          =================================================================== 
+     18            *          1. Enable The DMA controller clock using RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA1, ENABLE)
+     19            *             function for DMA1 or using RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA2, ENABLE)
+     20            *             function for DMA2.
+     21            *
+     22            *          2. Enable and configure the peripheral to be connected to the DMA channel
+     23            *             (except for internal SRAM / FLASH memories: no initialization is 
+     24            *             necessary). 
+     25            *        
+     26            *          3. For a given Channel, program the Source and Destination addresses,  
+     27            *             the transfer Direction, the Buffer Size, the Peripheral and Memory
+     28            *             Incrementation mode and Data Size, the Circular or Normal mode, 
+     29            *             the channel transfer Priority and the Memory-to-Memory transfer 
+     30            *             mode (if needed) using the DMA_Init() function.
+     31            *
+     32            *          4. Enable the NVIC and the corresponding interrupt(s) using the function 
+     33            *             DMA_ITConfig() if you need to use DMA interrupts. 
+     34            *
+     35            *          5. Enable the DMA channel using the DMA_Cmd() function. 
+     36            *                
+     37            *          6. Activate the needed channel Request using PPP_DMACmd() function for
+     38            *             any PPP peripheral except internal SRAM and FLASH (ie. SPI, USART ...)
+     39            *             The function allowing this operation is provided in each PPP peripheral
+     40            *             driver (ie. SPI_DMACmd for SPI peripheral).     
+     41            *
+     42            *          7. Optionally, you can configure the number of data to be transferred
+     43            *             when the channel is disabled (ie. after each Transfer Complete event
+     44            *             or when a Transfer Error occurs) using the function DMA_SetCurrDataCounter().
+     45            *             And you can get the number of remaining data to be transferred using 
+     46            *             the function DMA_GetCurrDataCounter() at run time (when the DMA channel is
+     47            *             enabled and running).  
+     48            *                   
+     49            *          8. To control DMA events you can use one of the following 
+     50            *              two methods:
+     51            *               a- Check on DMA channel flags using the function DMA_GetFlagStatus().  
+     52            *               b- Use DMA interrupts through the function DMA_ITConfig() at initialization
+     53            *                  phase and DMA_GetITStatus() function into interrupt routines in
+     54            *                  communication phase.  
+     55            *              After checking on a flag you should clear it using DMA_ClearFlag()
+     56            *              function. And after checking on an interrupt event you should 
+     57            *              clear it using DMA_ClearITPendingBit() function.     
+     58            *                 
+     59            *  @endverbatim
+     60            *                                  
+     61            ******************************************************************************
+     62            * @attention
+     63            *
+     64            * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+     65            * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
+     66            * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
+     67            * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
+     68            * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
+     69            * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+     70            *
+     71            * <h2><center>&copy; COPYRIGHT 2010 STMicroelectronics</center></h2>
+     72            ******************************************************************************  
+     73            */ 
+     74          
+     75          /* Includes ------------------------------------------------------------------*/
+     76          #include "stm32l1xx_dma.h"
+     77          #include "stm32l1xx_rcc.h"
+     78          
+     79          /** @addtogroup STM32L1xx_StdPeriph_Driver
+     80            * @{
+     81            */
+     82          
+     83          /** @defgroup DMA 
+     84            * @brief DMA driver modules
+     85            * @{
+     86            */ 
+     87          
+     88          /* Private typedef -----------------------------------------------------------*/
+     89          /* Private define ------------------------------------------------------------*/
+     90          
+     91          /* DMA1 Channelx interrupt pending bit masks */
+     92          #define DMA1_CHANNEL1_IT_MASK    ((uint32_t)(DMA_ISR_GIF1 | DMA_ISR_TCIF1 | DMA_ISR_HTIF1 | DMA_ISR_TEIF1))
+     93          #define DMA1_CHANNEL2_IT_MASK    ((uint32_t)(DMA_ISR_GIF2 | DMA_ISR_TCIF2 | DMA_ISR_HTIF2 | DMA_ISR_TEIF2))
+     94          #define DMA1_CHANNEL3_IT_MASK    ((uint32_t)(DMA_ISR_GIF3 | DMA_ISR_TCIF3 | DMA_ISR_HTIF3 | DMA_ISR_TEIF3))
+     95          #define DMA1_CHANNEL4_IT_MASK    ((uint32_t)(DMA_ISR_GIF4 | DMA_ISR_TCIF4 | DMA_ISR_HTIF4 | DMA_ISR_TEIF4))
+     96          #define DMA1_CHANNEL5_IT_MASK    ((uint32_t)(DMA_ISR_GIF5 | DMA_ISR_TCIF5 | DMA_ISR_HTIF5 | DMA_ISR_TEIF5))
+     97          #define DMA1_CHANNEL6_IT_MASK    ((uint32_t)(DMA_ISR_GIF6 | DMA_ISR_TCIF6 | DMA_ISR_HTIF6 | DMA_ISR_TEIF6))
+     98          #define DMA1_CHANNEL7_IT_MASK    ((uint32_t)(DMA_ISR_GIF7 | DMA_ISR_TCIF7 | DMA_ISR_HTIF7 | DMA_ISR_TEIF7))
+     99          
+    100          /* DMA FLAG mask */
+    101          #define FLAG_MASK                ((uint32_t)0x10000000)
+    102          
+    103          /* DMA registers Masks */
+    104          #define CCR_CLEAR_MASK           ((uint32_t)0xFFFF800F)
+    105          
+    106          /* Private macro -------------------------------------------------------------*/
+    107          /* Private variables ---------------------------------------------------------*/
+    108          /* Private function prototypes -----------------------------------------------*/
+    109          /* Private functions ---------------------------------------------------------*/
+    110          
+    111          
+    112          /** @defgroup DMA_Private_Functions
+    113            * @{
+    114            */
+    115          
+    116          /** @defgroup DMA_Group1 Initialization and Configuration functions
+    117           *  @brief   Initialization and Configuration functions
+    118           *
+    119          @verbatim   
+    120           ===============================================================================
+    121                           Initialization and Configuration functions
+    122           ===============================================================================  
+    123          
+    124            This subsection provides functions allowing to initialize the DMA channel source
+    125            and destination addresses, incrementation and data sizes, transfer direction, 
+    126            buffer size, circular/normal mode selection, memory-to-memory mode selection 
+    127            and channel priority value.
+    128            
+    129            The DMA_Init() function follows the DMA configuration procedures as described in
+    130            reference manual (RM0038).
+    131          
+    132          @endverbatim
+    133            * @{
+    134            */
+    135            
+    136          /**
+    137            * @brief  Deinitializes the DMAy Channelx registers to their default reset
+    138            *         values.
+    139            * @param  DMAy_Channelx: where y can be 1 to select the DMA and
+    140            *         x can be 1 to 7 for DMA1 to select the DMA Channel.
+    141            * @retval None
+    142            */
+
+   \                                 In section .text, align 2, keep-with-next
+    143          void DMA_DeInit(DMA_Channel_TypeDef* DMAy_Channelx)
+    144          {
+   \                     DMA_DeInit: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    145            /* Check the parameters */
+    146            assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+   \   00000004   0x.... 0x....      LDR.W    R0,??DataTable9  ;; 0x40026008
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xD01C             BEQ.N    ??DMA_DeInit_0
+   \   0000000C   0x.... 0x....      LDR.W    R0,??DataTable9_1  ;; 0x4002601c
+   \   00000010   0x4284             CMP      R4,R0
+   \   00000012   0xD018             BEQ.N    ??DMA_DeInit_0
+   \   00000014   0x.... 0x....      LDR.W    R0,??DataTable9_2  ;; 0x40026030
+   \   00000018   0x4284             CMP      R4,R0
+   \   0000001A   0xD014             BEQ.N    ??DMA_DeInit_0
+   \   0000001C   0x.... 0x....      LDR.W    R0,??DataTable9_3  ;; 0x40026044
+   \   00000020   0x4284             CMP      R4,R0
+   \   00000022   0xD010             BEQ.N    ??DMA_DeInit_0
+   \   00000024   0x.... 0x....      LDR.W    R0,??DataTable9_4  ;; 0x40026058
+   \   00000028   0x4284             CMP      R4,R0
+   \   0000002A   0xD00C             BEQ.N    ??DMA_DeInit_0
+   \   0000002C   0x.... 0x....      LDR.W    R0,??DataTable9_5  ;; 0x4002606c
+   \   00000030   0x4284             CMP      R4,R0
+   \   00000032   0xD008             BEQ.N    ??DMA_DeInit_0
+   \   00000034   0x.... 0x....      LDR.W    R0,??DataTable9_6  ;; 0x40026080
+   \   00000038   0x4284             CMP      R4,R0
+   \   0000003A   0xD004             BEQ.N    ??DMA_DeInit_0
+   \   0000003C   0x2192             MOVS     R1,#+146
+   \   0000003E   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \   00000042   0x.... 0x....      BL       assert_failed
+    147          
+    148            /* Disable the selected DMAy Channelx */
+    149            DMAy_Channelx->CCR &= (uint16_t)(~DMA_CCR1_EN);
+   \                     ??DMA_DeInit_0: (+1)
+   \   00000046   0x6820             LDR      R0,[R4, #+0]
+   \   00000048   0xF64F 0x71FE      MOVW     R1,#+65534
+   \   0000004C   0x4008             ANDS     R0,R1,R0
+   \   0000004E   0x6020             STR      R0,[R4, #+0]
+    150          
+    151            /* Reset DMAy Channelx control register */
+    152            DMAy_Channelx->CCR  = 0;
+   \   00000050   0x2000             MOVS     R0,#+0
+   \   00000052   0x6020             STR      R0,[R4, #+0]
+    153            
+    154            /* Reset DMAy Channelx remaining bytes register */
+    155            DMAy_Channelx->CNDTR = 0;
+   \   00000054   0x2000             MOVS     R0,#+0
+   \   00000056   0x6060             STR      R0,[R4, #+4]
+    156            
+    157            /* Reset DMAy Channelx peripheral address register */
+    158            DMAy_Channelx->CPAR  = 0;
+   \   00000058   0x2000             MOVS     R0,#+0
+   \   0000005A   0x60A0             STR      R0,[R4, #+8]
+    159            
+    160            /* Reset DMAy Channelx memory address register */
+    161            DMAy_Channelx->CMAR = 0;
+   \   0000005C   0x2000             MOVS     R0,#+0
+   \   0000005E   0x60E0             STR      R0,[R4, #+12]
+    162            
+    163            if (DMAy_Channelx == DMA1_Channel1)
+   \   00000060   0x.... 0x....      LDR.W    R0,??DataTable9  ;; 0x40026008
+   \   00000064   0x4284             CMP      R4,R0
+   \   00000066   0xD108             BNE.N    ??DMA_DeInit_1
+    164            {
+    165              /* Reset interrupt pending bits for DMA1 Channel1 */
+    166              DMA1->IFCR |= DMA1_CHANNEL1_IT_MASK;
+   \   00000068   0x.... 0x....      LDR.W    R0,??DataTable9_8  ;; 0x40026004
+   \   0000006C   0x6800             LDR      R0,[R0, #+0]
+   \   0000006E   0xF050 0x000F      ORRS     R0,R0,#0xF
+   \   00000072   0x.... 0x....      LDR.W    R1,??DataTable9_8  ;; 0x40026004
+   \   00000076   0x6008             STR      R0,[R1, #+0]
+   \   00000078   0xE04C             B.N      ??DMA_DeInit_2
+    167            }
+    168            else if (DMAy_Channelx == DMA1_Channel2)
+   \                     ??DMA_DeInit_1: (+1)
+   \   0000007A   0x.... 0x....      LDR.W    R0,??DataTable9_1  ;; 0x4002601c
+   \   0000007E   0x4284             CMP      R4,R0
+   \   00000080   0xD108             BNE.N    ??DMA_DeInit_3
+    169            {
+    170              /* Reset interrupt pending bits for DMA1 Channel2 */
+    171              DMA1->IFCR |= DMA1_CHANNEL2_IT_MASK;
+   \   00000082   0x.... 0x....      LDR.W    R0,??DataTable9_8  ;; 0x40026004
+   \   00000086   0x6800             LDR      R0,[R0, #+0]
+   \   00000088   0xF050 0x00F0      ORRS     R0,R0,#0xF0
+   \   0000008C   0x.... 0x....      LDR.W    R1,??DataTable9_8  ;; 0x40026004
+   \   00000090   0x6008             STR      R0,[R1, #+0]
+   \   00000092   0xE03F             B.N      ??DMA_DeInit_2
+    172            }
+    173            else if (DMAy_Channelx == DMA1_Channel3)
+   \                     ??DMA_DeInit_3: (+1)
+   \   00000094   0x.... 0x....      LDR.W    R0,??DataTable9_2  ;; 0x40026030
+   \   00000098   0x4284             CMP      R4,R0
+   \   0000009A   0xD108             BNE.N    ??DMA_DeInit_4
+    174            {
+    175              /* Reset interrupt pending bits for DMA1 Channel3 */
+    176              DMA1->IFCR |= DMA1_CHANNEL3_IT_MASK;
+   \   0000009C   0x.... 0x....      LDR.W    R0,??DataTable9_8  ;; 0x40026004
+   \   000000A0   0x6800             LDR      R0,[R0, #+0]
+   \   000000A2   0xF450 0x6070      ORRS     R0,R0,#0xF00
+   \   000000A6   0x.... 0x....      LDR.W    R1,??DataTable9_8  ;; 0x40026004
+   \   000000AA   0x6008             STR      R0,[R1, #+0]
+   \   000000AC   0xE032             B.N      ??DMA_DeInit_2
+    177            }
+    178            else if (DMAy_Channelx == DMA1_Channel4)
+   \                     ??DMA_DeInit_4: (+1)
+   \   000000AE   0x.... 0x....      LDR.W    R0,??DataTable9_3  ;; 0x40026044
+   \   000000B2   0x4284             CMP      R4,R0
+   \   000000B4   0xD108             BNE.N    ??DMA_DeInit_5
+    179            {
+    180              /* Reset interrupt pending bits for DMA1 Channel4 */
+    181              DMA1->IFCR |= DMA1_CHANNEL4_IT_MASK;
+   \   000000B6   0x.... 0x....      LDR.W    R0,??DataTable9_8  ;; 0x40026004
+   \   000000BA   0x6800             LDR      R0,[R0, #+0]
+   \   000000BC   0xF450 0x4070      ORRS     R0,R0,#0xF000
+   \   000000C0   0x.... 0x....      LDR.W    R1,??DataTable9_8  ;; 0x40026004
+   \   000000C4   0x6008             STR      R0,[R1, #+0]
+   \   000000C6   0xE025             B.N      ??DMA_DeInit_2
+    182            }
+    183            else if (DMAy_Channelx == DMA1_Channel5)
+   \                     ??DMA_DeInit_5: (+1)
+   \   000000C8   0x.... 0x....      LDR.W    R0,??DataTable9_4  ;; 0x40026058
+   \   000000CC   0x4284             CMP      R4,R0
+   \   000000CE   0xD108             BNE.N    ??DMA_DeInit_6
+    184            {
+    185              /* Reset interrupt pending bits for DMA1 Channel5 */
+    186              DMA1->IFCR |= DMA1_CHANNEL5_IT_MASK;
+   \   000000D0   0x.... 0x....      LDR.W    R0,??DataTable9_8  ;; 0x40026004
+   \   000000D4   0x6800             LDR      R0,[R0, #+0]
+   \   000000D6   0xF450 0x2070      ORRS     R0,R0,#0xF0000
+   \   000000DA   0x.... 0x....      LDR.W    R1,??DataTable9_8  ;; 0x40026004
+   \   000000DE   0x6008             STR      R0,[R1, #+0]
+   \   000000E0   0xE018             B.N      ??DMA_DeInit_2
+    187            }
+    188            else if (DMAy_Channelx == DMA1_Channel6)
+   \                     ??DMA_DeInit_6: (+1)
+   \   000000E2   0x.... 0x....      LDR.W    R0,??DataTable9_5  ;; 0x4002606c
+   \   000000E6   0x4284             CMP      R4,R0
+   \   000000E8   0xD108             BNE.N    ??DMA_DeInit_7
+    189            {
+    190              /* Reset interrupt pending bits for DMA1 Channel6 */
+    191              DMA1->IFCR |= DMA1_CHANNEL6_IT_MASK;
+   \   000000EA   0x.... 0x....      LDR.W    R0,??DataTable9_8  ;; 0x40026004
+   \   000000EE   0x6800             LDR      R0,[R0, #+0]
+   \   000000F0   0xF450 0x0070      ORRS     R0,R0,#0xF00000
+   \   000000F4   0x.... 0x....      LDR.W    R1,??DataTable9_8  ;; 0x40026004
+   \   000000F8   0x6008             STR      R0,[R1, #+0]
+   \   000000FA   0xE00B             B.N      ??DMA_DeInit_2
+    192            }
+    193            else
+    194            {
+    195              if (DMAy_Channelx == DMA1_Channel7)
+   \                     ??DMA_DeInit_7: (+1)
+   \   000000FC   0x.... 0x....      LDR.W    R0,??DataTable9_6  ;; 0x40026080
+   \   00000100   0x4284             CMP      R4,R0
+   \   00000102   0xD107             BNE.N    ??DMA_DeInit_2
+    196              {
+    197                /* Reset interrupt pending bits for DMA1 Channel7 */
+    198                DMA1->IFCR |= DMA1_CHANNEL7_IT_MASK;    
+   \   00000104   0x.... 0x....      LDR.W    R0,??DataTable9_8  ;; 0x40026004
+   \   00000108   0x6800             LDR      R0,[R0, #+0]
+   \   0000010A   0xF050 0x6070      ORRS     R0,R0,#0xF000000
+   \   0000010E   0x.... 0x....      LDR.W    R1,??DataTable9_8  ;; 0x40026004
+   \   00000112   0x6008             STR      R0,[R1, #+0]
+    199              }
+    200            }
+    201          }
+   \                     ??DMA_DeInit_2: (+1)
+   \   00000114   0xBD10             POP      {R4,PC}          ;; return
+    202          
+    203          /**
+    204            * @brief  Initializes the DMAy Channelx according to the specified
+    205            *         parameters in the DMA_InitStruct.
+    206            * @param  DMAy_Channelx: where y can be 1 to select the DMA and
+    207            *         x can be 1 to 7 for DMA1 to select the DMA Channel.
+    208            * @param  DMA_InitStruct: pointer to a DMA_InitTypeDef structure that
+    209            *         contains the configuration information for the specified DMA Channel.
+    210            * @retval None
+    211            */
+
+   \                                 In section .text, align 2, keep-with-next
+    212          void DMA_Init(DMA_Channel_TypeDef* DMAy_Channelx, DMA_InitTypeDef* DMA_InitStruct)
+    213          {
+   \                     DMA_Init: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    214            uint32_t tmpreg = 0;
+   \   00000006   0x2600             MOVS     R6,#+0
+    215          
+    216            /* Check the parameters */
+    217            assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+   \   00000008   0x.... 0x....      LDR.W    R0,??DataTable9  ;; 0x40026008
+   \   0000000C   0x4284             CMP      R4,R0
+   \   0000000E   0xD01C             BEQ.N    ??DMA_Init_0
+   \   00000010   0x.... 0x....      LDR.W    R0,??DataTable9_1  ;; 0x4002601c
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xD018             BEQ.N    ??DMA_Init_0
+   \   00000018   0x.... 0x....      LDR.W    R0,??DataTable9_2  ;; 0x40026030
+   \   0000001C   0x4284             CMP      R4,R0
+   \   0000001E   0xD014             BEQ.N    ??DMA_Init_0
+   \   00000020   0x.... 0x....      LDR.W    R0,??DataTable9_3  ;; 0x40026044
+   \   00000024   0x4284             CMP      R4,R0
+   \   00000026   0xD010             BEQ.N    ??DMA_Init_0
+   \   00000028   0x.... 0x....      LDR.W    R0,??DataTable9_4  ;; 0x40026058
+   \   0000002C   0x4284             CMP      R4,R0
+   \   0000002E   0xD00C             BEQ.N    ??DMA_Init_0
+   \   00000030   0x.... 0x....      LDR.W    R0,??DataTable9_5  ;; 0x4002606c
+   \   00000034   0x4284             CMP      R4,R0
+   \   00000036   0xD008             BEQ.N    ??DMA_Init_0
+   \   00000038   0x.... 0x....      LDR.W    R0,??DataTable9_6  ;; 0x40026080
+   \   0000003C   0x4284             CMP      R4,R0
+   \   0000003E   0xD004             BEQ.N    ??DMA_Init_0
+   \   00000040   0x21D9             MOVS     R1,#+217
+   \   00000042   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \   00000046   0x.... 0x....      BL       assert_failed
+    218            assert_param(IS_DMA_DIR(DMA_InitStruct->DMA_DIR));
+   \                     ??DMA_Init_0: (+1)
+   \   0000004A   0x68A8             LDR      R0,[R5, #+8]
+   \   0000004C   0x2810             CMP      R0,#+16
+   \   0000004E   0xD007             BEQ.N    ??DMA_Init_1
+   \   00000050   0x68A8             LDR      R0,[R5, #+8]
+   \   00000052   0x2800             CMP      R0,#+0
+   \   00000054   0xD004             BEQ.N    ??DMA_Init_1
+   \   00000056   0x21DA             MOVS     R1,#+218
+   \   00000058   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \   0000005C   0x.... 0x....      BL       assert_failed
+    219            assert_param(IS_DMA_BUFFER_SIZE(DMA_InitStruct->DMA_BufferSize));
+   \                     ??DMA_Init_1: (+1)
+   \   00000060   0x68E8             LDR      R0,[R5, #+12]
+   \   00000062   0x2800             CMP      R0,#+0
+   \   00000064   0xD003             BEQ.N    ??DMA_Init_2
+   \   00000066   0x68E8             LDR      R0,[R5, #+12]
+   \   00000068   0xF5B0 0x3F80      CMP      R0,#+65536
+   \   0000006C   0xD304             BCC.N    ??DMA_Init_3
+   \                     ??DMA_Init_2: (+1)
+   \   0000006E   0x21DB             MOVS     R1,#+219
+   \   00000070   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \   00000074   0x.... 0x....      BL       assert_failed
+    220            assert_param(IS_DMA_PERIPHERAL_INC_STATE(DMA_InitStruct->DMA_PeripheralInc));
+   \                     ??DMA_Init_3: (+1)
+   \   00000078   0x6928             LDR      R0,[R5, #+16]
+   \   0000007A   0x2840             CMP      R0,#+64
+   \   0000007C   0xD007             BEQ.N    ??DMA_Init_4
+   \   0000007E   0x6928             LDR      R0,[R5, #+16]
+   \   00000080   0x2800             CMP      R0,#+0
+   \   00000082   0xD004             BEQ.N    ??DMA_Init_4
+   \   00000084   0x21DC             MOVS     R1,#+220
+   \   00000086   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \   0000008A   0x.... 0x....      BL       assert_failed
+    221            assert_param(IS_DMA_MEMORY_INC_STATE(DMA_InitStruct->DMA_MemoryInc));   
+   \                     ??DMA_Init_4: (+1)
+   \   0000008E   0x6968             LDR      R0,[R5, #+20]
+   \   00000090   0x2880             CMP      R0,#+128
+   \   00000092   0xD007             BEQ.N    ??DMA_Init_5
+   \   00000094   0x6968             LDR      R0,[R5, #+20]
+   \   00000096   0x2800             CMP      R0,#+0
+   \   00000098   0xD004             BEQ.N    ??DMA_Init_5
+   \   0000009A   0x21DD             MOVS     R1,#+221
+   \   0000009C   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \   000000A0   0x.... 0x....      BL       assert_failed
+    222            assert_param(IS_DMA_PERIPHERAL_DATA_SIZE(DMA_InitStruct->DMA_PeripheralDataSize));
+   \                     ??DMA_Init_5: (+1)
+   \   000000A4   0x69A8             LDR      R0,[R5, #+24]
+   \   000000A6   0x2800             CMP      R0,#+0
+   \   000000A8   0xD00C             BEQ.N    ??DMA_Init_6
+   \   000000AA   0x69A8             LDR      R0,[R5, #+24]
+   \   000000AC   0xF5B0 0x7F80      CMP      R0,#+256
+   \   000000B0   0xD008             BEQ.N    ??DMA_Init_6
+   \   000000B2   0x69A8             LDR      R0,[R5, #+24]
+   \   000000B4   0xF5B0 0x7F00      CMP      R0,#+512
+   \   000000B8   0xD004             BEQ.N    ??DMA_Init_6
+   \   000000BA   0x21DE             MOVS     R1,#+222
+   \   000000BC   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \   000000C0   0x.... 0x....      BL       assert_failed
+    223            assert_param(IS_DMA_MEMORY_DATA_SIZE(DMA_InitStruct->DMA_MemoryDataSize));
+   \                     ??DMA_Init_6: (+1)
+   \   000000C4   0x69E8             LDR      R0,[R5, #+28]
+   \   000000C6   0x2800             CMP      R0,#+0
+   \   000000C8   0xD00C             BEQ.N    ??DMA_Init_7
+   \   000000CA   0x69E8             LDR      R0,[R5, #+28]
+   \   000000CC   0xF5B0 0x6F80      CMP      R0,#+1024
+   \   000000D0   0xD008             BEQ.N    ??DMA_Init_7
+   \   000000D2   0x69E8             LDR      R0,[R5, #+28]
+   \   000000D4   0xF5B0 0x6F00      CMP      R0,#+2048
+   \   000000D8   0xD004             BEQ.N    ??DMA_Init_7
+   \   000000DA   0x21DF             MOVS     R1,#+223
+   \   000000DC   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \   000000E0   0x.... 0x....      BL       assert_failed
+    224            assert_param(IS_DMA_MODE(DMA_InitStruct->DMA_Mode));
+   \                     ??DMA_Init_7: (+1)
+   \   000000E4   0x6A28             LDR      R0,[R5, #+32]
+   \   000000E6   0x2820             CMP      R0,#+32
+   \   000000E8   0xD007             BEQ.N    ??DMA_Init_8
+   \   000000EA   0x6A28             LDR      R0,[R5, #+32]
+   \   000000EC   0x2800             CMP      R0,#+0
+   \   000000EE   0xD004             BEQ.N    ??DMA_Init_8
+   \   000000F0   0x21E0             MOVS     R1,#+224
+   \   000000F2   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \   000000F6   0x.... 0x....      BL       assert_failed
+    225            assert_param(IS_DMA_PRIORITY(DMA_InitStruct->DMA_Priority));
+   \                     ??DMA_Init_8: (+1)
+   \   000000FA   0x6A68             LDR      R0,[R5, #+36]
+   \   000000FC   0xF5B0 0x5F40      CMP      R0,#+12288
+   \   00000100   0xD00F             BEQ.N    ??DMA_Init_9
+   \   00000102   0x6A68             LDR      R0,[R5, #+36]
+   \   00000104   0xF5B0 0x5F00      CMP      R0,#+8192
+   \   00000108   0xD00B             BEQ.N    ??DMA_Init_9
+   \   0000010A   0x6A68             LDR      R0,[R5, #+36]
+   \   0000010C   0xF5B0 0x5F80      CMP      R0,#+4096
+   \   00000110   0xD007             BEQ.N    ??DMA_Init_9
+   \   00000112   0x6A68             LDR      R0,[R5, #+36]
+   \   00000114   0x2800             CMP      R0,#+0
+   \   00000116   0xD004             BEQ.N    ??DMA_Init_9
+   \   00000118   0x21E1             MOVS     R1,#+225
+   \   0000011A   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \   0000011E   0x.... 0x....      BL       assert_failed
+    226            assert_param(IS_DMA_M2M_STATE(DMA_InitStruct->DMA_M2M));
+   \                     ??DMA_Init_9: (+1)
+   \   00000122   0x6AA8             LDR      R0,[R5, #+40]
+   \   00000124   0xF5B0 0x4F80      CMP      R0,#+16384
+   \   00000128   0xD007             BEQ.N    ??DMA_Init_10
+   \   0000012A   0x6AA8             LDR      R0,[R5, #+40]
+   \   0000012C   0x2800             CMP      R0,#+0
+   \   0000012E   0xD004             BEQ.N    ??DMA_Init_10
+   \   00000130   0x21E2             MOVS     R1,#+226
+   \   00000132   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \   00000136   0x.... 0x....      BL       assert_failed
+    227          
+    228          /*--------------------------- DMAy Channelx CCR Configuration -----------------*/
+    229            /* Get the DMAy_Channelx CCR value */
+    230            tmpreg = DMAy_Channelx->CCR;
+   \                     ??DMA_Init_10: (+1)
+   \   0000013A   0x6820             LDR      R0,[R4, #+0]
+   \   0000013C   0x0006             MOVS     R6,R0
+    231            /* Clear MEM2MEM, PL, MSIZE, PSIZE, MINC, PINC, CIRC and DIR bits */
+    232            tmpreg &= CCR_CLEAR_MASK;
+   \   0000013E   0xF36F 0x160E      BFC      R6,#+4,#+11
+    233            /* Configure DMAy Channelx: data transfer, data size, priority level and mode */
+    234            /* Set DIR bit according to DMA_DIR value */
+    235            /* Set CIRC bit according to DMA_Mode value */
+    236            /* Set PINC bit according to DMA_PeripheralInc value */
+    237            /* Set MINC bit according to DMA_MemoryInc value */
+    238            /* Set PSIZE bits according to DMA_PeripheralDataSize value */
+    239            /* Set MSIZE bits according to DMA_MemoryDataSize value */
+    240            /* Set PL bits according to DMA_Priority value */
+    241            /* Set the MEM2MEM bit according to DMA_M2M value */
+    242            tmpreg |= DMA_InitStruct->DMA_DIR | DMA_InitStruct->DMA_Mode |
+    243                      DMA_InitStruct->DMA_PeripheralInc | DMA_InitStruct->DMA_MemoryInc |
+    244                      DMA_InitStruct->DMA_PeripheralDataSize | DMA_InitStruct->DMA_MemoryDataSize |
+    245                      DMA_InitStruct->DMA_Priority | DMA_InitStruct->DMA_M2M;
+   \   00000142   0x68A8             LDR      R0,[R5, #+8]
+   \   00000144   0x6A29             LDR      R1,[R5, #+32]
+   \   00000146   0x4308             ORRS     R0,R1,R0
+   \   00000148   0x6929             LDR      R1,[R5, #+16]
+   \   0000014A   0x4308             ORRS     R0,R1,R0
+   \   0000014C   0x6969             LDR      R1,[R5, #+20]
+   \   0000014E   0x4308             ORRS     R0,R1,R0
+   \   00000150   0x69A9             LDR      R1,[R5, #+24]
+   \   00000152   0x4308             ORRS     R0,R1,R0
+   \   00000154   0x69E9             LDR      R1,[R5, #+28]
+   \   00000156   0x4308             ORRS     R0,R1,R0
+   \   00000158   0x6A69             LDR      R1,[R5, #+36]
+   \   0000015A   0x4308             ORRS     R0,R1,R0
+   \   0000015C   0x6AA9             LDR      R1,[R5, #+40]
+   \   0000015E   0x4308             ORRS     R0,R1,R0
+   \   00000160   0x4306             ORRS     R6,R0,R6
+    246          
+    247            /* Write to DMAy Channelx CCR */
+    248            DMAy_Channelx->CCR = tmpreg;
+   \   00000162   0x6026             STR      R6,[R4, #+0]
+    249          
+    250          /*--------------------------- DMAy Channelx CNDTR Configuration ---------------*/
+    251            /* Write to DMAy Channelx CNDTR */
+    252            DMAy_Channelx->CNDTR = DMA_InitStruct->DMA_BufferSize;
+   \   00000164   0x68E8             LDR      R0,[R5, #+12]
+   \   00000166   0x6060             STR      R0,[R4, #+4]
+    253          
+    254          /*--------------------------- DMAy Channelx CPAR Configuration ----------------*/
+    255            /* Write to DMAy Channelx CPAR */
+    256            DMAy_Channelx->CPAR = DMA_InitStruct->DMA_PeripheralBaseAddr;
+   \   00000168   0x6828             LDR      R0,[R5, #+0]
+   \   0000016A   0x60A0             STR      R0,[R4, #+8]
+    257          
+    258          /*--------------------------- DMAy Channelx CMAR Configuration ----------------*/
+    259            /* Write to DMAy Channelx CMAR */
+    260            DMAy_Channelx->CMAR = DMA_InitStruct->DMA_MemoryBaseAddr;
+   \   0000016C   0x6868             LDR      R0,[R5, #+4]
+   \   0000016E   0x60E0             STR      R0,[R4, #+12]
+    261          }
+   \   00000170   0xBD70             POP      {R4-R6,PC}       ;; return
+    262          
+    263          /**
+    264            * @brief  Fills each DMA_InitStruct member with its default value.
+    265            * @param  DMA_InitStruct: pointer to a DMA_InitTypeDef structure which will
+    266            *         be initialized.
+    267            * @retval None
+    268            */
+
+   \                                 In section .text, align 2, keep-with-next
+    269          void DMA_StructInit(DMA_InitTypeDef* DMA_InitStruct)
+    270          {
+    271          /*-------------- Reset DMA init structure parameters values ------------------*/
+    272            /* Initialize the DMA_PeripheralBaseAddr member */
+    273            DMA_InitStruct->DMA_PeripheralBaseAddr = 0;
+   \                     DMA_StructInit: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x6001             STR      R1,[R0, #+0]
+    274            /* Initialize the DMA_MemoryBaseAddr member */
+    275            DMA_InitStruct->DMA_MemoryBaseAddr = 0;
+   \   00000004   0x2100             MOVS     R1,#+0
+   \   00000006   0x6041             STR      R1,[R0, #+4]
+    276            /* Initialize the DMA_DIR member */
+    277            DMA_InitStruct->DMA_DIR = DMA_DIR_PeripheralSRC;
+   \   00000008   0x2100             MOVS     R1,#+0
+   \   0000000A   0x6081             STR      R1,[R0, #+8]
+    278            /* Initialize the DMA_BufferSize member */
+    279            DMA_InitStruct->DMA_BufferSize = 0;
+   \   0000000C   0x2100             MOVS     R1,#+0
+   \   0000000E   0x60C1             STR      R1,[R0, #+12]
+    280            /* Initialize the DMA_PeripheralInc member */
+    281            DMA_InitStruct->DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+   \   00000010   0x2100             MOVS     R1,#+0
+   \   00000012   0x6101             STR      R1,[R0, #+16]
+    282            /* Initialize the DMA_MemoryInc member */
+    283            DMA_InitStruct->DMA_MemoryInc = DMA_MemoryInc_Disable;
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0x6141             STR      R1,[R0, #+20]
+    284            /* Initialize the DMA_PeripheralDataSize member */
+    285            DMA_InitStruct->DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;
+   \   00000018   0x2100             MOVS     R1,#+0
+   \   0000001A   0x6181             STR      R1,[R0, #+24]
+    286            /* Initialize the DMA_MemoryDataSize member */
+    287            DMA_InitStruct->DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;
+   \   0000001C   0x2100             MOVS     R1,#+0
+   \   0000001E   0x61C1             STR      R1,[R0, #+28]
+    288            /* Initialize the DMA_Mode member */
+    289            DMA_InitStruct->DMA_Mode = DMA_Mode_Normal;
+   \   00000020   0x2100             MOVS     R1,#+0
+   \   00000022   0x6201             STR      R1,[R0, #+32]
+    290            /* Initialize the DMA_Priority member */
+    291            DMA_InitStruct->DMA_Priority = DMA_Priority_Low;
+   \   00000024   0x2100             MOVS     R1,#+0
+   \   00000026   0x6241             STR      R1,[R0, #+36]
+    292            /* Initialize the DMA_M2M member */
+    293            DMA_InitStruct->DMA_M2M = DMA_M2M_Disable;
+   \   00000028   0x2100             MOVS     R1,#+0
+   \   0000002A   0x6281             STR      R1,[R0, #+40]
+    294          }
+   \   0000002C   0x4770             BX       LR               ;; return
+    295          
+    296          /**
+    297            * @brief  Enables or disables the specified DMAy Channelx.
+    298            * @param  DMAy_Channelx: where y can be 1 to select the DMA and
+    299            *         x can be 1 to 7 for DMA1 to select the DMA Channel.
+    300            * @param  NewState: new state of the DMAy Channelx. 
+    301            *         This parameter can be: ENABLE or DISABLE.
+    302            * @retval None
+    303            */
+
+   \                                 In section .text, align 2, keep-with-next
+    304          void DMA_Cmd(DMA_Channel_TypeDef* DMAy_Channelx, FunctionalState NewState)
+    305          {
+   \                     DMA_Cmd: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    306            /* Check the parameters */
+    307            assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+   \   00000006   0x.... 0x....      LDR.W    R0,??DataTable9  ;; 0x40026008
+   \   0000000A   0x4284             CMP      R4,R0
+   \   0000000C   0xD01D             BEQ.N    ??DMA_Cmd_0
+   \   0000000E   0x.... 0x....      LDR.W    R0,??DataTable9_1  ;; 0x4002601c
+   \   00000012   0x4284             CMP      R4,R0
+   \   00000014   0xD019             BEQ.N    ??DMA_Cmd_0
+   \   00000016   0x.... 0x....      LDR.W    R0,??DataTable9_2  ;; 0x40026030
+   \   0000001A   0x4284             CMP      R4,R0
+   \   0000001C   0xD015             BEQ.N    ??DMA_Cmd_0
+   \   0000001E   0x.... 0x....      LDR.W    R0,??DataTable9_3  ;; 0x40026044
+   \   00000022   0x4284             CMP      R4,R0
+   \   00000024   0xD011             BEQ.N    ??DMA_Cmd_0
+   \   00000026   0x.... 0x....      LDR.W    R0,??DataTable9_4  ;; 0x40026058
+   \   0000002A   0x4284             CMP      R4,R0
+   \   0000002C   0xD00D             BEQ.N    ??DMA_Cmd_0
+   \   0000002E   0x.... 0x....      LDR.W    R0,??DataTable9_5  ;; 0x4002606c
+   \   00000032   0x4284             CMP      R4,R0
+   \   00000034   0xD009             BEQ.N    ??DMA_Cmd_0
+   \   00000036   0x.... 0x....      LDR.W    R0,??DataTable9_6  ;; 0x40026080
+   \   0000003A   0x4284             CMP      R4,R0
+   \   0000003C   0xD005             BEQ.N    ??DMA_Cmd_0
+   \   0000003E   0xF240 0x1133      MOVW     R1,#+307
+   \   00000042   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \   00000046   0x.... 0x....      BL       assert_failed
+    308            assert_param(IS_FUNCTIONAL_STATE(NewState));
+   \                     ??DMA_Cmd_0: (+1)
+   \   0000004A   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000004C   0x2D00             CMP      R5,#+0
+   \   0000004E   0xD008             BEQ.N    ??DMA_Cmd_1
+   \   00000050   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000052   0x2D01             CMP      R5,#+1
+   \   00000054   0xD005             BEQ.N    ??DMA_Cmd_1
+   \   00000056   0xF44F 0x719A      MOV      R1,#+308
+   \   0000005A   0x.... 0x....      LDR.W    R0,??DataTable9_7
+   \   0000005E   0x.... 0x....      BL       assert_failed
+    309          
+    310            if (NewState != DISABLE)
+   \                     ??DMA_Cmd_1: (+1)
+   \   00000062   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000064   0x2D00             CMP      R5,#+0
+   \   00000066   0xD004             BEQ.N    ??DMA_Cmd_2
+    311            {
+    312              /* Enable the selected DMAy Channelx */
+    313              DMAy_Channelx->CCR |= DMA_CCR1_EN;
+   \   00000068   0x6820             LDR      R0,[R4, #+0]
+   \   0000006A   0xF050 0x0001      ORRS     R0,R0,#0x1
+   \   0000006E   0x6020             STR      R0,[R4, #+0]
+   \   00000070   0xE004             B.N      ??DMA_Cmd_3
+    314            }
+    315            else
+    316            {
+    317              /* Disable the selected DMAy Channelx */
+    318              DMAy_Channelx->CCR &= (uint16_t)(~DMA_CCR1_EN);
+   \                     ??DMA_Cmd_2: (+1)
+   \   00000072   0x6820             LDR      R0,[R4, #+0]
+   \   00000074   0xF64F 0x71FE      MOVW     R1,#+65534
+   \   00000078   0x4008             ANDS     R0,R1,R0
+   \   0000007A   0x6020             STR      R0,[R4, #+0]
+    319            }
+    320          }
+   \                     ??DMA_Cmd_3: (+1)
+   \   0000007C   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    321          
+    322          /**
+    323            * @}
+    324            */
+    325          
+    326          /** @defgroup DMA_Group2 Data Counter functions
+    327           *  @brief   Data Counter functions 
+    328           *
+    329          @verbatim   
+    330           ===============================================================================
+    331                                     Data Counter functions
+    332           ===============================================================================  
+    333          
+    334            This subsection provides function allowing to configure and read the buffer size
+    335            (number of data to be transferred). 
+    336          
+    337            The DMA data counter can be written only when the DMA channel is disabled 
+    338            (ie. after transfer complete event).
+    339          
+    340            The following function can be used to write the Channel data counter value:
+    341              - void DMA_SetCurrDataCounter(DMA_Channel_TypeDef* DMAy_Channelx, uint16_t DataNumber);
+    342          
+    343          @note It is advised to use this function rather than DMA_Init() in situations where
+    344                only the Data buffer needs to be reloaded.
+    345          
+    346            The DMA data counter can be read to indicate the number of remaining transfers for
+    347            the relative DMA channel. This counter is decremented at the end of each data 
+    348            transfer and when the transfer is complete: 
+    349             - If Normal mode is selected: the counter is set to 0.
+    350             - If Circular mode is selected: the counter is reloaded with the initial value
+    351               (configured before enabling the DMA channel)
+    352             
+    353            The following function can be used to read the Channel data counter value:
+    354               - uint16_t DMA_GetCurrDataCounter(DMA_Channel_TypeDef* DMAy_Channelx);
+    355          
+    356          @endverbatim
+    357            * @{
+    358            */
+    359          
+    360          /**
+    361            * @brief  Sets the number of data units in the current DMAy Channelx transfer.
+    362            * @param  DMAy_Channelx: where y can be 1 to select the DMA and
+    363            *         x can be 1 to 7 for DMA1 to select the DMA Channel.
+    364            * @param  DataNumber: The number of data units in the current DMAy Channelx
+    365            *         transfer.   
+    366            * @note   This function can only be used when the DMAy_Channelx is disabled.                 
+    367            * @retval None.
+    368            */
+
+   \                                 In section .text, align 2, keep-with-next
+    369          void DMA_SetCurrDataCounter(DMA_Channel_TypeDef* DMAy_Channelx, uint16_t DataNumber)
+    370          {
+   \                     DMA_SetCurrDataCounter: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    371            /* Check the parameters */
+    372            assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+   \   00000006   0x....             LDR.N    R0,??DataTable9  ;; 0x40026008
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xD016             BEQ.N    ??DMA_SetCurrDataCounter_0
+   \   0000000C   0x....             LDR.N    R0,??DataTable9_1  ;; 0x4002601c
+   \   0000000E   0x4284             CMP      R4,R0
+   \   00000010   0xD013             BEQ.N    ??DMA_SetCurrDataCounter_0
+   \   00000012   0x....             LDR.N    R0,??DataTable9_2  ;; 0x40026030
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xD010             BEQ.N    ??DMA_SetCurrDataCounter_0
+   \   00000018   0x....             LDR.N    R0,??DataTable9_3  ;; 0x40026044
+   \   0000001A   0x4284             CMP      R4,R0
+   \   0000001C   0xD00D             BEQ.N    ??DMA_SetCurrDataCounter_0
+   \   0000001E   0x....             LDR.N    R0,??DataTable9_4  ;; 0x40026058
+   \   00000020   0x4284             CMP      R4,R0
+   \   00000022   0xD00A             BEQ.N    ??DMA_SetCurrDataCounter_0
+   \   00000024   0x....             LDR.N    R0,??DataTable9_5  ;; 0x4002606c
+   \   00000026   0x4284             CMP      R4,R0
+   \   00000028   0xD007             BEQ.N    ??DMA_SetCurrDataCounter_0
+   \   0000002A   0x....             LDR.N    R0,??DataTable9_6  ;; 0x40026080
+   \   0000002C   0x4284             CMP      R4,R0
+   \   0000002E   0xD004             BEQ.N    ??DMA_SetCurrDataCounter_0
+   \   00000030   0xF44F 0x71BA      MOV      R1,#+372
+   \   00000034   0x....             LDR.N    R0,??DataTable9_7
+   \   00000036   0x.... 0x....      BL       assert_failed
+    373            
+    374          /*--------------------------- DMAy Channelx CNDTR Configuration ---------------*/
+    375            /* Write to DMAy Channelx CNDTR */
+    376            DMAy_Channelx->CNDTR = DataNumber;  
+   \                     ??DMA_SetCurrDataCounter_0: (+1)
+   \   0000003A   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000003C   0x6065             STR      R5,[R4, #+4]
+    377          }
+   \   0000003E   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    378          
+    379          /**
+    380            * @brief  Returns the number of remaining data units in the current
+    381            *         DMAy Channelx transfer.
+    382            * @param  DMAy_Channelx: where y can be 1 to select the DMA and
+    383            *         x can be 1 to 7 for DMA1 to select the DMA Channel.
+    384            * @retval The number of remaining data units in the current DMAy Channelx
+    385            *         transfer.
+    386            */
+
+   \                                 In section .text, align 2, keep-with-next
+    387          uint16_t DMA_GetCurrDataCounter(DMA_Channel_TypeDef* DMAy_Channelx)
+    388          {
+   \                     DMA_GetCurrDataCounter: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    389            /* Check the parameters */
+    390            assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+   \   00000004   0x....             LDR.N    R0,??DataTable9  ;; 0x40026008
+   \   00000006   0x4284             CMP      R4,R0
+   \   00000008   0xD016             BEQ.N    ??DMA_GetCurrDataCounter_0
+   \   0000000A   0x....             LDR.N    R0,??DataTable9_1  ;; 0x4002601c
+   \   0000000C   0x4284             CMP      R4,R0
+   \   0000000E   0xD013             BEQ.N    ??DMA_GetCurrDataCounter_0
+   \   00000010   0x....             LDR.N    R0,??DataTable9_2  ;; 0x40026030
+   \   00000012   0x4284             CMP      R4,R0
+   \   00000014   0xD010             BEQ.N    ??DMA_GetCurrDataCounter_0
+   \   00000016   0x....             LDR.N    R0,??DataTable9_3  ;; 0x40026044
+   \   00000018   0x4284             CMP      R4,R0
+   \   0000001A   0xD00D             BEQ.N    ??DMA_GetCurrDataCounter_0
+   \   0000001C   0x....             LDR.N    R0,??DataTable9_4  ;; 0x40026058
+   \   0000001E   0x4284             CMP      R4,R0
+   \   00000020   0xD00A             BEQ.N    ??DMA_GetCurrDataCounter_0
+   \   00000022   0x....             LDR.N    R0,??DataTable9_5  ;; 0x4002606c
+   \   00000024   0x4284             CMP      R4,R0
+   \   00000026   0xD007             BEQ.N    ??DMA_GetCurrDataCounter_0
+   \   00000028   0x....             LDR.N    R0,??DataTable9_6  ;; 0x40026080
+   \   0000002A   0x4284             CMP      R4,R0
+   \   0000002C   0xD004             BEQ.N    ??DMA_GetCurrDataCounter_0
+   \   0000002E   0xF44F 0x71C3      MOV      R1,#+390
+   \   00000032   0x....             LDR.N    R0,??DataTable9_7
+   \   00000034   0x.... 0x....      BL       assert_failed
+    391            /* Return the number of remaining data units for DMAy Channelx */
+    392            return ((uint16_t)(DMAy_Channelx->CNDTR));
+   \                     ??DMA_GetCurrDataCounter_0: (+1)
+   \   00000038   0x6860             LDR      R0,[R4, #+4]
+   \   0000003A   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   0000003C   0xBD10             POP      {R4,PC}          ;; return
+    393          }
+    394          
+    395          /**
+    396            * @}
+    397            */
+    398          
+    399          /** @defgroup DMA_Group3 Interrupts and flags management functions
+    400           *  @brief   Interrupts and flags management functions 
+    401           *
+    402          @verbatim   
+    403           ===============================================================================
+    404                            Interrupts and flags management functions
+    405           ===============================================================================  
+    406          
+    407            This subsection provides functions allowing to configure the DMA Interrupts 
+    408            sources and check or clear the flags or pending bits status.
+    409            The user should identify which mode will be used in his application to manage the
+    410            DMA controller events: Polling mode or Interrupt mode. 
+    411              
+    412            Polling Mode
+    413            =============
+    414              Each DMA channel can be managed through 4 event Flags:
+    415              (y : DMA Controller number  
+    416               x : DMA channel number )
+    417                 1. DMAy_FLAG_TCx : to indicate that a Transfer Complete event occurred
+    418                 2. DMAy_FLAG_HTx : to indicate that a Half-Transfer Complete event occured
+    419                 3. DMAy_FLAG_TEx : to indicate that a Transfer Error occured.
+    420                 4. DMAy_FLAG_GLx : to indicate that at least one of the events described 
+    421                    above occured.             
+    422          
+    423          @note Clearing DMAy_FLAG_GLx results in clearing all other pending flags of the 
+    424                same channel (DMAy_FLAG_TCx, DMAy_FLAG_HTx and DMAy_FLAG_TEx).
+    425          
+    426             In this Mode it is advised to use the following functions:
+    427                - FlagStatus DMA_GetFlagStatus(uint32_t DMA_FLAG);
+    428                - void DMA_ClearFlag(uint32_t DMA_FLAG);
+    429          
+    430            Interrupt Mode
+    431            ===============
+    432              Each DMA channel can be managed through 4 Interrupts:
+    433          
+    434              Interrupt Source
+    435              ----------------
+    436                 1. DMA_IT_TC: specifies the interrupt source for the Transfer Complete event.  
+    437                 2. DMA_IT_HT : specifies the interrupt source for the Half-transfer Complete event.
+    438                 3. DMA_IT_TE : specifies the interrupt source for the transfer errors event.
+    439                 4. DMA_IT_GL : to indicate that at least one of the interrupts described 
+    440                    above occurred. 
+    441          
+    442          @note Clearing DMA_IT_GL interrupt results in clearing all other interrupts of the 
+    443                same channel (DMA_IT_TCx, DMA_IT_HT and DMA_IT_TE).
+    444               
+    445            In this Mode it is advised to use the following functions:
+    446               - void DMA_ITConfig(DMA_Channel_TypeDef* DMAy_Channelx, uint32_t DMA_IT, FunctionalState NewState);
+    447               - ITStatus DMA_GetITStatus(uint32_t DMA_IT);
+    448               - void DMA_ClearITPendingBit(uint32_t DMA_IT);
+    449          
+    450          @endverbatim
+    451            * @{
+    452            */
+    453          
+    454          /**
+    455            * @brief  Enables or disables the specified DMAy Channelx interrupts.
+    456            * @param  DMAy_Channelx: where y can be 1 to select the DMA and
+    457            *         x can be 1 to 7 for DMA1 to select the DMA Channel.
+    458            * @param  DMA_IT: specifies the DMA interrupts sources to be enabled
+    459            *         or disabled. 
+    460            *   This parameter can be any combination of the following values:
+    461            *     @arg DMA_IT_TC: Transfer complete interrupt mask
+    462            *     @arg DMA_IT_HT: Half transfer interrupt mask
+    463            *     @arg DMA_IT_TE: Transfer error interrupt mask
+    464            * @param  NewState: new state of the specified DMA interrupts.
+    465            *         This parameter can be: ENABLE or DISABLE.
+    466            * @retval None
+    467            */
+
+   \                                 In section .text, align 2, keep-with-next
+    468          void DMA_ITConfig(DMA_Channel_TypeDef* DMAy_Channelx, uint32_t DMA_IT, FunctionalState NewState)
+    469          {
+   \                     DMA_ITConfig: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+    470            /* Check the parameters */
+    471            assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+   \   00000008   0x....             LDR.N    R0,??DataTable9  ;; 0x40026008
+   \   0000000A   0x4284             CMP      R4,R0
+   \   0000000C   0xD016             BEQ.N    ??DMA_ITConfig_0
+   \   0000000E   0x....             LDR.N    R0,??DataTable9_1  ;; 0x4002601c
+   \   00000010   0x4284             CMP      R4,R0
+   \   00000012   0xD013             BEQ.N    ??DMA_ITConfig_0
+   \   00000014   0x....             LDR.N    R0,??DataTable9_2  ;; 0x40026030
+   \   00000016   0x4284             CMP      R4,R0
+   \   00000018   0xD010             BEQ.N    ??DMA_ITConfig_0
+   \   0000001A   0x....             LDR.N    R0,??DataTable9_3  ;; 0x40026044
+   \   0000001C   0x4284             CMP      R4,R0
+   \   0000001E   0xD00D             BEQ.N    ??DMA_ITConfig_0
+   \   00000020   0x....             LDR.N    R0,??DataTable9_4  ;; 0x40026058
+   \   00000022   0x4284             CMP      R4,R0
+   \   00000024   0xD00A             BEQ.N    ??DMA_ITConfig_0
+   \   00000026   0x....             LDR.N    R0,??DataTable9_5  ;; 0x4002606c
+   \   00000028   0x4284             CMP      R4,R0
+   \   0000002A   0xD007             BEQ.N    ??DMA_ITConfig_0
+   \   0000002C   0x....             LDR.N    R0,??DataTable9_6  ;; 0x40026080
+   \   0000002E   0x4284             CMP      R4,R0
+   \   00000030   0xD004             BEQ.N    ??DMA_ITConfig_0
+   \   00000032   0xF240 0x11D7      MOVW     R1,#+471
+   \   00000036   0x....             LDR.N    R0,??DataTable9_7
+   \   00000038   0x.... 0x....      BL       assert_failed
+    472            assert_param(IS_DMA_CONFIG_IT(DMA_IT));
+   \                     ??DMA_ITConfig_0: (+1)
+   \   0000003C   0xF035 0x000E      BICS     R0,R5,#0xE
+   \   00000040   0x2800             CMP      R0,#+0
+   \   00000042   0xD101             BNE.N    ??DMA_ITConfig_1
+   \   00000044   0x2D00             CMP      R5,#+0
+   \   00000046   0xD104             BNE.N    ??DMA_ITConfig_2
+   \                     ??DMA_ITConfig_1: (+1)
+   \   00000048   0xF44F 0x71EC      MOV      R1,#+472
+   \   0000004C   0x....             LDR.N    R0,??DataTable9_7
+   \   0000004E   0x.... 0x....      BL       assert_failed
+    473            assert_param(IS_FUNCTIONAL_STATE(NewState));
+   \                     ??DMA_ITConfig_2: (+1)
+   \   00000052   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000054   0x2E00             CMP      R6,#+0
+   \   00000056   0xD007             BEQ.N    ??DMA_ITConfig_3
+   \   00000058   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   0000005A   0x2E01             CMP      R6,#+1
+   \   0000005C   0xD004             BEQ.N    ??DMA_ITConfig_3
+   \   0000005E   0xF240 0x11D9      MOVW     R1,#+473
+   \   00000062   0x....             LDR.N    R0,??DataTable9_7
+   \   00000064   0x.... 0x....      BL       assert_failed
+    474          
+    475            if (NewState != DISABLE)
+   \                     ??DMA_ITConfig_3: (+1)
+   \   00000068   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   0000006A   0x2E00             CMP      R6,#+0
+   \   0000006C   0xD003             BEQ.N    ??DMA_ITConfig_4
+    476            {
+    477              /* Enable the selected DMA interrupts */
+    478              DMAy_Channelx->CCR |= DMA_IT;
+   \   0000006E   0x6820             LDR      R0,[R4, #+0]
+   \   00000070   0x4328             ORRS     R0,R5,R0
+   \   00000072   0x6020             STR      R0,[R4, #+0]
+   \   00000074   0xE002             B.N      ??DMA_ITConfig_5
+    479            }
+    480            else
+    481            {
+    482              /* Disable the selected DMA interrupts */
+    483              DMAy_Channelx->CCR &= ~DMA_IT;
+   \                     ??DMA_ITConfig_4: (+1)
+   \   00000076   0x6820             LDR      R0,[R4, #+0]
+   \   00000078   0x43A8             BICS     R0,R0,R5
+   \   0000007A   0x6020             STR      R0,[R4, #+0]
+    484            }
+    485          }
+   \                     ??DMA_ITConfig_5: (+1)
+   \   0000007C   0xBD70             POP      {R4-R6,PC}       ;; return
+    486          
+    487          /**
+    488            * @brief  Checks whether the specified DMAy Channelx flag is set or not.
+    489            * @param  DMA_FLAG: specifies the flag to check.
+    490            *   This parameter can be one of the following values:
+    491            *     @arg DMA1_FLAG_GL1: DMA1 Channel1 global flag.
+    492            *     @arg DMA1_FLAG_TC1: DMA1 Channel1 transfer complete flag.
+    493            *     @arg DMA1_FLAG_HT1: DMA1 Channel1 half transfer flag.
+    494            *     @arg DMA1_FLAG_TE1: DMA1 Channel1 transfer error flag.
+    495            *     @arg DMA1_FLAG_GL2: DMA1 Channel2 global flag.
+    496            *     @arg DMA1_FLAG_TC2: DMA1 Channel2 transfer complete flag.
+    497            *     @arg DMA1_FLAG_HT2: DMA1 Channel2 half transfer flag.
+    498            *     @arg DMA1_FLAG_TE2: DMA1 Channel2 transfer error flag.
+    499            *     @arg DMA1_FLAG_GL3: DMA1 Channel3 global flag.
+    500            *     @arg DMA1_FLAG_TC3: DMA1 Channel3 transfer complete flag.
+    501            *     @arg DMA1_FLAG_HT3: DMA1 Channel3 half transfer flag.
+    502            *     @arg DMA1_FLAG_TE3: DMA1 Channel3 transfer error flag.
+    503            *     @arg DMA1_FLAG_GL4: DMA1 Channel4 global flag.
+    504            *     @arg DMA1_FLAG_TC4: DMA1 Channel4 transfer complete flag.
+    505            *     @arg DMA1_FLAG_HT4: DMA1 Channel4 half transfer flag.
+    506            *     @arg DMA1_FLAG_TE4: DMA1 Channel4 transfer error flag.
+    507            *     @arg DMA1_FLAG_GL5: DMA1 Channel5 global flag.
+    508            *     @arg DMA1_FLAG_TC5: DMA1 Channel5 transfer complete flag.
+    509            *     @arg DMA1_FLAG_HT5: DMA1 Channel5 half transfer flag.
+    510            *     @arg DMA1_FLAG_TE5: DMA1 Channel5 transfer error flag.
+    511            *     @arg DMA1_FLAG_GL6: DMA1 Channel6 global flag.
+    512            *     @arg DMA1_FLAG_TC6: DMA1 Channel6 transfer complete flag.
+    513            *     @arg DMA1_FLAG_HT6: DMA1 Channel6 half transfer flag.
+    514            *     @arg DMA1_FLAG_TE6: DMA1 Channel6 transfer error flag.
+    515            *     @arg DMA1_FLAG_GL7: DMA1 Channel7 global flag.
+    516            *     @arg DMA1_FLAG_TC7: DMA1 Channel7 transfer complete flag.
+    517            *     @arg DMA1_FLAG_HT7: DMA1 Channel7 half transfer flag.
+    518            *     @arg DMA1_FLAG_TE7: DMA1 Channel7 transfer error flag.
+    519            *     
+    520            * @note
+    521            *    The Global flag (DMAy_FLAG_GLx) is set whenever any of the other flags 
+    522            *    relative to the same channel is set (Transfer Complete, Half-transfer 
+    523            *    Complete or Transfer Error flags: DMAy_FLAG_TCx, DMAy_FLAG_HTx or 
+    524            *    DMAy_FLAG_TEx). 
+    525            *      
+    526            * @retval The new state of DMA_FLAG (SET or RESET).
+    527            */
+
+   \                                 In section .text, align 2, keep-with-next
+    528          FlagStatus DMA_GetFlagStatus(uint32_t DMA_FLAG)
+    529          {
+   \                     DMA_GetFlagStatus: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    530            FlagStatus bitstatus = RESET;
+   \   00000004   0x2500             MOVS     R5,#+0
+    531            uint32_t tmpreg = 0;
+   \   00000006   0x2600             MOVS     R6,#+0
+    532          
+    533            /* Check the parameters */
+    534            assert_param(IS_DMA_GET_FLAG(DMA_FLAG));
+   \   00000008   0x2C01             CMP      R4,#+1
+   \   0000000A   0xD04E             BEQ.N    ??DMA_GetFlagStatus_0
+   \   0000000C   0x2C02             CMP      R4,#+2
+   \   0000000E   0xD04C             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000010   0x2C04             CMP      R4,#+4
+   \   00000012   0xD04A             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000014   0x2C08             CMP      R4,#+8
+   \   00000016   0xD048             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000018   0x2C10             CMP      R4,#+16
+   \   0000001A   0xD046             BEQ.N    ??DMA_GetFlagStatus_0
+   \   0000001C   0x2C20             CMP      R4,#+32
+   \   0000001E   0xD044             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000020   0x2C40             CMP      R4,#+64
+   \   00000022   0xD042             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000024   0x2C80             CMP      R4,#+128
+   \   00000026   0xD040             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000028   0xF5B4 0x7F80      CMP      R4,#+256
+   \   0000002C   0xD03D             BEQ.N    ??DMA_GetFlagStatus_0
+   \   0000002E   0xF5B4 0x7F00      CMP      R4,#+512
+   \   00000032   0xD03A             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000034   0xF5B4 0x6F80      CMP      R4,#+1024
+   \   00000038   0xD037             BEQ.N    ??DMA_GetFlagStatus_0
+   \   0000003A   0xF5B4 0x6F00      CMP      R4,#+2048
+   \   0000003E   0xD034             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000040   0xF5B4 0x5F80      CMP      R4,#+4096
+   \   00000044   0xD031             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000046   0xF5B4 0x5F00      CMP      R4,#+8192
+   \   0000004A   0xD02E             BEQ.N    ??DMA_GetFlagStatus_0
+   \   0000004C   0xF5B4 0x4F80      CMP      R4,#+16384
+   \   00000050   0xD02B             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000052   0xF5B4 0x4F00      CMP      R4,#+32768
+   \   00000056   0xD028             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000058   0xF5B4 0x3F80      CMP      R4,#+65536
+   \   0000005C   0xD025             BEQ.N    ??DMA_GetFlagStatus_0
+   \   0000005E   0xF5B4 0x3F00      CMP      R4,#+131072
+   \   00000062   0xD022             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000064   0xF5B4 0x2F80      CMP      R4,#+262144
+   \   00000068   0xD01F             BEQ.N    ??DMA_GetFlagStatus_0
+   \   0000006A   0xF5B4 0x2F00      CMP      R4,#+524288
+   \   0000006E   0xD01C             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000070   0xF5B4 0x1F80      CMP      R4,#+1048576
+   \   00000074   0xD019             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000076   0xF5B4 0x1F00      CMP      R4,#+2097152
+   \   0000007A   0xD016             BEQ.N    ??DMA_GetFlagStatus_0
+   \   0000007C   0xF5B4 0x0F80      CMP      R4,#+4194304
+   \   00000080   0xD013             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000082   0xF5B4 0x0F00      CMP      R4,#+8388608
+   \   00000086   0xD010             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000088   0xF1B4 0x7F80      CMP      R4,#+16777216
+   \   0000008C   0xD00D             BEQ.N    ??DMA_GetFlagStatus_0
+   \   0000008E   0xF1B4 0x7F00      CMP      R4,#+33554432
+   \   00000092   0xD00A             BEQ.N    ??DMA_GetFlagStatus_0
+   \   00000094   0xF1B4 0x6F80      CMP      R4,#+67108864
+   \   00000098   0xD007             BEQ.N    ??DMA_GetFlagStatus_0
+   \   0000009A   0xF1B4 0x6F00      CMP      R4,#+134217728
+   \   0000009E   0xD004             BEQ.N    ??DMA_GetFlagStatus_0
+   \   000000A0   0xF240 0x2116      MOVW     R1,#+534
+   \   000000A4   0x....             LDR.N    R0,??DataTable9_7
+   \   000000A6   0x.... 0x....      BL       assert_failed
+    535          
+    536            /* Calculate the used DMA */
+    537            if ((DMA_FLAG & FLAG_MASK) == (uint32_t)RESET)
+   \                     ??DMA_GetFlagStatus_0: (+1)
+   \   000000AA   0x00E0             LSLS     R0,R4,#+3
+   \   000000AC   0xD402             BMI.N    ??DMA_GetFlagStatus_1
+    538            {
+    539              /* Get DMA1 ISR register value */
+    540              tmpreg = DMA1->ISR ;
+   \   000000AE   0x....             LDR.N    R0,??DataTable9_9  ;; 0x40026000
+   \   000000B0   0x6800             LDR      R0,[R0, #+0]
+   \   000000B2   0x0006             MOVS     R6,R0
+    541            }
+    542          
+    543            /* Check the status of the specified DMA flag */
+    544            if ((tmpreg & DMA_FLAG) != (uint32_t)RESET)
+   \                     ??DMA_GetFlagStatus_1: (+1)
+   \   000000B4   0x4226             TST      R6,R4
+   \   000000B6   0xD002             BEQ.N    ??DMA_GetFlagStatus_2
+    545            {
+    546              /* DMA_FLAG is set */
+    547              bitstatus = SET;
+   \   000000B8   0x2001             MOVS     R0,#+1
+   \   000000BA   0x0005             MOVS     R5,R0
+   \   000000BC   0xE001             B.N      ??DMA_GetFlagStatus_3
+    548            }
+    549            else
+    550            {
+    551              /* DMA_FLAG is reset */
+    552              bitstatus = RESET;
+   \                     ??DMA_GetFlagStatus_2: (+1)
+   \   000000BE   0x2000             MOVS     R0,#+0
+   \   000000C0   0x0005             MOVS     R5,R0
+    553            }
+    554            
+    555            /* Return the DMA_FLAG status */
+    556            return  bitstatus;
+   \                     ??DMA_GetFlagStatus_3: (+1)
+   \   000000C2   0x0028             MOVS     R0,R5
+   \   000000C4   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   000000C6   0xBD70             POP      {R4-R6,PC}       ;; return
+    557          }
+    558          
+    559          /**
+    560            * @brief  Clears the DMAy Channelx's pending flags.
+    561            * @param  DMA_FLAG: specifies the flag to clear.
+    562            *   This parameter can be any combination (for the same DMA) of the following values:
+    563            *     @arg DMA1_FLAG_GL1: DMA1 Channel1 global flag.
+    564            *     @arg DMA1_FLAG_TC1: DMA1 Channel1 transfer complete flag.
+    565            *     @arg DMA1_FLAG_HT1: DMA1 Channel1 half transfer flag.
+    566            *     @arg DMA1_FLAG_TE1: DMA1 Channel1 transfer error flag.
+    567            *     @arg DMA1_FLAG_GL2: DMA1 Channel2 global flag.
+    568            *     @arg DMA1_FLAG_TC2: DMA1 Channel2 transfer complete flag.
+    569            *     @arg DMA1_FLAG_HT2: DMA1 Channel2 half transfer flag.
+    570            *     @arg DMA1_FLAG_TE2: DMA1 Channel2 transfer error flag.
+    571            *     @arg DMA1_FLAG_GL3: DMA1 Channel3 global flag.
+    572            *     @arg DMA1_FLAG_TC3: DMA1 Channel3 transfer complete flag.
+    573            *     @arg DMA1_FLAG_HT3: DMA1 Channel3 half transfer flag.
+    574            *     @arg DMA1_FLAG_TE3: DMA1 Channel3 transfer error flag.
+    575            *     @arg DMA1_FLAG_GL4: DMA1 Channel4 global flag.
+    576            *     @arg DMA1_FLAG_TC4: DMA1 Channel4 transfer complete flag.
+    577            *     @arg DMA1_FLAG_HT4: DMA1 Channel4 half transfer flag.
+    578            *     @arg DMA1_FLAG_TE4: DMA1 Channel4 transfer error flag.
+    579            *     @arg DMA1_FLAG_GL5: DMA1 Channel5 global flag.
+    580            *     @arg DMA1_FLAG_TC5: DMA1 Channel5 transfer complete flag.
+    581            *     @arg DMA1_FLAG_HT5: DMA1 Channel5 half transfer flag.
+    582            *     @arg DMA1_FLAG_TE5: DMA1 Channel5 transfer error flag.
+    583            *     @arg DMA1_FLAG_GL6: DMA1 Channel6 global flag.
+    584            *     @arg DMA1_FLAG_TC6: DMA1 Channel6 transfer complete flag.
+    585            *     @arg DMA1_FLAG_HT6: DMA1 Channel6 half transfer flag.
+    586            *     @arg DMA1_FLAG_TE6: DMA1 Channel6 transfer error flag.
+    587            *     @arg DMA1_FLAG_GL7: DMA1 Channel7 global flag.
+    588            *     @arg DMA1_FLAG_TC7: DMA1 Channel7 transfer complete flag.
+    589            *     @arg DMA1_FLAG_HT7: DMA1 Channel7 half transfer flag.
+    590            *     @arg DMA1_FLAG_TE7: DMA1 Channel7 transfer error flag.
+    591            *     
+    592            * @note
+    593            *    Clearing the Global flag (DMAy_FLAG_GLx) results in clearing all other flags
+    594            *    relative to the same channel (Transfer Complete, Half-transfer Complete and 
+    595            *    Transfer Error flags: DMAy_FLAG_TCx, DMAy_FLAG_HTx and DMAy_FLAG_TEx).  
+    596            *      
+    597            * @retval None
+    598            */
+
+   \                                 In section .text, align 2, keep-with-next
+    599          void DMA_ClearFlag(uint32_t DMA_FLAG)
+    600          {
+   \                     DMA_ClearFlag: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    601            /* Check the parameters */
+    602            assert_param(IS_DMA_CLEAR_FLAG(DMA_FLAG));
+   \   00000004   0xF014 0x4F70      TST      R4,#0xF0000000
+   \   00000008   0xD101             BNE.N    ??DMA_ClearFlag_0
+   \   0000000A   0x2C00             CMP      R4,#+0
+   \   0000000C   0xD104             BNE.N    ??DMA_ClearFlag_1
+   \                     ??DMA_ClearFlag_0: (+1)
+   \   0000000E   0xF240 0x215A      MOVW     R1,#+602
+   \   00000012   0x....             LDR.N    R0,??DataTable9_7
+   \   00000014   0x.... 0x....      BL       assert_failed
+    603          
+    604            if ((DMA_FLAG & FLAG_MASK) == (uint32_t)RESET)
+   \                     ??DMA_ClearFlag_1: (+1)
+   \   00000018   0x00E0             LSLS     R0,R4,#+3
+   \   0000001A   0xD401             BMI.N    ??DMA_ClearFlag_2
+    605            {
+    606              /* Clear the selected DMA flags */
+    607              DMA1->IFCR = DMA_FLAG;
+   \   0000001C   0x....             LDR.N    R0,??DataTable9_8  ;; 0x40026004
+   \   0000001E   0x6004             STR      R4,[R0, #+0]
+    608            }
+    609          }
+   \                     ??DMA_ClearFlag_2: (+1)
+   \   00000020   0xBD10             POP      {R4,PC}          ;; return
+    610          
+    611          /**
+    612            * @brief  Checks whether the specified DMAy Channelx interrupt has occurred or not.
+    613            * @param  DMA_IT: specifies the DMA interrupt source to check. 
+    614            *   This parameter can be one of the following values:
+    615            *     @arg DMA1_IT_GL1: DMA1 Channel1 global interrupt.
+    616            *     @arg DMA1_IT_TC1: DMA1 Channel1 transfer complete interrupt.
+    617            *     @arg DMA1_IT_HT1: DMA1 Channel1 half transfer interrupt.
+    618            *     @arg DMA1_IT_TE1: DMA1 Channel1 transfer error interrupt.
+    619            *     @arg DMA1_IT_GL2: DMA1 Channel2 global interrupt.
+    620            *     @arg DMA1_IT_TC2: DMA1 Channel2 transfer complete interrupt.
+    621            *     @arg DMA1_IT_HT2: DMA1 Channel2 half transfer interrupt.
+    622            *     @arg DMA1_IT_TE2: DMA1 Channel2 transfer error interrupt.
+    623            *     @arg DMA1_IT_GL3: DMA1 Channel3 global interrupt.
+    624            *     @arg DMA1_IT_TC3: DMA1 Channel3 transfer complete interrupt.
+    625            *     @arg DMA1_IT_HT3: DMA1 Channel3 half transfer interrupt.
+    626            *     @arg DMA1_IT_TE3: DMA1 Channel3 transfer error interrupt.
+    627            *     @arg DMA1_IT_GL4: DMA1 Channel4 global interrupt.
+    628            *     @arg DMA1_IT_TC4: DMA1 Channel4 transfer complete interrupt.
+    629            *     @arg DMA1_IT_HT4: DMA1 Channel4 half transfer interrupt.
+    630            *     @arg DMA1_IT_TE4: DMA1 Channel4 transfer error interrupt.
+    631            *     @arg DMA1_IT_GL5: DMA1 Channel5 global interrupt.
+    632            *     @arg DMA1_IT_TC5: DMA1 Channel5 transfer complete interrupt.
+    633            *     @arg DMA1_IT_HT5: DMA1 Channel5 half transfer interrupt.
+    634            *     @arg DMA1_IT_TE5: DMA1 Channel5 transfer error interrupt.
+    635            *     @arg DMA1_IT_GL6: DMA1 Channel6 global interrupt.
+    636            *     @arg DMA1_IT_TC6: DMA1 Channel6 transfer complete interrupt.
+    637            *     @arg DMA1_IT_HT6: DMA1 Channel6 half transfer interrupt.
+    638            *     @arg DMA1_IT_TE6: DMA1 Channel6 transfer error interrupt.
+    639            *     @arg DMA1_IT_GL7: DMA1 Channel7 global interrupt.
+    640            *     @arg DMA1_IT_TC7: DMA1 Channel7 transfer complete interrupt.
+    641            *     @arg DMA1_IT_HT7: DMA1 Channel7 half transfer interrupt.
+    642            *     @arg DMA1_IT_TE7: DMA1 Channel7 transfer error interrupt.
+    643            *     
+    644            * @note
+    645            *    The Global interrupt (DMAy_FLAG_GLx) is set whenever any of the other 
+    646            *    interrupts relative to the same channel is set (Transfer Complete, 
+    647            *    Half-transfer Complete or Transfer Error interrupts: DMAy_IT_TCx, 
+    648            *    DMAy_IT_HTx or DMAy_IT_TEx). 
+    649            *      
+    650            * @retval The new state of DMA_IT (SET or RESET).
+    651            */
+
+   \                                 In section .text, align 2, keep-with-next
+    652          ITStatus DMA_GetITStatus(uint32_t DMA_IT)
+    653          {
+   \                     DMA_GetITStatus: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    654            ITStatus bitstatus = RESET;
+   \   00000004   0x2500             MOVS     R5,#+0
+    655            uint32_t tmpreg = 0;
+   \   00000006   0x2600             MOVS     R6,#+0
+    656           
+    657            /* Check the parameters */
+    658            assert_param(IS_DMA_GET_IT(DMA_IT));
+   \   00000008   0x2C01             CMP      R4,#+1
+   \   0000000A   0xD04E             BEQ.N    ??DMA_GetITStatus_0
+   \   0000000C   0x2C02             CMP      R4,#+2
+   \   0000000E   0xD04C             BEQ.N    ??DMA_GetITStatus_0
+   \   00000010   0x2C04             CMP      R4,#+4
+   \   00000012   0xD04A             BEQ.N    ??DMA_GetITStatus_0
+   \   00000014   0x2C08             CMP      R4,#+8
+   \   00000016   0xD048             BEQ.N    ??DMA_GetITStatus_0
+   \   00000018   0x2C10             CMP      R4,#+16
+   \   0000001A   0xD046             BEQ.N    ??DMA_GetITStatus_0
+   \   0000001C   0x2C20             CMP      R4,#+32
+   \   0000001E   0xD044             BEQ.N    ??DMA_GetITStatus_0
+   \   00000020   0x2C40             CMP      R4,#+64
+   \   00000022   0xD042             BEQ.N    ??DMA_GetITStatus_0
+   \   00000024   0x2C80             CMP      R4,#+128
+   \   00000026   0xD040             BEQ.N    ??DMA_GetITStatus_0
+   \   00000028   0xF5B4 0x7F80      CMP      R4,#+256
+   \   0000002C   0xD03D             BEQ.N    ??DMA_GetITStatus_0
+   \   0000002E   0xF5B4 0x7F00      CMP      R4,#+512
+   \   00000032   0xD03A             BEQ.N    ??DMA_GetITStatus_0
+   \   00000034   0xF5B4 0x6F80      CMP      R4,#+1024
+   \   00000038   0xD037             BEQ.N    ??DMA_GetITStatus_0
+   \   0000003A   0xF5B4 0x6F00      CMP      R4,#+2048
+   \   0000003E   0xD034             BEQ.N    ??DMA_GetITStatus_0
+   \   00000040   0xF5B4 0x5F80      CMP      R4,#+4096
+   \   00000044   0xD031             BEQ.N    ??DMA_GetITStatus_0
+   \   00000046   0xF5B4 0x5F00      CMP      R4,#+8192
+   \   0000004A   0xD02E             BEQ.N    ??DMA_GetITStatus_0
+   \   0000004C   0xF5B4 0x4F80      CMP      R4,#+16384
+   \   00000050   0xD02B             BEQ.N    ??DMA_GetITStatus_0
+   \   00000052   0xF5B4 0x4F00      CMP      R4,#+32768
+   \   00000056   0xD028             BEQ.N    ??DMA_GetITStatus_0
+   \   00000058   0xF5B4 0x3F80      CMP      R4,#+65536
+   \   0000005C   0xD025             BEQ.N    ??DMA_GetITStatus_0
+   \   0000005E   0xF5B4 0x3F00      CMP      R4,#+131072
+   \   00000062   0xD022             BEQ.N    ??DMA_GetITStatus_0
+   \   00000064   0xF5B4 0x2F80      CMP      R4,#+262144
+   \   00000068   0xD01F             BEQ.N    ??DMA_GetITStatus_0
+   \   0000006A   0xF5B4 0x2F00      CMP      R4,#+524288
+   \   0000006E   0xD01C             BEQ.N    ??DMA_GetITStatus_0
+   \   00000070   0xF5B4 0x1F80      CMP      R4,#+1048576
+   \   00000074   0xD019             BEQ.N    ??DMA_GetITStatus_0
+   \   00000076   0xF5B4 0x1F00      CMP      R4,#+2097152
+   \   0000007A   0xD016             BEQ.N    ??DMA_GetITStatus_0
+   \   0000007C   0xF5B4 0x0F80      CMP      R4,#+4194304
+   \   00000080   0xD013             BEQ.N    ??DMA_GetITStatus_0
+   \   00000082   0xF5B4 0x0F00      CMP      R4,#+8388608
+   \   00000086   0xD010             BEQ.N    ??DMA_GetITStatus_0
+   \   00000088   0xF1B4 0x7F80      CMP      R4,#+16777216
+   \   0000008C   0xD00D             BEQ.N    ??DMA_GetITStatus_0
+   \   0000008E   0xF1B4 0x7F00      CMP      R4,#+33554432
+   \   00000092   0xD00A             BEQ.N    ??DMA_GetITStatus_0
+   \   00000094   0xF1B4 0x6F80      CMP      R4,#+67108864
+   \   00000098   0xD007             BEQ.N    ??DMA_GetITStatus_0
+   \   0000009A   0xF1B4 0x6F00      CMP      R4,#+134217728
+   \   0000009E   0xD004             BEQ.N    ??DMA_GetITStatus_0
+   \   000000A0   0xF240 0x2192      MOVW     R1,#+658
+   \   000000A4   0x....             LDR.N    R0,??DataTable9_7
+   \   000000A6   0x.... 0x....      BL       assert_failed
+    659          
+    660            /* Calculate the used DMA */
+    661            if ((DMA_IT & FLAG_MASK) == (uint32_t)RESET)
+   \                     ??DMA_GetITStatus_0: (+1)
+   \   000000AA   0x00E0             LSLS     R0,R4,#+3
+   \   000000AC   0xD402             BMI.N    ??DMA_GetITStatus_1
+    662            {
+    663              /* Get DMA1 ISR register value */
+    664              tmpreg = DMA1->ISR ;
+   \   000000AE   0x....             LDR.N    R0,??DataTable9_9  ;; 0x40026000
+   \   000000B0   0x6800             LDR      R0,[R0, #+0]
+   \   000000B2   0x0006             MOVS     R6,R0
+    665            }
+    666          
+    667            /* Check the status of the specified DMA interrupt */
+    668            if ((tmpreg & DMA_IT) != (uint32_t)RESET)
+   \                     ??DMA_GetITStatus_1: (+1)
+   \   000000B4   0x4226             TST      R6,R4
+   \   000000B6   0xD002             BEQ.N    ??DMA_GetITStatus_2
+    669            {
+    670              /* DMA_IT is set */
+    671              bitstatus = SET;
+   \   000000B8   0x2001             MOVS     R0,#+1
+   \   000000BA   0x0005             MOVS     R5,R0
+   \   000000BC   0xE001             B.N      ??DMA_GetITStatus_3
+    672            }
+    673            else
+    674            {
+    675              /* DMA_IT is reset */
+    676              bitstatus = RESET;
+   \                     ??DMA_GetITStatus_2: (+1)
+   \   000000BE   0x2000             MOVS     R0,#+0
+   \   000000C0   0x0005             MOVS     R5,R0
+    677            }
+    678            /* Return the DMA_IT status */
+    679            return  bitstatus;
+   \                     ??DMA_GetITStatus_3: (+1)
+   \   000000C2   0x0028             MOVS     R0,R5
+   \   000000C4   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   000000C6   0xBD70             POP      {R4-R6,PC}       ;; return
+    680          }
+    681          
+    682          /**
+    683            * @brief  Clears the DMAy Channelx’s interrupt pending bits.
+    684            * @param  DMA_IT: specifies the DMA interrupt pending bit to clear.
+    685            *   This parameter can be any combination (for the same DMA) of the following values:
+    686            *     @arg DMA1_IT_GL1: DMA1 Channel1 global interrupt.
+    687            *     @arg DMA1_IT_TC1: DMA1 Channel1 transfer complete interrupt.
+    688            *     @arg DMA1_IT_HT1: DMA1 Channel1 half transfer interrupt.
+    689            *     @arg DMA1_IT_TE1: DMA1 Channel1 transfer error interrupt.
+    690            *     @arg DMA1_IT_GL2: DMA1 Channel2 global interrupt.
+    691            *     @arg DMA1_IT_TC2: DMA1 Channel2 transfer complete interrupt.
+    692            *     @arg DMA1_IT_HT2: DMA1 Channel2 half transfer interrupt.
+    693            *     @arg DMA1_IT_TE2: DMA1 Channel2 transfer error interrupt.
+    694            *     @arg DMA1_IT_GL3: DMA1 Channel3 global interrupt.
+    695            *     @arg DMA1_IT_TC3: DMA1 Channel3 transfer complete interrupt.
+    696            *     @arg DMA1_IT_HT3: DMA1 Channel3 half transfer interrupt.
+    697            *     @arg DMA1_IT_TE3: DMA1 Channel3 transfer error interrupt.
+    698            *     @arg DMA1_IT_GL4: DMA1 Channel4 global interrupt.
+    699            *     @arg DMA1_IT_TC4: DMA1 Channel4 transfer complete interrupt.
+    700            *     @arg DMA1_IT_HT4: DMA1 Channel4 half transfer interrupt.
+    701            *     @arg DMA1_IT_TE4: DMA1 Channel4 transfer error interrupt.
+    702            *     @arg DMA1_IT_GL5: DMA1 Channel5 global interrupt.
+    703            *     @arg DMA1_IT_TC5: DMA1 Channel5 transfer complete interrupt.
+    704            *     @arg DMA1_IT_HT5: DMA1 Channel5 half transfer interrupt.
+    705            *     @arg DMA1_IT_TE5: DMA1 Channel5 transfer error interrupt.
+    706            *     @arg DMA1_IT_GL6: DMA1 Channel6 global interrupt.
+    707            *     @arg DMA1_IT_TC6: DMA1 Channel6 transfer complete interrupt.
+    708            *     @arg DMA1_IT_HT6: DMA1 Channel6 half transfer interrupt.
+    709            *     @arg DMA1_IT_TE6: DMA1 Channel6 transfer error interrupt.
+    710            *     @arg DMA1_IT_GL7: DMA1 Channel7 global interrupt.
+    711            *     @arg DMA1_IT_TC7: DMA1 Channel7 transfer complete interrupt.
+    712            *     @arg DMA1_IT_HT7: DMA1 Channel7 half transfer interrupt.
+    713            *     @arg DMA1_IT_TE7: DMA1 Channel7 transfer error interrupt.
+    714            *     
+    715            * @note
+    716            *    Clearing the Global interrupt (DMAy_IT_GLx) results in clearing all other 
+    717            *    interrupts relative to the same channel (Transfer Complete, Half-transfer 
+    718            *    Complete and Transfer Error interrupts: DMAy_IT_TCx, DMAy_IT_HTx and 
+    719            *    DMAy_IT_TEx).  
+    720            *        
+    721            * @retval None
+    722            */
+
+   \                                 In section .text, align 2, keep-with-next
+    723          void DMA_ClearITPendingBit(uint32_t DMA_IT)
+    724          {
+   \                     DMA_ClearITPendingBit: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    725            /* Check the parameters */
+    726            assert_param(IS_DMA_CLEAR_IT(DMA_IT));
+   \   00000004   0xF014 0x4F70      TST      R4,#0xF0000000
+   \   00000008   0xD101             BNE.N    ??DMA_ClearITPendingBit_0
+   \   0000000A   0x2C00             CMP      R4,#+0
+   \   0000000C   0xD104             BNE.N    ??DMA_ClearITPendingBit_1
+   \                     ??DMA_ClearITPendingBit_0: (+1)
+   \   0000000E   0xF240 0x21D6      MOVW     R1,#+726
+   \   00000012   0x....             LDR.N    R0,??DataTable9_7
+   \   00000014   0x.... 0x....      BL       assert_failed
+    727          
+    728            /* Calculate the used DMA */
+    729            if ((DMA_IT & FLAG_MASK) == (uint32_t)RESET)
+   \                     ??DMA_ClearITPendingBit_1: (+1)
+   \   00000018   0x00E0             LSLS     R0,R4,#+3
+   \   0000001A   0xD401             BMI.N    ??DMA_ClearITPendingBit_2
+    730            {
+    731              /* Clear the selected DMA interrupt pending bits */
+    732              DMA1->IFCR = DMA_IT;
+   \   0000001C   0x....             LDR.N    R0,??DataTable9_8  ;; 0x40026004
+   \   0000001E   0x6004             STR      R4,[R0, #+0]
+    733            }
+    734          }
+   \                     ??DMA_ClearITPendingBit_2: (+1)
+   \   00000020   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9:
+   \   00000000   0x40026008         DC32     0x40026008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_1:
+   \   00000000   0x4002601C         DC32     0x4002601c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_2:
+   \   00000000   0x40026030         DC32     0x40026030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_3:
+   \   00000000   0x40026044         DC32     0x40026044
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_4:
+   \   00000000   0x40026058         DC32     0x40026058
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_5:
+   \   00000000   0x4002606C         DC32     0x4002606c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_6:
+   \   00000000   0x40026080         DC32     0x40026080
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_7:
+   \   00000000   0x........         DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_8:
+   \   00000000   0x40026004         DC32     0x40026004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_9:
+   \   00000000   0x40026000         DC32     0x40026000
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \   00000000   0x45 0x3A          DC8 45H, 3AH, 5CH, 41H, 43H, 51H, 5CH, 50H
+   \              0x5C 0x41    
+   \              0x43 0x51    
+   \              0x5C 0x50    
+   \   00000008   0x72 0x6F          DC8 72H, 6FH, 6AH, 5FH, 76H, 65H, 72H, 30H
+   \              0x6A 0x5F    
+   \              0x76 0x65    
+   \              0x72 0x30    
+   \   00000010   0x39 0x61          DC8 39H, 61H, 5FH, 31H, 35H, 31H, 30H, 32H
+   \              0x5F 0x31    
+   \              0x35 0x31    
+   \              0x30 0x32    
+   \   00000018   0x30 0x31          DC8 30H, 31H, 35H, 5CH, 45H, 6EH, 64H, 5FH
+   \              0x35 0x5C    
+   \              0x45 0x6E    
+   \              0x64 0x5F    
+   \   00000020   0x30 0x32          DC8 30H, 32H, 5CH, 32H, 30H, 31H, 33H, 5FH
+   \              0x5C 0x32    
+   \              0x30 0x31    
+   \              0x33 0x5F    
+   \   00000028   0x31 0x31          DC8 31H, 31H, 5FH, 32H, 35H, 5FH, 53H, 70H
+   \              0x5F 0x32    
+   \              0x35 0x5F    
+   \              0x53 0x70    
+   \   00000030   0x69 0x72          DC8 69H, 72H, 69H, 74H, 31H, 5FH, 45H, 6CH
+   \              0x69 0x74    
+   \              0x31 0x5F    
+   \              0x45 0x6C    
+   \   00000038   0x65 0x6B          DC8 65H, 6BH, 74H, 72H, 6FH, 6CH, 75H, 78H
+   \              0x74 0x72    
+   \              0x6F 0x6C    
+   \              0x75 0x78    
+   \   00000040   0x5C 0x53          DC8 5CH, 53H, 54H, 4DH, 33H, 32H, 4CH, 5CH
+   \              0x54 0x4D    
+   \              0x33 0x32    
+   \              0x4C 0x5C    
+   \   00000048   0x53 0x54          DC8 53H, 54H, 4DH, 33H, 32H, 4CH, 31H, 78H
+   \              0x4D 0x33    
+   \              0x32 0x4C    
+   \              0x31 0x78    
+   \   00000050   0x78 0x5F          DC8 78H, 5FH, 53H, 74H, 64H, 50H, 65H, 72H
+   \              0x53 0x74    
+   \              0x64 0x50    
+   \              0x65 0x72    
+   \   00000058   0x69 0x70          DC8 69H, 70H, 68H, 5FH, 4CH, 69H, 62H, 5CH
+   \              0x68 0x5F    
+   \              0x4C 0x69    
+   \              0x62 0x5C    
+   \   00000060   0x53 0x6F          DC8 53H, 6FH, 75H, 72H, 63H, 65H, 5CH, 53H
+   \              0x75 0x72    
+   \              0x63 0x65    
+   \              0x5C 0x53    
+   \   00000068   0x54 0x4D          DC8 54H, 4DH, 33H, 32H, 4CH, 31H, 78H, 78H
+   \              0x33 0x32    
+   \              0x4C 0x31    
+   \              0x78 0x78    
+   \   00000070   0x5F 0x53          DC8 5FH, 53H, 74H, 64H, 50H, 65H, 72H, 69H
+   \              0x74 0x64    
+   \              0x50 0x65    
+   \              0x72 0x69    
+   \   00000078   0x70 0x68          DC8 70H, 68H, 5FH, 44H, 72H, 69H, 76H, 65H
+   \              0x5F 0x44    
+   \              0x72 0x69    
+   \              0x76 0x65    
+   \   00000080   0x72 0x5C          DC8 72H, 5CH, 73H, 72H, 63H, 5CH, 73H, 74H
+   \              0x73 0x72    
+   \              0x63 0x5C    
+   \              0x73 0x74    
+   \   00000088   0x6D 0x33          DC8 6DH, 33H, 32H, 6CH, 31H, 78H, 78H, 5FH
+   \              0x32 0x6C    
+   \              0x31 0x78    
+   \              0x78 0x5F    
+   \   00000090   0x64 0x6D          DC8 64H, 6DH, 61H, 2EH, 63H, 0
+   \              0x61 0x2E    
+   \              0x63 0x00    
+   \   00000096   0x00 0x00          DC8 0, 0
+    735          
+    736          /**
+    737            * @}
+    738            */
+    739          
+    740          /**
+    741            * @}
+    742            */
+    743          
+    744          /**
+    745            * @}
+    746            */
+    747          
+    748          /**
+    749            * @}
+    750            */
+    751          
+    752          /******************* (C) COPYRIGHT 2010 STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   DMA_ClearFlag
+         8   -> assert_failed
+       8   DMA_ClearITPendingBit
+         8   -> assert_failed
+      16   DMA_Cmd
+        16   -> assert_failed
+       8   DMA_DeInit
+         8   -> assert_failed
+       8   DMA_GetCurrDataCounter
+         8   -> assert_failed
+      16   DMA_GetFlagStatus
+        16   -> assert_failed
+      16   DMA_GetITStatus
+        16   -> assert_failed
+      16   DMA_ITConfig
+        16   -> assert_failed
+      16   DMA_Init
+        16   -> assert_failed
+      16   DMA_SetCurrDataCounter
+        16   -> assert_failed
+       0   DMA_StructInit
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable9
+       4  ??DataTable9_1
+       4  ??DataTable9_2
+       4  ??DataTable9_3
+       4  ??DataTable9_4
+       4  ??DataTable9_5
+       4  ??DataTable9_6
+       4  ??DataTable9_7
+       4  ??DataTable9_8
+       4  ??DataTable9_9
+     152  ?_0
+      34  DMA_ClearFlag
+      34  DMA_ClearITPendingBit
+     126  DMA_Cmd
+     278  DMA_DeInit
+      62  DMA_GetCurrDataCounter
+     200  DMA_GetFlagStatus
+     200  DMA_GetITStatus
+     126  DMA_ITConfig
+     370  DMA_Init
+      64  DMA_SetCurrDataCounter
+      46  DMA_StructInit
+
+ 
+   152 bytes in section .rodata
+ 1 580 bytes in section .text
+ 
+ 1 580 bytes of CODE  memory
+   152 bytes of CONST memory
+
+Errors: none
+Warnings: none

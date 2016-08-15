@@ -1,0 +1,1749 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.2.8542/W32 for ARM        20/Nov/2015  05:04:54
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\STM32L\STM32L1xx_StdPeriph_Lib\Source\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.c
+#    Command line =  
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\STM32L\STM32L1xx_StdPeriph_Lib\Source\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.c
+#        -D USE_STDPERIPH_DRIVER -D VECT_TAB_FLASH -D STM32L1XX_MD -D
+#        IAR_ARM_CM3 -D USE_FULL_ASSERT -D SPIRIT_USE_FULL_ASSERT -D
+#        USE_SYSTICK_DELAY -D SDK -lC
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\List\
+#        -o
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Normal.h" -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\.\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\Application\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\Application\examples\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\Application\runtime\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\SDK_Eval_STM32L\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\SPIRIT1_Library\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\SDK_Eval_Util\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\STM32L1xx_StdPeriph_Lib\Source\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\STM32L1xx_StdPeriph_Lib\Source\STM32L1xx_StdPeriph_Driver\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\SDK_Virtual_Com\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\STM32_USB-FS-Device_Lib\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\ACQ\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\List\stm32l1xx_gpio.lst
+#    Object file  =  
+#        E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_gpio.o
+#
+###############################################################################
+
+E:\ACQ\Proj_ver09a_15102015\End_02\2013_11_25_Spirit1_Elektrolux\STM32L\STM32L1xx_StdPeriph_Lib\Source\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32l1xx_gpio.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.0
+      6            * @date    31-December-2010
+      7            * @brief   This file provides firmware functions to manage the following 
+      8            *          functionalities of the GPIO peripheral:           
+      9            *           - Initialization and Configuration
+     10            *           - GPIO Read and Write
+     11            *           - GPIO Alternate functions configuration
+     12            * 
+     13            *  @verbatim
+     14            *
+     15            *          ===================================================================
+     16            *                                 How to use this driver
+     17            *          ===================================================================       
+     18            *           1. Enable the GPIO AHB clock using RCC_AHBPeriphClockCmd()
+     19            *             
+     20            *           2. Configure the GPIO pin(s) using GPIO_Init()
+     21            *              Four possible configuration are available for each pin:
+     22            *                - Input: Floating, Pull-up, Pull-down.
+     23            *                - Output: Push-Pull (Pull-up, Pull-down or no Pull)
+     24            *                          Open Drain (Pull-up, Pull-down or no Pull).
+     25            *                  In output mode, the speed is configurable: Very Low, Low,
+     26            *                  Medium or High.
+     27            *                - Alternate Function: Push-Pull (Pull-up, Pull-down or no Pull)
+     28            *                                      Open Drain (Pull-up, Pull-down or no Pull).
+     29            *                - Analog: required mode when a pin is to be used as ADC channel,
+     30            *                          DAC output or comparator input.
+     31            * 
+     32            *          3- Peripherals alternate function:
+     33            *              - For ADC, DAC and comparators, configure the desired pin in 
+     34            *                analog mode using GPIO_InitStruct->GPIO_Mode = GPIO_Mode_AN
+     35            *              - For other peripherals (TIM, USART...):
+     36            *                 - Connect the pin to the desired peripherals' Alternate 
+     37            *                   Function (AF) using GPIO_PinAFConfig() function
+     38            *                 - Configure the desired pin in alternate function mode using
+     39            *                   GPIO_InitStruct->GPIO_Mode = GPIO_Mode_AF
+     40            *                 - Select the type, pull-up/pull-down and output speed via 
+     41            *                   GPIO_PuPd, GPIO_OType and GPIO_Speed members
+     42            *                 - Call GPIO_Init() function
+     43            *        
+     44            *          4. To get the level of a pin configured in input mode use GPIO_ReadInputDataBit()
+     45            *          
+     46            *          5. To set/reset the level of a pin configured in output mode use
+     47            *             GPIO_SetBits()/GPIO_ResetBits()
+     48            *               
+     49            *          6. During and just after reset, the alternate functions are not 
+     50            *             active and the GPIO pins are configured in input floating mode
+     51            *             (except JTAG pins).
+     52            *
+     53            *          7. The LSE oscillator pins OSC32_IN and OSC32_OUT can be used as 
+     54            *             general-purpose (PC14 and PC15, respectively) when the LSE
+     55            *             oscillator is off. The LSE has priority over the GPIO function.
+     56            *
+     57            *          8. The HSE oscillator pins OSC_IN/OSC_OUT can be used as 
+     58            *             general-purpose PH0 and PH1, respectively, when the HSE 
+     59            *             oscillator is off. The HSE has priority over the GPIO function.
+     60            *             
+     61            *  @endverbatim        
+     62            *
+     63            ******************************************************************************
+     64            * @attention
+     65            *
+     66            * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+     67            * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
+     68            * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
+     69            * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
+     70            * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
+     71            * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+     72            *
+     73            * <h2><center>&copy; COPYRIGHT 2010 STMicroelectronics</center></h2>
+     74            ******************************************************************************  
+     75            */ 
+     76          
+     77          /* Includes ------------------------------------------------------------------*/
+     78          #include "stm32l1xx_gpio.h"
+     79          #include "stm32l1xx_rcc.h"
+     80          
+     81          /** @addtogroup STM32L1xx_StdPeriph_Driver
+     82            * @{
+     83            */
+     84          
+     85          /** @defgroup GPIO 
+     86            * @brief GPIO driver modules
+     87            * @{
+     88            */
+     89          
+     90          /* Private typedef -----------------------------------------------------------*/
+     91          /* Private define ------------------------------------------------------------*/
+     92          /* Private macro -------------------------------------------------------------*/
+     93          /* Private variables ---------------------------------------------------------*/
+     94          /* Private function prototypes -----------------------------------------------*/
+     95          /* Private functions ---------------------------------------------------------*/
+     96          
+     97          /** @defgroup GPIO_Private_Functions
+     98            * @{
+     99            */
+    100          
+    101          /** @defgroup GPIO_Group1 Initialization and Configuration
+    102           *  @brief   Initialization and Configuration
+    103           *
+    104          @verbatim   
+    105           ===============================================================================
+    106                                  Initialization and Configuration
+    107           ===============================================================================  
+    108          
+    109          @endverbatim
+    110            * @{
+    111            */
+    112          
+    113          /**
+    114            * @brief  Deinitializes the GPIOx peripheral registers to their default reset 
+    115            *         values.
+    116            *         By default, The GPIO pins are configured in input floating mode
+    117            *         (except JTAG pins).
+    118            * @param  GPIOx: where x can be (A, B, C, D, E or H) to select the GPIO peripheral.
+    119            * @retval None
+    120            */
+
+   \                                 In section .text, align 2, keep-with-next
+    121          void GPIO_DeInit(GPIO_TypeDef* GPIOx)
+    122          {
+   \                     GPIO_DeInit: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    123            /* Check the parameters */
+    124            assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+   \   00000004   0x.... 0x....      LDR.W    R0,??DataTable11  ;; 0x40020000
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xD018             BEQ.N    ??GPIO_DeInit_0
+   \   0000000C   0x.... 0x....      LDR.W    R0,??DataTable11_1  ;; 0x40020400
+   \   00000010   0x4284             CMP      R4,R0
+   \   00000012   0xD014             BEQ.N    ??GPIO_DeInit_0
+   \   00000014   0x.... 0x....      LDR.W    R0,??DataTable11_2  ;; 0x40020800
+   \   00000018   0x4284             CMP      R4,R0
+   \   0000001A   0xD010             BEQ.N    ??GPIO_DeInit_0
+   \   0000001C   0x.... 0x....      LDR.W    R0,??DataTable11_3  ;; 0x40020c00
+   \   00000020   0x4284             CMP      R4,R0
+   \   00000022   0xD00C             BEQ.N    ??GPIO_DeInit_0
+   \   00000024   0x.... 0x....      LDR.W    R0,??DataTable11_4  ;; 0x40021000
+   \   00000028   0x4284             CMP      R4,R0
+   \   0000002A   0xD008             BEQ.N    ??GPIO_DeInit_0
+   \   0000002C   0x.... 0x....      LDR.W    R0,??DataTable11_5  ;; 0x40021400
+   \   00000030   0x4284             CMP      R4,R0
+   \   00000032   0xD004             BEQ.N    ??GPIO_DeInit_0
+   \   00000034   0x217C             MOVS     R1,#+124
+   \   00000036   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   0000003A   0x.... 0x....      BL       assert_failed
+    125          
+    126            if(GPIOx == GPIOA)
+   \                     ??GPIO_DeInit_0: (+1)
+   \   0000003E   0x.... 0x....      LDR.W    R0,??DataTable11  ;; 0x40020000
+   \   00000042   0x4284             CMP      R4,R0
+   \   00000044   0xD108             BNE.N    ??GPIO_DeInit_1
+    127            {
+    128              RCC_AHBPeriphResetCmd(RCC_AHBPeriph_GPIOA, ENABLE);
+   \   00000046   0x2101             MOVS     R1,#+1
+   \   00000048   0x2001             MOVS     R0,#+1
+   \   0000004A   0x.... 0x....      BL       RCC_AHBPeriphResetCmd
+    129              RCC_AHBPeriphResetCmd(RCC_AHBPeriph_GPIOA, DISABLE);  
+   \   0000004E   0x2100             MOVS     R1,#+0
+   \   00000050   0x2001             MOVS     R0,#+1
+   \   00000052   0x.... 0x....      BL       RCC_AHBPeriphResetCmd
+   \   00000056   0xE03F             B.N      ??GPIO_DeInit_2
+    130            }
+    131            else if(GPIOx == GPIOB)
+   \                     ??GPIO_DeInit_1: (+1)
+   \   00000058   0x.... 0x....      LDR.W    R0,??DataTable11_1  ;; 0x40020400
+   \   0000005C   0x4284             CMP      R4,R0
+   \   0000005E   0xD108             BNE.N    ??GPIO_DeInit_3
+    132            {
+    133              RCC_AHBPeriphResetCmd(RCC_AHBPeriph_GPIOB, ENABLE);
+   \   00000060   0x2101             MOVS     R1,#+1
+   \   00000062   0x2002             MOVS     R0,#+2
+   \   00000064   0x.... 0x....      BL       RCC_AHBPeriphResetCmd
+    134              RCC_AHBPeriphResetCmd(RCC_AHBPeriph_GPIOB, DISABLE);
+   \   00000068   0x2100             MOVS     R1,#+0
+   \   0000006A   0x2002             MOVS     R0,#+2
+   \   0000006C   0x.... 0x....      BL       RCC_AHBPeriphResetCmd
+   \   00000070   0xE032             B.N      ??GPIO_DeInit_2
+    135            }
+    136            else if(GPIOx == GPIOC)
+   \                     ??GPIO_DeInit_3: (+1)
+   \   00000072   0x.... 0x....      LDR.W    R0,??DataTable11_2  ;; 0x40020800
+   \   00000076   0x4284             CMP      R4,R0
+   \   00000078   0xD108             BNE.N    ??GPIO_DeInit_4
+    137            {
+    138              RCC_AHBPeriphResetCmd(RCC_AHBPeriph_GPIOC, ENABLE);
+   \   0000007A   0x2101             MOVS     R1,#+1
+   \   0000007C   0x2004             MOVS     R0,#+4
+   \   0000007E   0x.... 0x....      BL       RCC_AHBPeriphResetCmd
+    139              RCC_AHBPeriphResetCmd(RCC_AHBPeriph_GPIOC, DISABLE);
+   \   00000082   0x2100             MOVS     R1,#+0
+   \   00000084   0x2004             MOVS     R0,#+4
+   \   00000086   0x.... 0x....      BL       RCC_AHBPeriphResetCmd
+   \   0000008A   0xE025             B.N      ??GPIO_DeInit_2
+    140            }
+    141            else if(GPIOx == GPIOD)
+   \                     ??GPIO_DeInit_4: (+1)
+   \   0000008C   0x.... 0x....      LDR.W    R0,??DataTable11_3  ;; 0x40020c00
+   \   00000090   0x4284             CMP      R4,R0
+   \   00000092   0xD108             BNE.N    ??GPIO_DeInit_5
+    142            {
+    143              RCC_AHBPeriphResetCmd(RCC_AHBPeriph_GPIOD, ENABLE);
+   \   00000094   0x2101             MOVS     R1,#+1
+   \   00000096   0x2008             MOVS     R0,#+8
+   \   00000098   0x.... 0x....      BL       RCC_AHBPeriphResetCmd
+    144              RCC_AHBPeriphResetCmd(RCC_AHBPeriph_GPIOD, DISABLE);
+   \   0000009C   0x2100             MOVS     R1,#+0
+   \   0000009E   0x2008             MOVS     R0,#+8
+   \   000000A0   0x.... 0x....      BL       RCC_AHBPeriphResetCmd
+   \   000000A4   0xE018             B.N      ??GPIO_DeInit_2
+    145            }
+    146            else if(GPIOx == GPIOE)
+   \                     ??GPIO_DeInit_5: (+1)
+   \   000000A6   0x.... 0x....      LDR.W    R0,??DataTable11_4  ;; 0x40021000
+   \   000000AA   0x4284             CMP      R4,R0
+   \   000000AC   0xD108             BNE.N    ??GPIO_DeInit_6
+    147            {
+    148                RCC_AHBPeriphResetCmd(RCC_AHBPeriph_GPIOE, ENABLE);
+   \   000000AE   0x2101             MOVS     R1,#+1
+   \   000000B0   0x2010             MOVS     R0,#+16
+   \   000000B2   0x.... 0x....      BL       RCC_AHBPeriphResetCmd
+    149                RCC_AHBPeriphResetCmd(RCC_AHBPeriph_GPIOE, DISABLE);
+   \   000000B6   0x2100             MOVS     R1,#+0
+   \   000000B8   0x2010             MOVS     R0,#+16
+   \   000000BA   0x.... 0x....      BL       RCC_AHBPeriphResetCmd
+   \   000000BE   0xE00B             B.N      ??GPIO_DeInit_2
+    150            }
+    151            else
+    152            {
+    153              if(GPIOx == GPIOH)
+   \                     ??GPIO_DeInit_6: (+1)
+   \   000000C0   0x.... 0x....      LDR.W    R0,??DataTable11_5  ;; 0x40021400
+   \   000000C4   0x4284             CMP      R4,R0
+   \   000000C6   0xD107             BNE.N    ??GPIO_DeInit_2
+    154              {
+    155                RCC_AHBPeriphResetCmd(RCC_AHBPeriph_GPIOH, ENABLE);
+   \   000000C8   0x2101             MOVS     R1,#+1
+   \   000000CA   0x2020             MOVS     R0,#+32
+   \   000000CC   0x.... 0x....      BL       RCC_AHBPeriphResetCmd
+    156                RCC_AHBPeriphResetCmd(RCC_AHBPeriph_GPIOH, DISABLE);
+   \   000000D0   0x2100             MOVS     R1,#+0
+   \   000000D2   0x2020             MOVS     R0,#+32
+   \   000000D4   0x.... 0x....      BL       RCC_AHBPeriphResetCmd
+    157              }
+    158            }
+    159          }
+   \                     ??GPIO_DeInit_2: (+1)
+   \   000000D8   0xBD10             POP      {R4,PC}          ;; return
+    160          
+    161          /**
+    162            * @brief  Initializes the GPIOx peripheral according to the specified 
+    163            *         parameters in the GPIO_InitStruct.
+    164            * @param  GPIOx: where x can be (A, B, C, D, E or H) to select the GPIO peripheral.
+    165            * @param  GPIO_InitStruct: pointer to a GPIO_InitTypeDef structure that 
+    166            *         contains the configuration information for the specified GPIO
+    167            *         peripheral.
+    168            *         GPIO_Pin: selects the pin to be configured: GPIO_Pin_0 -> GPIO_Pin_15
+    169            *         GPIO_Mode: selects the mode of the pin: 
+    170            *                      - Input mode: GPIO_Mode_IN
+    171            *                      - Output mode: GPIO_Mode_OUT
+    172            *                      - Alternate Function mode: GPIO_Mode_AF
+    173            *                      - Analog mode: GPIO_Mode_AN
+    174            *         GPIO_Speed: selects the speed of the pin if configured in Output:
+    175            *                      - Very Low: GPIO_Speed_400KHz
+    176            *                      - Low: GPIO_Speed_2MHz
+    177            *                      - Medium: GPIO_Speed_10MHz
+    178            *                      - High: GPIO_Speed_40MHz
+    179            *         GPIO_OType: selects the Output type (if the selected mode is output):
+    180            *                      - Push-pull: GPIO_OType_PP
+    181            *                      - Open Drain: GPIO_OType_OD
+    182            *         GPIO_PuPd: configures the Pull-up/Pull-down resistor on the pin:
+    183            *                      - pull-up: GPIO_PuPd_UP
+    184            *                      - pull-down: GPIO_PuPd_DOWN
+    185            *                      - Neither pull-up nor Pull-down: GPIO_PuPd_NOPULL
+    186            * @retval None
+    187            */
+
+   \                                 In section .text, align 2, keep-with-next
+    188          void GPIO_Init(GPIO_TypeDef* GPIOx, GPIO_InitTypeDef* GPIO_InitStruct)
+    189          {
+   \                     GPIO_Init: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+    190            uint32_t pinpos = 0x00, pos = 0x00 , currentpin = 0x00;
+   \   00000008   0x2600             MOVS     R6,#+0
+   \   0000000A   0x2700             MOVS     R7,#+0
+   \   0000000C   0xF05F 0x0800      MOVS     R8,#+0
+    191            
+    192            /* Check the parameters */
+    193            assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+   \   00000010   0x.... 0x....      LDR.W    R0,??DataTable11  ;; 0x40020000
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xD018             BEQ.N    ??GPIO_Init_0
+   \   00000018   0x.... 0x....      LDR.W    R0,??DataTable11_1  ;; 0x40020400
+   \   0000001C   0x4284             CMP      R4,R0
+   \   0000001E   0xD014             BEQ.N    ??GPIO_Init_0
+   \   00000020   0x.... 0x....      LDR.W    R0,??DataTable11_2  ;; 0x40020800
+   \   00000024   0x4284             CMP      R4,R0
+   \   00000026   0xD010             BEQ.N    ??GPIO_Init_0
+   \   00000028   0x.... 0x....      LDR.W    R0,??DataTable11_3  ;; 0x40020c00
+   \   0000002C   0x4284             CMP      R4,R0
+   \   0000002E   0xD00C             BEQ.N    ??GPIO_Init_0
+   \   00000030   0x.... 0x....      LDR.W    R0,??DataTable11_4  ;; 0x40021000
+   \   00000034   0x4284             CMP      R4,R0
+   \   00000036   0xD008             BEQ.N    ??GPIO_Init_0
+   \   00000038   0x.... 0x....      LDR.W    R0,??DataTable11_5  ;; 0x40021400
+   \   0000003C   0x4284             CMP      R4,R0
+   \   0000003E   0xD004             BEQ.N    ??GPIO_Init_0
+   \   00000040   0x21C1             MOVS     R1,#+193
+   \   00000042   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   00000046   0x.... 0x....      BL       assert_failed
+    194            assert_param(IS_GPIO_PIN(GPIO_InitStruct->GPIO_Pin));
+   \                     ??GPIO_Init_0: (+1)
+   \   0000004A   0x6828             LDR      R0,[R5, #+0]
+   \   0000004C   0x2800             CMP      R0,#+0
+   \   0000004E   0xD104             BNE.N    ??GPIO_Init_1
+   \   00000050   0x21C2             MOVS     R1,#+194
+   \   00000052   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   00000056   0x.... 0x....      BL       assert_failed
+    195            assert_param(IS_GPIO_MODE(GPIO_InitStruct->GPIO_Mode));
+   \                     ??GPIO_Init_1: (+1)
+   \   0000005A   0x7928             LDRB     R0,[R5, #+4]
+   \   0000005C   0x2800             CMP      R0,#+0
+   \   0000005E   0xD00D             BEQ.N    ??GPIO_Init_2
+   \   00000060   0x7928             LDRB     R0,[R5, #+4]
+   \   00000062   0x2801             CMP      R0,#+1
+   \   00000064   0xD00A             BEQ.N    ??GPIO_Init_2
+   \   00000066   0x7928             LDRB     R0,[R5, #+4]
+   \   00000068   0x2802             CMP      R0,#+2
+   \   0000006A   0xD007             BEQ.N    ??GPIO_Init_2
+   \   0000006C   0x7928             LDRB     R0,[R5, #+4]
+   \   0000006E   0x2803             CMP      R0,#+3
+   \   00000070   0xD004             BEQ.N    ??GPIO_Init_2
+   \   00000072   0x21C3             MOVS     R1,#+195
+   \   00000074   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   00000078   0x.... 0x....      BL       assert_failed
+    196            assert_param(IS_GPIO_PUPD(GPIO_InitStruct->GPIO_PuPd));
+   \                     ??GPIO_Init_2: (+1)
+   \   0000007C   0x79E8             LDRB     R0,[R5, #+7]
+   \   0000007E   0x2800             CMP      R0,#+0
+   \   00000080   0xD00A             BEQ.N    ??GPIO_Init_3
+   \   00000082   0x79E8             LDRB     R0,[R5, #+7]
+   \   00000084   0x2801             CMP      R0,#+1
+   \   00000086   0xD007             BEQ.N    ??GPIO_Init_3
+   \   00000088   0x79E8             LDRB     R0,[R5, #+7]
+   \   0000008A   0x2802             CMP      R0,#+2
+   \   0000008C   0xD004             BEQ.N    ??GPIO_Init_3
+   \   0000008E   0x21C4             MOVS     R1,#+196
+   \   00000090   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   00000094   0x.... 0x....      BL       assert_failed
+    197          
+    198            /* -------------------------Configure the port pins---------------- */
+    199            /*-- GPIO Mode Configuration --*/
+    200            for (pinpos = 0x00; pinpos < 0x10; pinpos++)
+   \                     ??GPIO_Init_3: (+1)
+   \   00000098   0x2000             MOVS     R0,#+0
+   \   0000009A   0x0006             MOVS     R6,R0
+   \                     ??GPIO_Init_4: (+1)
+   \   0000009C   0x2E10             CMP      R6,#+16
+   \   0000009E   0xD265             BCS.N    ??GPIO_Init_5
+    201            {
+    202              pos = ((uint32_t)0x01) << pinpos;
+   \   000000A0   0x2001             MOVS     R0,#+1
+   \   000000A2   0x40B0             LSLS     R0,R0,R6
+   \   000000A4   0x0007             MOVS     R7,R0
+    203          
+    204              /* Get the port pins position */
+    205              currentpin = (GPIO_InitStruct->GPIO_Pin) & pos;
+   \   000000A6   0x6828             LDR      R0,[R5, #+0]
+   \   000000A8   0x4038             ANDS     R0,R7,R0
+   \   000000AA   0x4680             MOV      R8,R0
+    206          
+    207              if (currentpin == pos)
+   \   000000AC   0x45B8             CMP      R8,R7
+   \   000000AE   0xD15B             BNE.N    ??GPIO_Init_6
+    208              {
+    209                GPIOx->MODER  &= ~(GPIO_MODER_MODER0 << (pinpos * 2));
+   \   000000B0   0x6820             LDR      R0,[R4, #+0]
+   \   000000B2   0x2103             MOVS     R1,#+3
+   \   000000B4   0x0032             MOVS     R2,R6
+   \   000000B6   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   000000B8   0x0052             LSLS     R2,R2,#+1
+   \   000000BA   0x4091             LSLS     R1,R1,R2
+   \   000000BC   0x4388             BICS     R0,R0,R1
+   \   000000BE   0x6020             STR      R0,[R4, #+0]
+    210          
+    211                GPIOx->MODER |= (((uint32_t)GPIO_InitStruct->GPIO_Mode) << (pinpos * 2));
+   \   000000C0   0x6820             LDR      R0,[R4, #+0]
+   \   000000C2   0x7929             LDRB     R1,[R5, #+4]
+   \   000000C4   0x0032             MOVS     R2,R6
+   \   000000C6   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   000000C8   0x0052             LSLS     R2,R2,#+1
+   \   000000CA   0x4091             LSLS     R1,R1,R2
+   \   000000CC   0x4308             ORRS     R0,R1,R0
+   \   000000CE   0x6020             STR      R0,[R4, #+0]
+    212          
+    213                if ((GPIO_InitStruct->GPIO_Mode == GPIO_Mode_OUT) || (GPIO_InitStruct->GPIO_Mode == GPIO_Mode_AF))
+   \   000000D0   0x7928             LDRB     R0,[R5, #+4]
+   \   000000D2   0x2801             CMP      R0,#+1
+   \   000000D4   0xD002             BEQ.N    ??GPIO_Init_7
+   \   000000D6   0x7928             LDRB     R0,[R5, #+4]
+   \   000000D8   0x2802             CMP      R0,#+2
+   \   000000DA   0xD135             BNE.N    ??GPIO_Init_8
+    214                {
+    215                  /* Check Speed mode parameters */
+    216                  assert_param(IS_GPIO_SPEED(GPIO_InitStruct->GPIO_Speed));
+   \                     ??GPIO_Init_7: (+1)
+   \   000000DC   0x7968             LDRB     R0,[R5, #+5]
+   \   000000DE   0x2800             CMP      R0,#+0
+   \   000000E0   0xD00D             BEQ.N    ??GPIO_Init_9
+   \   000000E2   0x7968             LDRB     R0,[R5, #+5]
+   \   000000E4   0x2801             CMP      R0,#+1
+   \   000000E6   0xD00A             BEQ.N    ??GPIO_Init_9
+   \   000000E8   0x7968             LDRB     R0,[R5, #+5]
+   \   000000EA   0x2802             CMP      R0,#+2
+   \   000000EC   0xD007             BEQ.N    ??GPIO_Init_9
+   \   000000EE   0x7968             LDRB     R0,[R5, #+5]
+   \   000000F0   0x2803             CMP      R0,#+3
+   \   000000F2   0xD004             BEQ.N    ??GPIO_Init_9
+   \   000000F4   0x21D8             MOVS     R1,#+216
+   \   000000F6   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   000000FA   0x.... 0x....      BL       assert_failed
+    217          
+    218                  /* Speed mode configuration */
+    219                  GPIOx->OSPEEDR &= ~(GPIO_OSPEEDER_OSPEEDR0 << (pinpos * 2));
+   \                     ??GPIO_Init_9: (+1)
+   \   000000FE   0x68A0             LDR      R0,[R4, #+8]
+   \   00000100   0x2103             MOVS     R1,#+3
+   \   00000102   0x0032             MOVS     R2,R6
+   \   00000104   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000106   0x0052             LSLS     R2,R2,#+1
+   \   00000108   0x4091             LSLS     R1,R1,R2
+   \   0000010A   0x4388             BICS     R0,R0,R1
+   \   0000010C   0x60A0             STR      R0,[R4, #+8]
+    220                  GPIOx->OSPEEDR |= ((uint32_t)(GPIO_InitStruct->GPIO_Speed) << (pinpos * 2));
+   \   0000010E   0x68A0             LDR      R0,[R4, #+8]
+   \   00000110   0x7969             LDRB     R1,[R5, #+5]
+   \   00000112   0x0032             MOVS     R2,R6
+   \   00000114   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000116   0x0052             LSLS     R2,R2,#+1
+   \   00000118   0x4091             LSLS     R1,R1,R2
+   \   0000011A   0x4308             ORRS     R0,R1,R0
+   \   0000011C   0x60A0             STR      R0,[R4, #+8]
+    221          
+    222                  /*Check Output mode parameters */
+    223                  assert_param(IS_GPIO_OTYPE(GPIO_InitStruct->GPIO_OType));
+   \   0000011E   0x79A8             LDRB     R0,[R5, #+6]
+   \   00000120   0x2800             CMP      R0,#+0
+   \   00000122   0xD007             BEQ.N    ??GPIO_Init_10
+   \   00000124   0x79A8             LDRB     R0,[R5, #+6]
+   \   00000126   0x2801             CMP      R0,#+1
+   \   00000128   0xD004             BEQ.N    ??GPIO_Init_10
+   \   0000012A   0x21DF             MOVS     R1,#+223
+   \   0000012C   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   00000130   0x.... 0x....      BL       assert_failed
+    224          
+    225                  /* Output mode configuration */
+    226                  GPIOx->OTYPER  &= ~((GPIO_OTYPER_OT_0) << ((uint16_t)pinpos)) ;
+   \                     ??GPIO_Init_10: (+1)
+   \   00000134   0x88A0             LDRH     R0,[R4, #+4]
+   \   00000136   0x2101             MOVS     R1,#+1
+   \   00000138   0x40B1             LSLS     R1,R1,R6
+   \   0000013A   0x4388             BICS     R0,R0,R1
+   \   0000013C   0x80A0             STRH     R0,[R4, #+4]
+    227                  GPIOx->OTYPER |= (uint16_t)(((uint16_t)GPIO_InitStruct->GPIO_OType) << ((uint16_t)pinpos));
+   \   0000013E   0x88A0             LDRH     R0,[R4, #+4]
+   \   00000140   0x79A9             LDRB     R1,[R5, #+6]
+   \   00000142   0x40B1             LSLS     R1,R1,R6
+   \   00000144   0x4308             ORRS     R0,R1,R0
+   \   00000146   0x80A0             STRH     R0,[R4, #+4]
+    228                }
+    229          
+    230                /* Pull-up Pull down resistor configuration */
+    231                GPIOx->PUPDR &= ~(GPIO_PUPDR_PUPDR0 << ((uint16_t)pinpos * 2));
+   \                     ??GPIO_Init_8: (+1)
+   \   00000148   0x68E0             LDR      R0,[R4, #+12]
+   \   0000014A   0x2103             MOVS     R1,#+3
+   \   0000014C   0x0032             MOVS     R2,R6
+   \   0000014E   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000150   0x0052             LSLS     R2,R2,#+1
+   \   00000152   0x4091             LSLS     R1,R1,R2
+   \   00000154   0x4388             BICS     R0,R0,R1
+   \   00000156   0x60E0             STR      R0,[R4, #+12]
+    232                GPIOx->PUPDR |= (((uint32_t)GPIO_InitStruct->GPIO_PuPd) << (pinpos * 2));
+   \   00000158   0x68E0             LDR      R0,[R4, #+12]
+   \   0000015A   0x79E9             LDRB     R1,[R5, #+7]
+   \   0000015C   0x0032             MOVS     R2,R6
+   \   0000015E   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000160   0x0052             LSLS     R2,R2,#+1
+   \   00000162   0x4091             LSLS     R1,R1,R2
+   \   00000164   0x4308             ORRS     R0,R1,R0
+   \   00000166   0x60E0             STR      R0,[R4, #+12]
+    233              }
+    234            }
+   \                     ??GPIO_Init_6: (+1)
+   \   00000168   0x1C76             ADDS     R6,R6,#+1
+   \   0000016A   0xE797             B.N      ??GPIO_Init_4
+    235          }
+   \                     ??GPIO_Init_5: (+1)
+   \   0000016C   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    236          
+    237          /**
+    238            * @brief  Fills each GPIO_InitStruct member with its default value.
+    239            * @param  GPIO_InitStruct : pointer to a GPIO_InitTypeDef structure which will 
+    240            *         be initialized.
+    241            * @retval None
+    242            */
+
+   \                                 In section .text, align 2, keep-with-next
+    243          void GPIO_StructInit(GPIO_InitTypeDef* GPIO_InitStruct)
+    244          {
+    245            /* Reset GPIO init structure parameters values */
+    246            GPIO_InitStruct->GPIO_Pin  = GPIO_Pin_All;
+   \                     GPIO_StructInit: (+1)
+   \   00000000   0xF64F 0x71FF      MOVW     R1,#+65535
+   \   00000004   0x6001             STR      R1,[R0, #+0]
+    247            GPIO_InitStruct->GPIO_Mode = GPIO_Mode_IN;
+   \   00000006   0x2100             MOVS     R1,#+0
+   \   00000008   0x7101             STRB     R1,[R0, #+4]
+    248            GPIO_InitStruct->GPIO_Speed = GPIO_Speed_400KHz;
+   \   0000000A   0x2100             MOVS     R1,#+0
+   \   0000000C   0x7141             STRB     R1,[R0, #+5]
+    249            GPIO_InitStruct->GPIO_OType = GPIO_OType_PP;
+   \   0000000E   0x2100             MOVS     R1,#+0
+   \   00000010   0x7181             STRB     R1,[R0, #+6]
+    250            GPIO_InitStruct->GPIO_PuPd = GPIO_PuPd_NOPULL;
+   \   00000012   0x2100             MOVS     R1,#+0
+   \   00000014   0x71C1             STRB     R1,[R0, #+7]
+    251          }
+   \   00000016   0x4770             BX       LR               ;; return
+    252          
+    253          /**
+    254            * @brief  Locks GPIO Pins configuration registers.
+    255            *         The locked registers are GPIOx_MODER, GPIOx_OTYPER, GPIOx_OSPEEDR,
+    256            *         GPIOx_PUPDR, GPIOx_AFRL and GPIOx_AFRH.
+    257            *         The configuration of the locked GPIO pins can no longer be modified
+    258            *         until the next reset.
+    259            * @param  GPIOx: where x can be (A, B, C, D, E or H) to select the GPIO peripheral.
+    260            * @param  GPIO_Pin: specifies the port bit to be written.
+    261            *   This parameter can be any combination of GPIO_Pin_x where x can be (0..15).
+    262            * @retval None
+    263            */
+
+   \                                 In section .text, align 2, keep-with-next
+    264          void GPIO_PinLockConfig(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+    265          {
+   \                     GPIO_PinLockConfig: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    266            uint32_t tmp = 0x00010000;
+   \   00000006   0xF45F 0x3680      MOVS     R6,#+65536
+    267            
+    268            /* Check the parameters */
+    269            assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+   \   0000000A   0x.... 0x....      LDR.W    R0,??DataTable11  ;; 0x40020000
+   \   0000000E   0x4284             CMP      R4,R0
+   \   00000010   0xD019             BEQ.N    ??GPIO_PinLockConfig_0
+   \   00000012   0x.... 0x....      LDR.W    R0,??DataTable11_1  ;; 0x40020400
+   \   00000016   0x4284             CMP      R4,R0
+   \   00000018   0xD015             BEQ.N    ??GPIO_PinLockConfig_0
+   \   0000001A   0x.... 0x....      LDR.W    R0,??DataTable11_2  ;; 0x40020800
+   \   0000001E   0x4284             CMP      R4,R0
+   \   00000020   0xD011             BEQ.N    ??GPIO_PinLockConfig_0
+   \   00000022   0x.... 0x....      LDR.W    R0,??DataTable11_3  ;; 0x40020c00
+   \   00000026   0x4284             CMP      R4,R0
+   \   00000028   0xD00D             BEQ.N    ??GPIO_PinLockConfig_0
+   \   0000002A   0x.... 0x....      LDR.W    R0,??DataTable11_4  ;; 0x40021000
+   \   0000002E   0x4284             CMP      R4,R0
+   \   00000030   0xD009             BEQ.N    ??GPIO_PinLockConfig_0
+   \   00000032   0x.... 0x....      LDR.W    R0,??DataTable11_5  ;; 0x40021400
+   \   00000036   0x4284             CMP      R4,R0
+   \   00000038   0xD005             BEQ.N    ??GPIO_PinLockConfig_0
+   \   0000003A   0xF240 0x110D      MOVW     R1,#+269
+   \   0000003E   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   00000042   0x.... 0x....      BL       assert_failed
+    270            assert_param(IS_GPIO_PIN(GPIO_Pin));
+   \                     ??GPIO_PinLockConfig_0: (+1)
+   \   00000046   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000048   0x2D00             CMP      R5,#+0
+   \   0000004A   0xD105             BNE.N    ??GPIO_PinLockConfig_1
+   \   0000004C   0xF44F 0x7187      MOV      R1,#+270
+   \   00000050   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   00000054   0x.... 0x....      BL       assert_failed
+    271            
+    272            tmp |= GPIO_Pin;
+   \                     ??GPIO_PinLockConfig_1: (+1)
+   \   00000058   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000005A   0x432E             ORRS     R6,R5,R6
+    273            /* Set LCKK bit */
+    274            GPIOx->LCKR = tmp;
+   \   0000005C   0x61E6             STR      R6,[R4, #+28]
+    275            /* Reset LCKK bit */
+    276            GPIOx->LCKR =  GPIO_Pin;
+   \   0000005E   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000060   0x61E5             STR      R5,[R4, #+28]
+    277            /* Set LCKK bit */
+    278            GPIOx->LCKR = tmp;
+   \   00000062   0x61E6             STR      R6,[R4, #+28]
+    279            /* Read LCKK bit*/
+    280            tmp = GPIOx->LCKR;
+   \   00000064   0x69E0             LDR      R0,[R4, #+28]
+   \   00000066   0x0006             MOVS     R6,R0
+    281            /* Read LCKK bit*/
+    282            tmp = GPIOx->LCKR;
+   \   00000068   0x69E0             LDR      R0,[R4, #+28]
+   \   0000006A   0x0006             MOVS     R6,R0
+    283          }
+   \   0000006C   0xBD70             POP      {R4-R6,PC}       ;; return
+    284          
+    285          /**
+    286            * @}
+    287            */
+    288          
+    289          /** @defgroup GPIO_Group2 GPIO Read and Write
+    290           *  @brief   GPIO Read and Write
+    291           *
+    292          @verbatim   
+    293           ===============================================================================
+    294                                        GPIO Read and Write
+    295           ===============================================================================  
+    296          
+    297          @endverbatim
+    298            * @{
+    299            */
+    300          
+    301          /**
+    302            * @brief  Reads the specified input port pin.
+    303            * @param  GPIOx: where x can be (A, B, C, D, E or H) to select the GPIO peripheral.
+    304            * @param  GPIO_Pin: specifies the port bit to read.
+    305            *   This parameter can be GPIO_Pin_x where x can be (0..15).
+    306            * @retval The input port pin value.
+    307            */
+
+   \                                 In section .text, align 2, keep-with-next
+    308          uint8_t GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+    309          {
+   \                     GPIO_ReadInputDataBit: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    310            uint8_t bitstatus = 0x00;
+   \   00000006   0x2600             MOVS     R6,#+0
+    311            
+    312            /* Check the parameters */
+    313            assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+   \   00000008   0x.... 0x....      LDR.W    R0,??DataTable11  ;; 0x40020000
+   \   0000000C   0x4284             CMP      R4,R0
+   \   0000000E   0xD019             BEQ.N    ??GPIO_ReadInputDataBit_0
+   \   00000010   0x.... 0x....      LDR.W    R0,??DataTable11_1  ;; 0x40020400
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xD015             BEQ.N    ??GPIO_ReadInputDataBit_0
+   \   00000018   0x.... 0x....      LDR.W    R0,??DataTable11_2  ;; 0x40020800
+   \   0000001C   0x4284             CMP      R4,R0
+   \   0000001E   0xD011             BEQ.N    ??GPIO_ReadInputDataBit_0
+   \   00000020   0x.... 0x....      LDR.W    R0,??DataTable11_3  ;; 0x40020c00
+   \   00000024   0x4284             CMP      R4,R0
+   \   00000026   0xD00D             BEQ.N    ??GPIO_ReadInputDataBit_0
+   \   00000028   0x.... 0x....      LDR.W    R0,??DataTable11_4  ;; 0x40021000
+   \   0000002C   0x4284             CMP      R4,R0
+   \   0000002E   0xD009             BEQ.N    ??GPIO_ReadInputDataBit_0
+   \   00000030   0x.... 0x....      LDR.W    R0,??DataTable11_5  ;; 0x40021400
+   \   00000034   0x4284             CMP      R4,R0
+   \   00000036   0xD005             BEQ.N    ??GPIO_ReadInputDataBit_0
+   \   00000038   0xF240 0x1139      MOVW     R1,#+313
+   \   0000003C   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   00000040   0x.... 0x....      BL       assert_failed
+    314            assert_param(IS_GET_GPIO_PIN(GPIO_Pin));
+   \                     ??GPIO_ReadInputDataBit_0: (+1)
+   \   00000044   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000046   0x2D01             CMP      R5,#+1
+   \   00000048   0xD03A             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   0000004A   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000004C   0x2D02             CMP      R5,#+2
+   \   0000004E   0xD037             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   00000050   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000052   0x2D04             CMP      R5,#+4
+   \   00000054   0xD034             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   00000056   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000058   0x2D08             CMP      R5,#+8
+   \   0000005A   0xD031             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   0000005C   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000005E   0x2D10             CMP      R5,#+16
+   \   00000060   0xD02E             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   00000062   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000064   0x2D20             CMP      R5,#+32
+   \   00000066   0xD02B             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   00000068   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000006A   0x2D40             CMP      R5,#+64
+   \   0000006C   0xD028             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   0000006E   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000070   0x2D80             CMP      R5,#+128
+   \   00000072   0xD025             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   00000074   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000076   0xF5B5 0x7F80      CMP      R5,#+256
+   \   0000007A   0xD021             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   0000007C   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000007E   0xF5B5 0x7F00      CMP      R5,#+512
+   \   00000082   0xD01D             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   00000084   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000086   0xF5B5 0x6F80      CMP      R5,#+1024
+   \   0000008A   0xD019             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   0000008C   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000008E   0xF5B5 0x6F00      CMP      R5,#+2048
+   \   00000092   0xD015             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   00000094   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000096   0xF5B5 0x5F80      CMP      R5,#+4096
+   \   0000009A   0xD011             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   0000009C   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000009E   0xF5B5 0x5F00      CMP      R5,#+8192
+   \   000000A2   0xD00D             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   000000A4   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   000000A6   0xF5B5 0x4F80      CMP      R5,#+16384
+   \   000000AA   0xD009             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   000000AC   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   000000AE   0xF5B5 0x4F00      CMP      R5,#+32768
+   \   000000B2   0xD005             BEQ.N    ??GPIO_ReadInputDataBit_1
+   \   000000B4   0xF44F 0x719D      MOV      R1,#+314
+   \   000000B8   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   000000BC   0x.... 0x....      BL       assert_failed
+    315          
+    316            if ((GPIOx->IDR & GPIO_Pin) != (uint32_t)Bit_RESET)
+   \                     ??GPIO_ReadInputDataBit_1: (+1)
+   \   000000C0   0x8A20             LDRH     R0,[R4, #+16]
+   \   000000C2   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   000000C4   0x4228             TST      R0,R5
+   \   000000C6   0xD002             BEQ.N    ??GPIO_ReadInputDataBit_2
+    317            {
+    318              bitstatus = (uint8_t)Bit_SET;
+   \   000000C8   0x2001             MOVS     R0,#+1
+   \   000000CA   0x0006             MOVS     R6,R0
+   \   000000CC   0xE001             B.N      ??GPIO_ReadInputDataBit_3
+    319            }
+    320            else
+    321            {
+    322              bitstatus = (uint8_t)Bit_RESET;
+   \                     ??GPIO_ReadInputDataBit_2: (+1)
+   \   000000CE   0x2000             MOVS     R0,#+0
+   \   000000D0   0x0006             MOVS     R6,R0
+    323            }
+    324            return bitstatus;
+   \                     ??GPIO_ReadInputDataBit_3: (+1)
+   \   000000D2   0x0030             MOVS     R0,R6
+   \   000000D4   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   000000D6   0xBD70             POP      {R4-R6,PC}       ;; return
+    325          }
+    326          
+    327          /**
+    328            * @brief  Reads the specified GPIO input data port.
+    329            * @param  GPIOx: where x can be (A, B, C, D, E or H) to select the GPIO peripheral.
+    330            * @retval GPIO input data port value.
+    331            */
+
+   \                                 In section .text, align 2, keep-with-next
+    332          uint16_t GPIO_ReadInputData(GPIO_TypeDef* GPIOx)
+    333          {
+   \                     GPIO_ReadInputData: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    334            /* Check the parameters */
+    335            assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+   \   00000004   0x.... 0x....      LDR.W    R0,??DataTable11  ;; 0x40020000
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xD019             BEQ.N    ??GPIO_ReadInputData_0
+   \   0000000C   0x.... 0x....      LDR.W    R0,??DataTable11_1  ;; 0x40020400
+   \   00000010   0x4284             CMP      R4,R0
+   \   00000012   0xD015             BEQ.N    ??GPIO_ReadInputData_0
+   \   00000014   0x.... 0x....      LDR.W    R0,??DataTable11_2  ;; 0x40020800
+   \   00000018   0x4284             CMP      R4,R0
+   \   0000001A   0xD011             BEQ.N    ??GPIO_ReadInputData_0
+   \   0000001C   0x.... 0x....      LDR.W    R0,??DataTable11_3  ;; 0x40020c00
+   \   00000020   0x4284             CMP      R4,R0
+   \   00000022   0xD00D             BEQ.N    ??GPIO_ReadInputData_0
+   \   00000024   0x.... 0x....      LDR.W    R0,??DataTable11_4  ;; 0x40021000
+   \   00000028   0x4284             CMP      R4,R0
+   \   0000002A   0xD009             BEQ.N    ??GPIO_ReadInputData_0
+   \   0000002C   0x.... 0x....      LDR.W    R0,??DataTable11_5  ;; 0x40021400
+   \   00000030   0x4284             CMP      R4,R0
+   \   00000032   0xD005             BEQ.N    ??GPIO_ReadInputData_0
+   \   00000034   0xF240 0x114F      MOVW     R1,#+335
+   \   00000038   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   0000003C   0x.... 0x....      BL       assert_failed
+    336            
+    337            return ((uint16_t)GPIOx->IDR);
+   \                     ??GPIO_ReadInputData_0: (+1)
+   \   00000040   0x8A20             LDRH     R0,[R4, #+16]
+   \   00000042   0xBD10             POP      {R4,PC}          ;; return
+    338          }
+    339          
+    340          /**
+    341            * @brief  Reads the specified output data port bit.
+    342            * @param  GPIOx: where x can be (A, B, C, D, E or H) to select the GPIO peripheral.
+    343            * @param  GPIO_Pin: Specifies the port bit to read.
+    344            *   This parameter can be GPIO_Pin_x where x can be (0..15).
+    345            * @retval The output port pin value.
+    346            */
+
+   \                                 In section .text, align 2, keep-with-next
+    347          uint8_t GPIO_ReadOutputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+    348          {
+   \                     GPIO_ReadOutputDataBit: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    349            uint8_t bitstatus = 0x00;
+   \   00000006   0x2600             MOVS     R6,#+0
+    350          
+    351            /* Check the parameters */
+    352            assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+   \   00000008   0x.... 0x....      LDR.W    R0,??DataTable11  ;; 0x40020000
+   \   0000000C   0x4284             CMP      R4,R0
+   \   0000000E   0xD019             BEQ.N    ??GPIO_ReadOutputDataBit_0
+   \   00000010   0x.... 0x....      LDR.W    R0,??DataTable11_1  ;; 0x40020400
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xD015             BEQ.N    ??GPIO_ReadOutputDataBit_0
+   \   00000018   0x.... 0x....      LDR.W    R0,??DataTable11_2  ;; 0x40020800
+   \   0000001C   0x4284             CMP      R4,R0
+   \   0000001E   0xD011             BEQ.N    ??GPIO_ReadOutputDataBit_0
+   \   00000020   0x.... 0x....      LDR.W    R0,??DataTable11_3  ;; 0x40020c00
+   \   00000024   0x4284             CMP      R4,R0
+   \   00000026   0xD00D             BEQ.N    ??GPIO_ReadOutputDataBit_0
+   \   00000028   0x.... 0x....      LDR.W    R0,??DataTable11_4  ;; 0x40021000
+   \   0000002C   0x4284             CMP      R4,R0
+   \   0000002E   0xD009             BEQ.N    ??GPIO_ReadOutputDataBit_0
+   \   00000030   0x.... 0x....      LDR.W    R0,??DataTable11_5  ;; 0x40021400
+   \   00000034   0x4284             CMP      R4,R0
+   \   00000036   0xD005             BEQ.N    ??GPIO_ReadOutputDataBit_0
+   \   00000038   0xF44F 0x71B0      MOV      R1,#+352
+   \   0000003C   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   00000040   0x.... 0x....      BL       assert_failed
+    353            assert_param(IS_GET_GPIO_PIN(GPIO_Pin));
+   \                     ??GPIO_ReadOutputDataBit_0: (+1)
+   \   00000044   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000046   0x2D01             CMP      R5,#+1
+   \   00000048   0xD03A             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   0000004A   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000004C   0x2D02             CMP      R5,#+2
+   \   0000004E   0xD037             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   00000050   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000052   0x2D04             CMP      R5,#+4
+   \   00000054   0xD034             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   00000056   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000058   0x2D08             CMP      R5,#+8
+   \   0000005A   0xD031             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   0000005C   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000005E   0x2D10             CMP      R5,#+16
+   \   00000060   0xD02E             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   00000062   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000064   0x2D20             CMP      R5,#+32
+   \   00000066   0xD02B             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   00000068   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000006A   0x2D40             CMP      R5,#+64
+   \   0000006C   0xD028             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   0000006E   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000070   0x2D80             CMP      R5,#+128
+   \   00000072   0xD025             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   00000074   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000076   0xF5B5 0x7F80      CMP      R5,#+256
+   \   0000007A   0xD021             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   0000007C   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000007E   0xF5B5 0x7F00      CMP      R5,#+512
+   \   00000082   0xD01D             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   00000084   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000086   0xF5B5 0x6F80      CMP      R5,#+1024
+   \   0000008A   0xD019             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   0000008C   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000008E   0xF5B5 0x6F00      CMP      R5,#+2048
+   \   00000092   0xD015             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   00000094   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000096   0xF5B5 0x5F80      CMP      R5,#+4096
+   \   0000009A   0xD011             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   0000009C   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000009E   0xF5B5 0x5F00      CMP      R5,#+8192
+   \   000000A2   0xD00D             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   000000A4   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   000000A6   0xF5B5 0x4F80      CMP      R5,#+16384
+   \   000000AA   0xD009             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   000000AC   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   000000AE   0xF5B5 0x4F00      CMP      R5,#+32768
+   \   000000B2   0xD005             BEQ.N    ??GPIO_ReadOutputDataBit_1
+   \   000000B4   0xF240 0x1161      MOVW     R1,#+353
+   \   000000B8   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   000000BC   0x.... 0x....      BL       assert_failed
+    354            
+    355            if ((GPIOx->ODR & GPIO_Pin) != (uint32_t)Bit_RESET)
+   \                     ??GPIO_ReadOutputDataBit_1: (+1)
+   \   000000C0   0x8AA0             LDRH     R0,[R4, #+20]
+   \   000000C2   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   000000C4   0x4228             TST      R0,R5
+   \   000000C6   0xD002             BEQ.N    ??GPIO_ReadOutputDataBit_2
+    356            {
+    357              bitstatus = (uint8_t)Bit_SET;
+   \   000000C8   0x2001             MOVS     R0,#+1
+   \   000000CA   0x0006             MOVS     R6,R0
+   \   000000CC   0xE001             B.N      ??GPIO_ReadOutputDataBit_3
+    358            }
+    359            else
+    360            {
+    361              bitstatus = (uint8_t)Bit_RESET;
+   \                     ??GPIO_ReadOutputDataBit_2: (+1)
+   \   000000CE   0x2000             MOVS     R0,#+0
+   \   000000D0   0x0006             MOVS     R6,R0
+    362            }
+    363            return bitstatus;
+   \                     ??GPIO_ReadOutputDataBit_3: (+1)
+   \   000000D2   0x0030             MOVS     R0,R6
+   \   000000D4   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   000000D6   0xBD70             POP      {R4-R6,PC}       ;; return
+    364          }
+    365          
+    366          /**
+    367            * @brief  Reads the specified GPIO output data port.
+    368            * @param  GPIOx: where x can be (A, B, C, D, E or H) to select the GPIO peripheral.
+    369            * @retval GPIO output data port value.
+    370            */
+
+   \                                 In section .text, align 2, keep-with-next
+    371          uint16_t GPIO_ReadOutputData(GPIO_TypeDef* GPIOx)
+    372          {
+   \                     GPIO_ReadOutputData: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    373            /* Check the parameters */
+    374            assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+   \   00000004   0x.... 0x....      LDR.W    R0,??DataTable11  ;; 0x40020000
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xD019             BEQ.N    ??GPIO_ReadOutputData_0
+   \   0000000C   0x.... 0x....      LDR.W    R0,??DataTable11_1  ;; 0x40020400
+   \   00000010   0x4284             CMP      R4,R0
+   \   00000012   0xD015             BEQ.N    ??GPIO_ReadOutputData_0
+   \   00000014   0x.... 0x....      LDR.W    R0,??DataTable11_2  ;; 0x40020800
+   \   00000018   0x4284             CMP      R4,R0
+   \   0000001A   0xD011             BEQ.N    ??GPIO_ReadOutputData_0
+   \   0000001C   0x.... 0x....      LDR.W    R0,??DataTable11_3  ;; 0x40020c00
+   \   00000020   0x4284             CMP      R4,R0
+   \   00000022   0xD00D             BEQ.N    ??GPIO_ReadOutputData_0
+   \   00000024   0x.... 0x....      LDR.W    R0,??DataTable11_4  ;; 0x40021000
+   \   00000028   0x4284             CMP      R4,R0
+   \   0000002A   0xD009             BEQ.N    ??GPIO_ReadOutputData_0
+   \   0000002C   0x.... 0x....      LDR.W    R0,??DataTable11_5  ;; 0x40021400
+   \   00000030   0x4284             CMP      R4,R0
+   \   00000032   0xD005             BEQ.N    ??GPIO_ReadOutputData_0
+   \   00000034   0xF44F 0x71BB      MOV      R1,#+374
+   \   00000038   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   0000003C   0x.... 0x....      BL       assert_failed
+    375            
+    376            return ((uint16_t)GPIOx->ODR);
+   \                     ??GPIO_ReadOutputData_0: (+1)
+   \   00000040   0x8AA0             LDRH     R0,[R4, #+20]
+   \   00000042   0xBD10             POP      {R4,PC}          ;; return
+    377          }
+    378          
+    379          /**
+    380            * @brief  Sets the selected data port bits.
+    381            * @param  GPIOx: where x can be (A, B, C, D, E or H) to select the GPIO peripheral.
+    382            * @param  GPIO_Pin: specifies the port bits to be written.
+    383            *   This parameter can be any combination of GPIO_Pin_x where x can be (0..15).
+    384            * @note  This functions uses GPIOx_BSRR register to allow atomic read/modify 
+    385            *        accesses. In this way, there is no risk of an IRQ occurring between
+    386            *        the read and the modify access.
+    387            * @retval None
+    388            */
+
+   \                                 In section .text, align 2, keep-with-next
+    389          void GPIO_SetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+    390          {
+   \                     GPIO_SetBits: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    391            /* Check the parameters */
+    392            assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+   \   00000006   0x.... 0x....      LDR.W    R0,??DataTable11  ;; 0x40020000
+   \   0000000A   0x4284             CMP      R4,R0
+   \   0000000C   0xD019             BEQ.N    ??GPIO_SetBits_0
+   \   0000000E   0x.... 0x....      LDR.W    R0,??DataTable11_1  ;; 0x40020400
+   \   00000012   0x4284             CMP      R4,R0
+   \   00000014   0xD015             BEQ.N    ??GPIO_SetBits_0
+   \   00000016   0x.... 0x....      LDR.W    R0,??DataTable11_2  ;; 0x40020800
+   \   0000001A   0x4284             CMP      R4,R0
+   \   0000001C   0xD011             BEQ.N    ??GPIO_SetBits_0
+   \   0000001E   0x.... 0x....      LDR.W    R0,??DataTable11_3  ;; 0x40020c00
+   \   00000022   0x4284             CMP      R4,R0
+   \   00000024   0xD00D             BEQ.N    ??GPIO_SetBits_0
+   \   00000026   0x.... 0x....      LDR.W    R0,??DataTable11_4  ;; 0x40021000
+   \   0000002A   0x4284             CMP      R4,R0
+   \   0000002C   0xD009             BEQ.N    ??GPIO_SetBits_0
+   \   0000002E   0x.... 0x....      LDR.W    R0,??DataTable11_5  ;; 0x40021400
+   \   00000032   0x4284             CMP      R4,R0
+   \   00000034   0xD005             BEQ.N    ??GPIO_SetBits_0
+   \   00000036   0xF44F 0x71C4      MOV      R1,#+392
+   \   0000003A   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   0000003E   0x.... 0x....      BL       assert_failed
+    393            assert_param(IS_GPIO_PIN(GPIO_Pin));
+   \                     ??GPIO_SetBits_0: (+1)
+   \   00000042   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000044   0x2D00             CMP      R5,#+0
+   \   00000046   0xD105             BNE.N    ??GPIO_SetBits_1
+   \   00000048   0xF240 0x1189      MOVW     R1,#+393
+   \   0000004C   0x.... 0x....      LDR.W    R0,??DataTable11_6
+   \   00000050   0x.... 0x....      BL       assert_failed
+    394            
+    395            GPIOx->BSRRL = GPIO_Pin;
+   \                     ??GPIO_SetBits_1: (+1)
+   \   00000054   0x8325             STRH     R5,[R4, #+24]
+    396          }
+   \   00000056   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    397          
+    398          /**
+    399            * @brief  Clears the selected data port bits.
+    400            * @param  GPIOx: where x can be (A, B, C, D, E or H) to select the GPIO peripheral.
+    401            * @param  GPIO_Pin: specifies the port bits to be written.
+    402            *   This parameter can be any combination of GPIO_Pin_x where x can be (0..15).
+    403            * @note  This functions uses GPIOx_BSRR register to allow atomic read/modify 
+    404            *        accesses. In this way, there is no risk of an IRQ occurring between
+    405            *        the read and the modify access.
+    406            * @retval None
+    407            */
+
+   \                                 In section .text, align 2, keep-with-next
+    408          void GPIO_ResetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+    409          {
+   \                     GPIO_ResetBits: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    410            /* Check the parameters */
+    411            assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+   \   00000006   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xD013             BEQ.N    ??GPIO_ResetBits_0
+   \   0000000C   0x....             LDR.N    R0,??DataTable11_1  ;; 0x40020400
+   \   0000000E   0x4284             CMP      R4,R0
+   \   00000010   0xD010             BEQ.N    ??GPIO_ResetBits_0
+   \   00000012   0x....             LDR.N    R0,??DataTable11_2  ;; 0x40020800
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xD00D             BEQ.N    ??GPIO_ResetBits_0
+   \   00000018   0x....             LDR.N    R0,??DataTable11_3  ;; 0x40020c00
+   \   0000001A   0x4284             CMP      R4,R0
+   \   0000001C   0xD00A             BEQ.N    ??GPIO_ResetBits_0
+   \   0000001E   0x....             LDR.N    R0,??DataTable11_4  ;; 0x40021000
+   \   00000020   0x4284             CMP      R4,R0
+   \   00000022   0xD007             BEQ.N    ??GPIO_ResetBits_0
+   \   00000024   0x....             LDR.N    R0,??DataTable11_5  ;; 0x40021400
+   \   00000026   0x4284             CMP      R4,R0
+   \   00000028   0xD004             BEQ.N    ??GPIO_ResetBits_0
+   \   0000002A   0xF240 0x119B      MOVW     R1,#+411
+   \   0000002E   0x....             LDR.N    R0,??DataTable11_6
+   \   00000030   0x.... 0x....      BL       assert_failed
+    412            assert_param(IS_GPIO_PIN(GPIO_Pin));
+   \                     ??GPIO_ResetBits_0: (+1)
+   \   00000034   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000036   0x2D00             CMP      R5,#+0
+   \   00000038   0xD104             BNE.N    ??GPIO_ResetBits_1
+   \   0000003A   0xF44F 0x71CE      MOV      R1,#+412
+   \   0000003E   0x....             LDR.N    R0,??DataTable11_6
+   \   00000040   0x.... 0x....      BL       assert_failed
+    413            
+    414            GPIOx->BSRRH = GPIO_Pin;
+   \                     ??GPIO_ResetBits_1: (+1)
+   \   00000044   0x8365             STRH     R5,[R4, #+26]
+    415          }
+   \   00000046   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    416          
+    417          /**
+    418            * @brief  Sets or clears the selected data port bit.
+    419            * @param  GPIOx: where x can be (A, B, C, D, E or H) to select the GPIO peripheral.
+    420            * @param  GPIO_Pin: specifies the port bit to be written.
+    421            *   This parameter can be one of GPIO_Pin_x where x can be (0..15).
+    422            * @param  BitVal: specifies the value to be written to the selected bit.
+    423            *   This parameter can be one of the BitAction enum values:
+    424            *     @arg Bit_RESET: to clear the port pin
+    425            *     @arg Bit_SET: to set the port pin
+    426            * @retval None
+    427            */
+
+   \                                 In section .text, align 2, keep-with-next
+    428          void GPIO_WriteBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, BitAction BitVal)
+    429          {
+   \                     GPIO_WriteBit: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+    430            /* Check the parameters */
+    431            assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+   \   00000008   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   0000000A   0x4284             CMP      R4,R0
+   \   0000000C   0xD013             BEQ.N    ??GPIO_WriteBit_0
+   \   0000000E   0x....             LDR.N    R0,??DataTable11_1  ;; 0x40020400
+   \   00000010   0x4284             CMP      R4,R0
+   \   00000012   0xD010             BEQ.N    ??GPIO_WriteBit_0
+   \   00000014   0x....             LDR.N    R0,??DataTable11_2  ;; 0x40020800
+   \   00000016   0x4284             CMP      R4,R0
+   \   00000018   0xD00D             BEQ.N    ??GPIO_WriteBit_0
+   \   0000001A   0x....             LDR.N    R0,??DataTable11_3  ;; 0x40020c00
+   \   0000001C   0x4284             CMP      R4,R0
+   \   0000001E   0xD00A             BEQ.N    ??GPIO_WriteBit_0
+   \   00000020   0x....             LDR.N    R0,??DataTable11_4  ;; 0x40021000
+   \   00000022   0x4284             CMP      R4,R0
+   \   00000024   0xD007             BEQ.N    ??GPIO_WriteBit_0
+   \   00000026   0x....             LDR.N    R0,??DataTable11_5  ;; 0x40021400
+   \   00000028   0x4284             CMP      R4,R0
+   \   0000002A   0xD004             BEQ.N    ??GPIO_WriteBit_0
+   \   0000002C   0xF240 0x11AF      MOVW     R1,#+431
+   \   00000030   0x....             LDR.N    R0,??DataTable11_6
+   \   00000032   0x.... 0x....      BL       assert_failed
+    432            assert_param(IS_GET_GPIO_PIN(GPIO_Pin));
+   \                     ??GPIO_WriteBit_0: (+1)
+   \   00000036   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000038   0x2D01             CMP      R5,#+1
+   \   0000003A   0xD039             BEQ.N    ??GPIO_WriteBit_1
+   \   0000003C   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000003E   0x2D02             CMP      R5,#+2
+   \   00000040   0xD036             BEQ.N    ??GPIO_WriteBit_1
+   \   00000042   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000044   0x2D04             CMP      R5,#+4
+   \   00000046   0xD033             BEQ.N    ??GPIO_WriteBit_1
+   \   00000048   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000004A   0x2D08             CMP      R5,#+8
+   \   0000004C   0xD030             BEQ.N    ??GPIO_WriteBit_1
+   \   0000004E   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000050   0x2D10             CMP      R5,#+16
+   \   00000052   0xD02D             BEQ.N    ??GPIO_WriteBit_1
+   \   00000054   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000056   0x2D20             CMP      R5,#+32
+   \   00000058   0xD02A             BEQ.N    ??GPIO_WriteBit_1
+   \   0000005A   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000005C   0x2D40             CMP      R5,#+64
+   \   0000005E   0xD027             BEQ.N    ??GPIO_WriteBit_1
+   \   00000060   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000062   0x2D80             CMP      R5,#+128
+   \   00000064   0xD024             BEQ.N    ??GPIO_WriteBit_1
+   \   00000066   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000068   0xF5B5 0x7F80      CMP      R5,#+256
+   \   0000006C   0xD020             BEQ.N    ??GPIO_WriteBit_1
+   \   0000006E   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000070   0xF5B5 0x7F00      CMP      R5,#+512
+   \   00000074   0xD01C             BEQ.N    ??GPIO_WriteBit_1
+   \   00000076   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000078   0xF5B5 0x6F80      CMP      R5,#+1024
+   \   0000007C   0xD018             BEQ.N    ??GPIO_WriteBit_1
+   \   0000007E   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000080   0xF5B5 0x6F00      CMP      R5,#+2048
+   \   00000084   0xD014             BEQ.N    ??GPIO_WriteBit_1
+   \   00000086   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000088   0xF5B5 0x5F80      CMP      R5,#+4096
+   \   0000008C   0xD010             BEQ.N    ??GPIO_WriteBit_1
+   \   0000008E   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000090   0xF5B5 0x5F00      CMP      R5,#+8192
+   \   00000094   0xD00C             BEQ.N    ??GPIO_WriteBit_1
+   \   00000096   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000098   0xF5B5 0x4F80      CMP      R5,#+16384
+   \   0000009C   0xD008             BEQ.N    ??GPIO_WriteBit_1
+   \   0000009E   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   000000A0   0xF5B5 0x4F00      CMP      R5,#+32768
+   \   000000A4   0xD004             BEQ.N    ??GPIO_WriteBit_1
+   \   000000A6   0xF44F 0x71D8      MOV      R1,#+432
+   \   000000AA   0x....             LDR.N    R0,??DataTable11_6
+   \   000000AC   0x.... 0x....      BL       assert_failed
+    433            assert_param(IS_GPIO_BIT_ACTION(BitVal));
+   \                     ??GPIO_WriteBit_1: (+1)
+   \   000000B0   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000B2   0x2E00             CMP      R6,#+0
+   \   000000B4   0xD007             BEQ.N    ??GPIO_WriteBit_2
+   \   000000B6   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000B8   0x2E01             CMP      R6,#+1
+   \   000000BA   0xD004             BEQ.N    ??GPIO_WriteBit_2
+   \   000000BC   0xF240 0x11B1      MOVW     R1,#+433
+   \   000000C0   0x....             LDR.N    R0,??DataTable11_6
+   \   000000C2   0x.... 0x....      BL       assert_failed
+    434            
+    435            if (BitVal != Bit_RESET)
+   \                     ??GPIO_WriteBit_2: (+1)
+   \   000000C6   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000C8   0x2E00             CMP      R6,#+0
+   \   000000CA   0xD001             BEQ.N    ??GPIO_WriteBit_3
+    436            {
+    437              GPIOx->BSRRL = GPIO_Pin;
+   \   000000CC   0x8325             STRH     R5,[R4, #+24]
+   \   000000CE   0xE000             B.N      ??GPIO_WriteBit_4
+    438            }
+    439            else
+    440            {
+    441              GPIOx->BSRRH = GPIO_Pin ;
+   \                     ??GPIO_WriteBit_3: (+1)
+   \   000000D0   0x8365             STRH     R5,[R4, #+26]
+    442            }
+    443          }
+   \                     ??GPIO_WriteBit_4: (+1)
+   \   000000D2   0xBD70             POP      {R4-R6,PC}       ;; return
+    444          
+    445          /**
+    446            * @brief  Writes data to the specified GPIO data port.
+    447            * @param  GPIOx: where x can be (A, B, C, D, E or H) to select the GPIO peripheral.
+    448            * @param  PortVal: specifies the value to be written to the port output data 
+    449            *                  register.
+    450            * @retval None
+    451            */
+
+   \                                 In section .text, align 2, keep-with-next
+    452          void GPIO_Write(GPIO_TypeDef* GPIOx, uint16_t PortVal)
+    453          {
+   \                     GPIO_Write: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    454            /* Check the parameters */
+    455            assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+   \   00000006   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xD013             BEQ.N    ??GPIO_Write_0
+   \   0000000C   0x....             LDR.N    R0,??DataTable11_1  ;; 0x40020400
+   \   0000000E   0x4284             CMP      R4,R0
+   \   00000010   0xD010             BEQ.N    ??GPIO_Write_0
+   \   00000012   0x....             LDR.N    R0,??DataTable11_2  ;; 0x40020800
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xD00D             BEQ.N    ??GPIO_Write_0
+   \   00000018   0x....             LDR.N    R0,??DataTable11_3  ;; 0x40020c00
+   \   0000001A   0x4284             CMP      R4,R0
+   \   0000001C   0xD00A             BEQ.N    ??GPIO_Write_0
+   \   0000001E   0x....             LDR.N    R0,??DataTable11_4  ;; 0x40021000
+   \   00000020   0x4284             CMP      R4,R0
+   \   00000022   0xD007             BEQ.N    ??GPIO_Write_0
+   \   00000024   0x....             LDR.N    R0,??DataTable11_5  ;; 0x40021400
+   \   00000026   0x4284             CMP      R4,R0
+   \   00000028   0xD004             BEQ.N    ??GPIO_Write_0
+   \   0000002A   0xF240 0x11C7      MOVW     R1,#+455
+   \   0000002E   0x....             LDR.N    R0,??DataTable11_6
+   \   00000030   0x.... 0x....      BL       assert_failed
+    456            
+    457            GPIOx->ODR = PortVal;
+   \                     ??GPIO_Write_0: (+1)
+   \   00000034   0x82A5             STRH     R5,[R4, #+20]
+    458          }
+   \   00000036   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    459          
+    460          /**
+    461            * @}
+    462            */
+    463          
+    464          /** @defgroup GPIO_Group3 GPIO Alternate functions configuration functions
+    465           *  @brief   GPIO Alternate functions configuration functions
+    466           *
+    467          @verbatim   
+    468           ===============================================================================
+    469                         GPIO Alternate functions configuration functions
+    470           ===============================================================================  
+    471          
+    472          @endverbatim
+    473            * @{
+    474            */
+    475          
+    476          /**
+    477            * @brief  Changes the mapping of the specified pin.
+    478            * @param  GPIOx: where x can be (A, B, C, D, E or H) to select the GPIO peripheral.
+    479            * @param  GPIO_PinSource: specifies the pin for the Alternate function.
+    480            *   This parameter can be GPIO_PinSourcex where x can be (0..15).
+    481            * @param  GPIO_AFSelection: selects the pin to used as Alternat function.
+    482            *   This parameter can be one of the following values:
+    483            *     @arg GPIO_AF_RTC_50Hz: RTC 50/60 Hz synchronization
+    484            *     @arg GPIO_AF_MCO: Microcontroller clock output
+    485            *     @arg GPIO_AF_RTC_AF1: Time stamp, Tamper, Alarm A out, Alarm B out,
+    486            *                           512 Hz clock output (with an LSE oscillator of 32.768 kHz)
+    487            *     @arg GPIO_AF_WKUP: wakeup
+    488            *     @arg GPIO_AF_SWJ: SWJ (SW and JTAG)
+    489            *     @arg GPIO_AF_TRACE
+    490            *     @arg GPIO_AF_TIM2
+    491            *     @arg GPIO_AF_TIM3
+    492            *     @arg GPIO_AF_TIM4
+    493            *     @arg GPIO_AF_TIM9
+    494            *     @arg GPIO_AF_TIM10
+    495            *     @arg GPIO_AF_TIM11
+    496            *     @arg GPIO_AF_I2C1
+    497            *     @arg GPIO_AF_I2C2
+    498            *     @arg GPIO_AF_SPI1
+    499            *     @arg GPIO_AF_SPI2
+    500            *     @arg GPIO_AF_USART1
+    501            *     @arg GPIO_AF_USART2
+    502            *     @arg GPIO_AF_USART3
+    503            *     @arg GPIO_AF_USB
+    504            *     @arg GPIO_AF_LCD
+    505            *     @arg GPIO_AF_RI
+    506            *     @arg GPIO_AF_EVENTOUT: Cortex-M3 EVENTOUT signal
+    507            * @note: The pin should already been configured in Alternate Function mode(AF)
+    508            *        using GPIO_InitStruct->GPIO_Mode = GPIO_Mode_AF
+    509            * @note: Please refer to the Alternate function mapping table in the device 
+    510            *        datasheet for the detailed mapping of the system and peripherals’
+    511            *        alternate function I/O pins.  
+    512            * @note: EVENTOUT is not mapped on PH0, PH1 and PH2.  
+    513            * @retval None
+    514            */
+
+   \                                 In section .text, align 2, keep-with-next
+    515          void GPIO_PinAFConfig(GPIO_TypeDef* GPIOx, uint16_t GPIO_PinSource, uint8_t GPIO_AF)
+    516          {
+   \                     GPIO_PinAFConfig: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+    517            uint32_t temp = 0x00;
+   \   0000000A   0x2700             MOVS     R7,#+0
+    518            uint32_t temp_2 = 0x00;
+   \   0000000C   0xF05F 0x0800      MOVS     R8,#+0
+    519            
+    520            /* Check the parameters */
+    521            assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+   \   00000010   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000012   0x4284             CMP      R4,R0
+   \   00000014   0xD013             BEQ.N    ??GPIO_PinAFConfig_0
+   \   00000016   0x....             LDR.N    R0,??DataTable11_1  ;; 0x40020400
+   \   00000018   0x4284             CMP      R4,R0
+   \   0000001A   0xD010             BEQ.N    ??GPIO_PinAFConfig_0
+   \   0000001C   0x....             LDR.N    R0,??DataTable11_2  ;; 0x40020800
+   \   0000001E   0x4284             CMP      R4,R0
+   \   00000020   0xD00D             BEQ.N    ??GPIO_PinAFConfig_0
+   \   00000022   0x....             LDR.N    R0,??DataTable11_3  ;; 0x40020c00
+   \   00000024   0x4284             CMP      R4,R0
+   \   00000026   0xD00A             BEQ.N    ??GPIO_PinAFConfig_0
+   \   00000028   0x....             LDR.N    R0,??DataTable11_4  ;; 0x40021000
+   \   0000002A   0x4284             CMP      R4,R0
+   \   0000002C   0xD007             BEQ.N    ??GPIO_PinAFConfig_0
+   \   0000002E   0x....             LDR.N    R0,??DataTable11_5  ;; 0x40021400
+   \   00000030   0x4284             CMP      R4,R0
+   \   00000032   0xD004             BEQ.N    ??GPIO_PinAFConfig_0
+   \   00000034   0xF240 0x2109      MOVW     R1,#+521
+   \   00000038   0x....             LDR.N    R0,??DataTable11_6
+   \   0000003A   0x.... 0x....      BL       assert_failed
+    522            assert_param(IS_GPIO_PIN_SOURCE(GPIO_PinSource));
+   \                     ??GPIO_PinAFConfig_0: (+1)
+   \   0000003E   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000040   0x2D00             CMP      R5,#+0
+   \   00000042   0xD031             BEQ.N    ??GPIO_PinAFConfig_1
+   \   00000044   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000046   0x2D01             CMP      R5,#+1
+   \   00000048   0xD02E             BEQ.N    ??GPIO_PinAFConfig_1
+   \   0000004A   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000004C   0x2D02             CMP      R5,#+2
+   \   0000004E   0xD02B             BEQ.N    ??GPIO_PinAFConfig_1
+   \   00000050   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000052   0x2D03             CMP      R5,#+3
+   \   00000054   0xD028             BEQ.N    ??GPIO_PinAFConfig_1
+   \   00000056   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000058   0x2D04             CMP      R5,#+4
+   \   0000005A   0xD025             BEQ.N    ??GPIO_PinAFConfig_1
+   \   0000005C   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000005E   0x2D05             CMP      R5,#+5
+   \   00000060   0xD022             BEQ.N    ??GPIO_PinAFConfig_1
+   \   00000062   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000064   0x2D06             CMP      R5,#+6
+   \   00000066   0xD01F             BEQ.N    ??GPIO_PinAFConfig_1
+   \   00000068   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000006A   0x2D07             CMP      R5,#+7
+   \   0000006C   0xD01C             BEQ.N    ??GPIO_PinAFConfig_1
+   \   0000006E   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000070   0x2D08             CMP      R5,#+8
+   \   00000072   0xD019             BEQ.N    ??GPIO_PinAFConfig_1
+   \   00000074   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000076   0x2D09             CMP      R5,#+9
+   \   00000078   0xD016             BEQ.N    ??GPIO_PinAFConfig_1
+   \   0000007A   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000007C   0x2D0A             CMP      R5,#+10
+   \   0000007E   0xD013             BEQ.N    ??GPIO_PinAFConfig_1
+   \   00000080   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000082   0x2D0B             CMP      R5,#+11
+   \   00000084   0xD010             BEQ.N    ??GPIO_PinAFConfig_1
+   \   00000086   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000088   0x2D0C             CMP      R5,#+12
+   \   0000008A   0xD00D             BEQ.N    ??GPIO_PinAFConfig_1
+   \   0000008C   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000008E   0x2D0D             CMP      R5,#+13
+   \   00000090   0xD00A             BEQ.N    ??GPIO_PinAFConfig_1
+   \   00000092   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000094   0x2D0E             CMP      R5,#+14
+   \   00000096   0xD007             BEQ.N    ??GPIO_PinAFConfig_1
+   \   00000098   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000009A   0x2D0F             CMP      R5,#+15
+   \   0000009C   0xD004             BEQ.N    ??GPIO_PinAFConfig_1
+   \   0000009E   0xF240 0x210A      MOVW     R1,#+522
+   \   000000A2   0x....             LDR.N    R0,??DataTable11_6
+   \   000000A4   0x.... 0x....      BL       assert_failed
+    523            assert_param(IS_GPIO_AF(GPIO_AF));
+                   ^
+Warning[Pa134]: left and right operands are identical
+   \                     ??GPIO_PinAFConfig_1: (+1)
+   \   000000A8   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000AA   0x2E00             CMP      R6,#+0
+   \   000000AC   0xD046             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000AE   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000B0   0x2E00             CMP      R6,#+0
+   \   000000B2   0xD043             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000B4   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000B6   0x2E00             CMP      R6,#+0
+   \   000000B8   0xD040             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000BA   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000BC   0x2E00             CMP      R6,#+0
+   \   000000BE   0xD03D             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000C0   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000C2   0x2E00             CMP      R6,#+0
+   \   000000C4   0xD03A             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000C6   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000C8   0x2E00             CMP      R6,#+0
+   \   000000CA   0xD037             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000CC   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000CE   0x2E01             CMP      R6,#+1
+   \   000000D0   0xD034             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000D2   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000D4   0x2E02             CMP      R6,#+2
+   \   000000D6   0xD031             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000D8   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000DA   0x2E02             CMP      R6,#+2
+   \   000000DC   0xD02E             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000DE   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000E0   0x2E03             CMP      R6,#+3
+   \   000000E2   0xD02B             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000E4   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000E6   0x2E03             CMP      R6,#+3
+   \   000000E8   0xD028             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000EA   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000EC   0x2E03             CMP      R6,#+3
+   \   000000EE   0xD025             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000F0   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000F2   0x2E04             CMP      R6,#+4
+   \   000000F4   0xD022             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000F6   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000F8   0x2E04             CMP      R6,#+4
+   \   000000FA   0xD01F             BEQ.N    ??GPIO_PinAFConfig_2
+   \   000000FC   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000FE   0x2E05             CMP      R6,#+5
+   \   00000100   0xD01C             BEQ.N    ??GPIO_PinAFConfig_2
+   \   00000102   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000104   0x2E05             CMP      R6,#+5
+   \   00000106   0xD019             BEQ.N    ??GPIO_PinAFConfig_2
+   \   00000108   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   0000010A   0x2E07             CMP      R6,#+7
+   \   0000010C   0xD016             BEQ.N    ??GPIO_PinAFConfig_2
+   \   0000010E   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000110   0x2E07             CMP      R6,#+7
+   \   00000112   0xD013             BEQ.N    ??GPIO_PinAFConfig_2
+   \   00000114   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000116   0x2E07             CMP      R6,#+7
+   \   00000118   0xD010             BEQ.N    ??GPIO_PinAFConfig_2
+   \   0000011A   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   0000011C   0x2E0A             CMP      R6,#+10
+   \   0000011E   0xD00D             BEQ.N    ??GPIO_PinAFConfig_2
+   \   00000120   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000122   0x2E0B             CMP      R6,#+11
+   \   00000124   0xD00A             BEQ.N    ??GPIO_PinAFConfig_2
+   \   00000126   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000128   0x2E0E             CMP      R6,#+14
+   \   0000012A   0xD007             BEQ.N    ??GPIO_PinAFConfig_2
+   \   0000012C   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   0000012E   0x2E0F             CMP      R6,#+15
+   \   00000130   0xD004             BEQ.N    ??GPIO_PinAFConfig_2
+   \   00000132   0xF240 0x210B      MOVW     R1,#+523
+   \   00000136   0x....             LDR.N    R0,??DataTable11_6
+   \   00000138   0x.... 0x....      BL       assert_failed
+    524            
+    525            temp = ((uint32_t)(GPIO_AF) << ((uint32_t)((uint32_t)GPIO_PinSource & (uint32_t)0x07) * 4)) ;
+   \                     ??GPIO_PinAFConfig_2: (+1)
+   \   0000013C   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   0000013E   0xF015 0x0007      ANDS     R0,R5,#0x7
+   \   00000142   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000144   0x0080             LSLS     R0,R0,#+2
+   \   00000146   0xFA16 0xF000      LSLS     R0,R6,R0
+   \   0000014A   0x0007             MOVS     R7,R0
+    526            GPIOx->AFR[GPIO_PinSource >> 0x03] &= ~((uint32_t)0xF << ((uint32_t)((uint32_t)GPIO_PinSource & (uint32_t)0x07) * 4)) ;
+   \   0000014C   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000014E   0x10E8             ASRS     R0,R5,#+3
+   \   00000150   0xEB14 0x0080      ADDS     R0,R4,R0, LSL #+2
+   \   00000154   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000156   0x10E9             ASRS     R1,R5,#+3
+   \   00000158   0xEB14 0x0181      ADDS     R1,R4,R1, LSL #+2
+   \   0000015C   0x6A09             LDR      R1,[R1, #+32]
+   \   0000015E   0x220F             MOVS     R2,#+15
+   \   00000160   0xF015 0x0307      ANDS     R3,R5,#0x7
+   \   00000164   0xB2DB             UXTB     R3,R3            ;; ZeroExt  R3,R3,#+24,#+24
+   \   00000166   0x009B             LSLS     R3,R3,#+2
+   \   00000168   0x409A             LSLS     R2,R2,R3
+   \   0000016A   0x4391             BICS     R1,R1,R2
+   \   0000016C   0x6201             STR      R1,[R0, #+32]
+    527            temp_2 = GPIOx->AFR[GPIO_PinSource >> 0x03] | temp;
+   \   0000016E   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000170   0x10E8             ASRS     R0,R5,#+3
+   \   00000172   0xEB14 0x0080      ADDS     R0,R4,R0, LSL #+2
+   \   00000176   0x6A00             LDR      R0,[R0, #+32]
+   \   00000178   0x4338             ORRS     R0,R7,R0
+   \   0000017A   0x4680             MOV      R8,R0
+    528            GPIOx->AFR[GPIO_PinSource >> 0x03] = temp_2;
+   \   0000017C   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000017E   0x10E8             ASRS     R0,R5,#+3
+   \   00000180   0xEB14 0x0080      ADDS     R0,R4,R0, LSL #+2
+   \   00000184   0xF8C0 0x8020      STR      R8,[R0, #+32]
+    529          }
+   \   00000188   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11:
+   \   00000000   0x40020000         DC32     0x40020000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_1:
+   \   00000000   0x40020400         DC32     0x40020400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_2:
+   \   00000000   0x40020800         DC32     0x40020800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_3:
+   \   00000000   0x40020C00         DC32     0x40020c00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_4:
+   \   00000000   0x40021000         DC32     0x40021000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_5:
+   \   00000000   0x40021400         DC32     0x40021400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_6:
+   \   00000000   0x........         DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \   00000000   0x45 0x3A          DC8 45H, 3AH, 5CH, 41H, 43H, 51H, 5CH, 50H
+   \              0x5C 0x41    
+   \              0x43 0x51    
+   \              0x5C 0x50    
+   \   00000008   0x72 0x6F          DC8 72H, 6FH, 6AH, 5FH, 76H, 65H, 72H, 30H
+   \              0x6A 0x5F    
+   \              0x76 0x65    
+   \              0x72 0x30    
+   \   00000010   0x39 0x61          DC8 39H, 61H, 5FH, 31H, 35H, 31H, 30H, 32H
+   \              0x5F 0x31    
+   \              0x35 0x31    
+   \              0x30 0x32    
+   \   00000018   0x30 0x31          DC8 30H, 31H, 35H, 5CH, 45H, 6EH, 64H, 5FH
+   \              0x35 0x5C    
+   \              0x45 0x6E    
+   \              0x64 0x5F    
+   \   00000020   0x30 0x32          DC8 30H, 32H, 5CH, 32H, 30H, 31H, 33H, 5FH
+   \              0x5C 0x32    
+   \              0x30 0x31    
+   \              0x33 0x5F    
+   \   00000028   0x31 0x31          DC8 31H, 31H, 5FH, 32H, 35H, 5FH, 53H, 70H
+   \              0x5F 0x32    
+   \              0x35 0x5F    
+   \              0x53 0x70    
+   \   00000030   0x69 0x72          DC8 69H, 72H, 69H, 74H, 31H, 5FH, 45H, 6CH
+   \              0x69 0x74    
+   \              0x31 0x5F    
+   \              0x45 0x6C    
+   \   00000038   0x65 0x6B          DC8 65H, 6BH, 74H, 72H, 6FH, 6CH, 75H, 78H
+   \              0x74 0x72    
+   \              0x6F 0x6C    
+   \              0x75 0x78    
+   \   00000040   0x5C 0x53          DC8 5CH, 53H, 54H, 4DH, 33H, 32H, 4CH, 5CH
+   \              0x54 0x4D    
+   \              0x33 0x32    
+   \              0x4C 0x5C    
+   \   00000048   0x53 0x54          DC8 53H, 54H, 4DH, 33H, 32H, 4CH, 31H, 78H
+   \              0x4D 0x33    
+   \              0x32 0x4C    
+   \              0x31 0x78    
+   \   00000050   0x78 0x5F          DC8 78H, 5FH, 53H, 74H, 64H, 50H, 65H, 72H
+   \              0x53 0x74    
+   \              0x64 0x50    
+   \              0x65 0x72    
+   \   00000058   0x69 0x70          DC8 69H, 70H, 68H, 5FH, 4CH, 69H, 62H, 5CH
+   \              0x68 0x5F    
+   \              0x4C 0x69    
+   \              0x62 0x5C    
+   \   00000060   0x53 0x6F          DC8 53H, 6FH, 75H, 72H, 63H, 65H, 5CH, 53H
+   \              0x75 0x72    
+   \              0x63 0x65    
+   \              0x5C 0x53    
+   \   00000068   0x54 0x4D          DC8 54H, 4DH, 33H, 32H, 4CH, 31H, 78H, 78H
+   \              0x33 0x32    
+   \              0x4C 0x31    
+   \              0x78 0x78    
+   \   00000070   0x5F 0x53          DC8 5FH, 53H, 74H, 64H, 50H, 65H, 72H, 69H
+   \              0x74 0x64    
+   \              0x50 0x65    
+   \              0x72 0x69    
+   \   00000078   0x70 0x68          DC8 70H, 68H, 5FH, 44H, 72H, 69H, 76H, 65H
+   \              0x5F 0x44    
+   \              0x72 0x69    
+   \              0x76 0x65    
+   \   00000080   0x72 0x5C          DC8 72H, 5CH, 73H, 72H, 63H, 5CH, 73H, 74H
+   \              0x73 0x72    
+   \              0x63 0x5C    
+   \              0x73 0x74    
+   \   00000088   0x6D 0x33          DC8 6DH, 33H, 32H, 6CH, 31H, 78H, 78H, 5FH
+   \              0x32 0x6C    
+   \              0x31 0x78    
+   \              0x78 0x5F    
+   \   00000090   0x67 0x70          DC8 67H, 70H, 69H, 6FH, 2EH, 63H, 0
+   \              0x69 0x6F    
+   \              0x2E 0x63    
+   \              0x00         
+   \   00000097   0x00               DC8 0
+    530          
+    531          /**
+    532            * @}
+    533            */
+    534          
+    535          /**
+    536            * @}
+    537            */
+    538          
+    539          /**
+    540            * @}
+    541            */
+    542          
+    543          /**
+    544            * @}
+    545            */
+    546          /******************* (C) COPYRIGHT 2010 STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   GPIO_DeInit
+         8   -> RCC_AHBPeriphResetCmd
+         8   -> assert_failed
+      24   GPIO_Init
+        24   -> assert_failed
+      24   GPIO_PinAFConfig
+        24   -> assert_failed
+      16   GPIO_PinLockConfig
+        16   -> assert_failed
+       8   GPIO_ReadInputData
+         8   -> assert_failed
+      16   GPIO_ReadInputDataBit
+        16   -> assert_failed
+       8   GPIO_ReadOutputData
+         8   -> assert_failed
+      16   GPIO_ReadOutputDataBit
+        16   -> assert_failed
+      16   GPIO_ResetBits
+        16   -> assert_failed
+      16   GPIO_SetBits
+        16   -> assert_failed
+       0   GPIO_StructInit
+      16   GPIO_Write
+        16   -> assert_failed
+      16   GPIO_WriteBit
+        16   -> assert_failed
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       4  ??DataTable11_4
+       4  ??DataTable11_5
+       4  ??DataTable11_6
+     152  ?_0
+     218  GPIO_DeInit
+     368  GPIO_Init
+     396  GPIO_PinAFConfig
+     110  GPIO_PinLockConfig
+      68  GPIO_ReadInputData
+     216  GPIO_ReadInputDataBit
+      68  GPIO_ReadOutputData
+     216  GPIO_ReadOutputDataBit
+      72  GPIO_ResetBits
+      88  GPIO_SetBits
+      24  GPIO_StructInit
+      56  GPIO_Write
+     212  GPIO_WriteBit
+
+ 
+   152 bytes in section .rodata
+ 2 140 bytes in section .text
+ 
+ 2 140 bytes of CODE  memory
+   152 bytes of CONST memory
+
+Errors: none
+Warnings: 1

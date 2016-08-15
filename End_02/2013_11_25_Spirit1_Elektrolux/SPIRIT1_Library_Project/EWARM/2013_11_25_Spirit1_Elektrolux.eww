@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\2013_11_25_Spirit1_Elektrolux.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>Build ALL</name>
+      <member>
+        <project>2013_11_25_Spirit1_Elektrolux</project>
+        <configuration>SDK_BasicGeneric_A</configuration>
+      </member>
+      <member>
+        <project>2013_11_25_Spirit1_Elektrolux</project>
+        <configuration>SDK_BasicGeneric_B</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

@@ -1,0 +1,527 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.70.1.5641/W32 for ARM      22/Feb/2014  21:59:12 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\STM32L\SDK_Virtual_Com\S #
+#                    ource\src\SDK_EVAL_VC_Desc.c                             #
+#    Command line =  C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\STM32L\SDK_Virtual_Com\S #
+#                    ource\src\SDK_EVAL_VC_Desc.c -D USE_STDPERIPH_DRIVER -D  #
+#                    VECT_TAB_FLASH -D STM32L1XX_MD -D IAR_ARM_CM3 -D         #
+#                    USE_FULL_ASSERT -D SPIRIT_USE_FULL_ASSERT -D             #
+#                    USE_SYSTICK_DELAY -D SDK -lC                             #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\ #
+#                    EWARM\DZ-SB-DISC01\List\ -o                              #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\ #
+#                    EWARM\DZ-SB-DISC01\Obj\ --no_cse --no_unroll             #
+#                    --no_inline --no_code_motion --no_tbaa --no_clustering   #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M3  #
+#                    -e --fpu=None --dlib_config "C:\Program Files (x86)\IAR  #
+#                    Systems\Embedded Workbench 6.5\arm\INC\c\DLib_Config_Nor #
+#                    mal.h" -I C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_ #
+#                    po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Librar #
+#                    y_Project\EWARM\.\ -I C:\Users\bzdegluk.PLY\Desktop\ACQ_ #
+#                    SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SP #
+#                    IRIT1_Library_Project\EWARM\..\Application\ -I           #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\ #
+#                    EWARM\..\Application\examples\ -I                        #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\ #
+#                    EWARM\..\Application\runtime\ -I                         #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\ #
+#                    EWARM\..\..\STM32L\SDK_Eval_STM32L\Source\inc\ -I        #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\ #
+#                    EWARM\..\SPIRIT1_Library\Source\inc\ -I                  #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\ #
+#                    EWARM\..\SDK_Eval_Util\Source\inc\ -I                    #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\ #
+#                    EWARM\..\..\STM32L\STM32L1xx_StdPeriph_Lib\Source\CMSIS\ #
+#                    CM3\DeviceSupport\ST\STM32L1xx\ -I                       #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\ #
+#                    EWARM\..\..\STM32L\STM32L1xx_StdPeriph_Lib\Source\STM32L #
+#                    1xx_StdPeriph_Driver\inc\ -I                             #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\ #
+#                    EWARM\..\..\STM32L\SDK_Virtual_Com\Source\inc\ -I        #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\ #
+#                    EWARM\..\..\STM32L\STM32_USB-FS-Device_Lib\Source\inc\   #
+#                    -On --use_c++_inline -I "C:\Program Files (x86)\IAR      #
+#                    Systems\Embedded Workbench 6.5\arm\CMSIS\Include\"       #
+#    List file    =  C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\ #
+#                    EWARM\DZ-SB-DISC01\List\SDK_EVAL_VC_Desc.lst             #
+#    Object file  =  C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\ #
+#                    EWARM\DZ-SB-DISC01\Obj\SDK_EVAL_VC_Desc.o                #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\STM32L\SDK_Virtual_Com\Source\src\SDK_EVAL_VC_Desc.c
+      1          /**
+      2           * @file     SDK_EVAL_VC_Desc.c
+      3           * @author   MSH RF/ART Team IMS-Systems Lab
+      4           * @version  V1.0.0
+      5           * @date     August 4, 2011
+      6           * @brief    Descriptors for Virtual Com Port Demo.
+      7           * @details
+      8           *
+      9           * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+     10           * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
+     11           * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
+     12           * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
+     13           * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
+     14           * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+     15           *
+     16           * THIS SOURCE CODE IS PROTECTED BY A LICENSE.
+     17           * FOR MORE INFORMATION PLEASE CAREFULLY READ THE LICENSE AGREEMENT FILE LOCATED
+     18           * IN THE ROOT DIRECTORY OF THIS FIRMWARE PACKAGE.
+     19           *
+     20           * <h2><center>&copy; COPYRIGHT 2011 STMicroelectronics</center></h2>
+     21           *
+     22           */
+     23          
+     24          /* Includes ------------------------------------------------------------------*/
+     25          #include "usb_lib.h"
+     26          #include "SDK_EVAL_VC_Desc.h"
+     27          
+     28          
+     29          
+     30          /** @addtogroup SDK_EVAL_Virtual_Com
+     31           * @{
+     32           */
+     33          
+     34          
+     35          /** @addtogroup SDK_EVAL_VC_Descriptor
+     36           * @{
+     37           */
+     38          
+     39          
+     40          /** @defgroup SDK_EVAL_VC_Descriptor_Private_TypesDefinitions   SDK EVAL VC Descriptor Private TypesDefinitions
+     41           * @{
+     42           */
+     43          
+     44          /**
+     45           * @}
+     46           */
+     47          
+     48          
+     49          /** @defgroup SDK_EVAL_VC_Descriptor_Private_Defines    SDK EVAL VC Descriptor Private Defines
+     50           * @{
+     51           */
+     52          
+     53          /**
+     54           * @}
+     55           */
+     56          
+     57          
+     58          /** @defgroup SDK_EVAL_VC_Descriptor_Private_Macros   SDK EVAL VC Descriptor Private Macros
+     59           * @{
+     60           */
+     61          
+     62          /**
+     63           * @}
+     64           */
+     65          
+     66          
+     67          /** @defgroup SDK_EVAL_VC_Descriptor_Private_Variables    SDK EVAL VC Descriptor Private Variables
+     68           * @{
+     69           */
+     70          
+     71          /**
+     72           * @brief   Virtual Com Port Device Descriptor
+     73           */
+
+   \                                 In section .rodata, align 4
+     74          const uint8_t g_vectcVCPortDeviceDescriptor[] =
+   \                     g_vectcVCPortDeviceDescriptor:
+   \   00000000   0x12 0x01          DC8 18, 1, 0, 2, 2, 0, 0, 64, 131, 4, 22, 112, 0, 2, 1, 2, 3, 1, 0, 0
+   \              0x00 0x02    
+   \              0x02 0x00    
+   \              0x00 0x40    
+   \              0x83 0x04    
+   \              0x16 0x70    
+   \              0x00 0x02    
+   \              0x01 0x02    
+   \              0x03 0x01    
+   \              0x00 0x00    
+     75          {
+     76            0x12,   /* bLength */
+     77            USB_DEVICE_DESCRIPTOR_TYPE,     /* bDescriptorType */
+     78            0x00,
+     79            0x02,   /* bcdUSB = 2.00 */
+     80            0x02,   /* bDeviceClass: CDC */
+     81            0x00,   /* bDeviceSubClass */
+     82            0x00,   /* bDeviceProtocol */
+     83            0x40,   /* bMaxPacketSize0 */
+     84            0x83,
+     85            0x04,   /* idVendor = 0x0483 */
+     86            0x16,
+     87            0x70,   /* idProduct = 0x7016 */
+     88            0x00,
+     89            0x02,   /* bcdDevice = 2.00 */
+     90            1,              /* Index of string descriptor describing manufacturer */
+     91            2,              /* Index of string descriptor describing product */
+     92            3,              /* Index of string descriptor describing the device's serial number */
+     93            0x01    /* bNumConfigurations */
+     94          };
+     95          
+     96          
+     97          /**
+     98           * @brief   Virtual Com Port Configuration Descriptor
+     99           */
+
+   \                                 In section .rodata, align 4
+    100          const uint8_t g_vectcVCPortConfigDescriptor[] =
+   \                     g_vectcVCPortConfigDescriptor:
+   \   00000000   0x09 0x02          DC8 9, 2, 67, 0, 2, 1, 0, 192, 50, 9, 4, 0, 0, 1, 2, 2, 1, 0, 5, 36, 0
+   \              0x43 0x00    
+   \              0x02 0x01    
+   \              0x00 0xC0    
+   \              0x32 0x09    
+   \              0x04 0x00    
+   \              0x00 0x01    
+   \              0x02 0x02    
+   \              0x01 0x00    
+   \              0x05 0x24    
+   \              0x00         
+   \   00000015   0x10 0x01          DC8 16, 1, 5, 36, 1, 0, 1, 4, 36, 2, 2, 5, 36, 6, 0, 1, 7, 5, 130, 3, 8
+   \              0x05 0x24    
+   \              0x01 0x00    
+   \              0x01 0x04    
+   \              0x24 0x02    
+   \              0x02 0x05    
+   \              0x24 0x06    
+   \              0x00 0x01    
+   \              0x07 0x05    
+   \              0x82 0x03    
+   \              0x08         
+   \   0000002A   0x00 0xFF          DC8 0, 255, 9, 4, 1, 0, 2, 10, 0, 0, 0, 7, 5, 3, 2, 64, 0, 0, 7, 5, 129
+   \              0x09 0x04    
+   \              0x01 0x00    
+   \              0x02 0x0A    
+   \              0x00 0x00    
+   \              0x00 0x07    
+   \              0x05 0x03    
+   \              0x02 0x40    
+   \              0x00 0x00    
+   \              0x07 0x05    
+   \              0x81         
+   \   0000003F   0x02 0x40          DC8 2, 64, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00         
+    101          {
+    102            /*Configuration Descriptor*/
+    103            0x09,   /* bLength: Configuration Descriptor size */
+    104            USB_CONFIGURATION_DESCRIPTOR_TYPE,      /* bDescriptorType: Configuration */
+    105            VIRTUAL_COM_PORT_SIZ_CONFIG_DESC,       /* wTotalLength:no of returned bytes */
+    106            0x00,
+    107            0x02,   /* bNumInterfaces: 2 interface */
+    108            0x01,   /* bConfigurationValue: Configuration value */
+    109            0x00,   /* iConfiguration: Index of string descriptor describing the configuration */
+    110            0xC0,   /* bmAttributes: self powered */
+    111            0x32,   /* MaxPower 0 mA */
+    112            /*Interface Descriptor*/
+    113            0x09,   /* bLength: Interface Descriptor size */
+    114            USB_INTERFACE_DESCRIPTOR_TYPE,  /* bDescriptorType: Interface */
+    115            /* Interface descriptor type */
+    116            0x00,   /* bInterfaceNumber: Number of Interface */
+    117            0x00,   /* bAlternateSetting: Alternate setting */
+    118            0x01,   /* bNumEndpoints: One endpoints used */
+    119            0x02,   /* bInterfaceClass: Communication Interface Class */
+    120            0x02,   /* bInterfaceSubClass: Abstract Control Model */
+    121            0x01,   /* bInterfaceProtocol: Common AT commands */
+    122            0x00,   /* iInterface: */
+    123            /*Header Functional Descriptor*/
+    124            0x05,   /* bLength: Endpoint Descriptor size */
+    125            0x24,   /* bDescriptorType: CS_INTERFACE */
+    126            0x00,   /* bDescriptorSubtype: Header Func Desc */
+    127            0x10,   /* bcdCDC: spec release number */
+    128            0x01,
+    129            /*Call Management Functional Descriptor*/
+    130            0x05,   /* bFunctionLength */
+    131            0x24,   /* bDescriptorType: CS_INTERFACE */
+    132            0x01,   /* bDescriptorSubtype: Call Management Func Desc */
+    133            0x00,   /* bmCapabilities: D0+D1 */
+    134            0x01,   /* bDataInterface: 1 */
+    135            /*ACM Functional Descriptor*/
+    136            0x04,   /* bFunctionLength */
+    137            0x24,   /* bDescriptorType: CS_INTERFACE */
+    138            0x02,   /* bDescriptorSubtype: Abstract Control Management desc */
+    139            0x02,   /* bmCapabilities */
+    140            /*Union Functional Descriptor*/
+    141            0x05,   /* bFunctionLength */
+    142            0x24,   /* bDescriptorType: CS_INTERFACE */
+    143            0x06,   /* bDescriptorSubtype: Union func desc */
+    144            0x00,   /* bMasterInterface: Communication class interface */
+    145            0x01,   /* bSlaveInterface0: Data Class Interface */
+    146            /*Endpoint 2 Descriptor*/
+    147            0x07,   /* bLength: Endpoint Descriptor size */
+    148            USB_ENDPOINT_DESCRIPTOR_TYPE,   /* bDescriptorType: Endpoint */
+    149            0x82,   /* bEndpointAddress: (IN2) */
+    150            0x03,   /* bmAttributes: Interrupt */
+    151            VIRTUAL_COM_PORT_INT_SIZE,      /* wMaxPacketSize: */
+    152            0x00,
+    153            0xFF,   /* bInterval: */
+    154            /*Data class interface descriptor*/
+    155            0x09,   /* bLength: Endpoint Descriptor size */
+    156            USB_INTERFACE_DESCRIPTOR_TYPE,  /* bDescriptorType: */
+    157            0x01,   /* bInterfaceNumber: Number of Interface */
+    158            0x00,   /* bAlternateSetting: Alternate setting */
+    159            0x02,   /* bNumEndpoints: Two endpoints used */
+    160            0x0A,   /* bInterfaceClass: CDC */
+    161            0x00,   /* bInterfaceSubClass: */
+    162            0x00,   /* bInterfaceProtocol: */
+    163            0x00,   /* iInterface: */
+    164            /*Endpoint 3 Descriptor*/
+    165            0x07,   /* bLength: Endpoint Descriptor size */
+    166            USB_ENDPOINT_DESCRIPTOR_TYPE,   /* bDescriptorType: Endpoint */
+    167            0x03,   /* bEndpointAddress: (OUT3) */
+    168            0x02,   /* bmAttributes: Bulk */
+    169            VIRTUAL_COM_PORT_DATA_SIZE,             /* wMaxPacketSize: */
+    170            0x00,
+    171            0x00,   /* bInterval: ignore for Bulk transfer */
+    172            /*Endpoint 1 Descriptor*/
+    173            0x07,   /* bLength: Endpoint Descriptor size */
+    174            USB_ENDPOINT_DESCRIPTOR_TYPE,   /* bDescriptorType: Endpoint */
+    175            0x81,   /* bEndpointAddress: (IN1) */
+    176            0x02,   /* bmAttributes: Bulk */
+    177            VIRTUAL_COM_PORT_DATA_SIZE,             /* wMaxPacketSize: */
+    178            0x00,
+    179            0x00    /* bInterval */
+    180          };
+    181          
+    182          
+    183          /**
+    184           * @brief   Virtual Com Port String Language Descriptor
+    185           */
+
+   \                                 In section .rodata, align 4
+    186          const uint8_t g_vectcVCPortStringLangID[VIRTUAL_COM_PORT_SIZ_STRING_LANGID] =
+   \                     g_vectcVCPortStringLangID:
+   \   00000000   0x04 0x03          DC8 4, 3, 9, 4
+   \              0x09 0x04    
+    187          {
+    188            VIRTUAL_COM_PORT_SIZ_STRING_LANGID,
+    189            USB_STRING_DESCRIPTOR_TYPE,
+    190            0x09,
+    191            0x04 /* LangID = 0x0409: U.S. English */
+    192          };
+    193          
+    194          
+    195          /**
+    196           * @brief   Virtual Com Port String Vendor Descriptor
+    197           */
+
+   \                                 In section .rodata, align 4
+    198          const uint8_t g_vectcVCPortStringVendor[VIRTUAL_COM_PORT_SIZ_STRING_VENDOR] =
+   \                     g_vectcVCPortStringVendor:
+   \   00000000   0x26 0x03          DC8 38, 3, 83, 0, 84, 0, 77, 0, 105, 0, 99, 0, 114, 0, 111, 0, 101, 0
+   \              0x53 0x00    
+   \              0x54 0x00    
+   \              0x4D 0x00    
+   \              0x69 0x00    
+   \              0x63 0x00    
+   \              0x72 0x00    
+   \              0x6F 0x00    
+   \              0x65 0x00    
+   \   00000012   0x6C 0x00          DC8 108, 0, 101, 0, 99, 0, 116, 0, 114, 0, 111, 0, 110, 0, 105, 0, 99
+   \              0x65 0x00    
+   \              0x63 0x00    
+   \              0x74 0x00    
+   \              0x72 0x00    
+   \              0x6F 0x00    
+   \              0x6E 0x00    
+   \              0x69 0x00    
+   \              0x63         
+   \   00000023   0x00 0x73          DC8 0, 115, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00         
+    199          {
+    200            VIRTUAL_COM_PORT_SIZ_STRING_VENDOR,     /* Size of Vendor string */
+    201            USB_STRING_DESCRIPTOR_TYPE,             /* bDescriptorType*/
+    202            /* Manufacturer: "STMicroelectronics" */
+    203            'S', 0, 'T', 0, 'M', 0, 'i', 0, 'c', 0, 'r', 0, 'o', 0, 'e', 0,
+    204            'l', 0, 'e', 0, 'c', 0, 't', 0, 'r', 0, 'o', 0, 'n', 0, 'i', 0,
+    205            'c', 0, 's', 0
+    206          };
+    207          
+    208          
+    209          /**
+    210           * @brief   Virtual Com Port String Product Descriptor
+    211           */
+
+   \                                 In section .rodata, align 4
+    212          const uint8_t g_vectcVCPortStringProduct[VIRTUAL_COM_PORT_SIZ_STRING_PRODUCT] =
+   \                     g_vectcVCPortStringProduct:
+   \   00000000   0x70 0x03          DC8 112, 3, 83, 0, 80, 0, 73, 0, 82, 0, 73, 0, 84, 0, 49, 0, 32, 0, 45
+   \              0x53 0x00    
+   \              0x50 0x00    
+   \              0x49 0x00    
+   \              0x52 0x00    
+   \              0x49 0x00    
+   \              0x54 0x00    
+   \              0x31 0x00    
+   \              0x20 0x00    
+   \              0x2D         
+   \   00000013   0x00 0x20          DC8 0, 32, 0, 76, 0, 111, 0, 119, 0, 32, 0, 100, 0, 97, 0, 116, 0, 97
+   \              0x00 0x4C    
+   \              0x00 0x6F    
+   \              0x00 0x77    
+   \              0x00 0x20    
+   \              0x00 0x64    
+   \              0x00 0x61    
+   \              0x00 0x74    
+   \              0x00 0x61    
+   \   00000025   0x00 0x20          DC8 0, 32, 0, 114, 0, 97, 0, 116, 0, 101, 0, 32, 0, 108, 0, 111, 0, 119
+   \              0x00 0x72    
+   \              0x00 0x61    
+   \              0x00 0x74    
+   \              0x00 0x65    
+   \              0x00 0x20    
+   \              0x00 0x6C    
+   \              0x00 0x6F    
+   \              0x00 0x77    
+   \   00000037   0x00 0x20          DC8 0, 32, 0, 112, 0, 111, 0, 119, 0, 101, 0, 114, 0, 32, 0, 115, 0
+   \              0x00 0x70    
+   \              0x00 0x6F    
+   \              0x00 0x77    
+   \              0x00 0x65    
+   \              0x00 0x72    
+   \              0x00 0x20    
+   \              0x00 0x73    
+   \              0x00         
+   \   00000048   0x75 0x00          DC8 117, 0, 98, 0, 45, 0, 49, 0, 32, 0, 71, 0, 72, 0, 122, 0, 32, 0
+   \              0x62 0x00    
+   \              0x2D 0x00    
+   \              0x31 0x00    
+   \              0x20 0x00    
+   \              0x47 0x00    
+   \              0x48 0x00    
+   \              0x7A 0x00    
+   \              0x20 0x00    
+   \   0000005A   0x74 0x00          DC8 116, 0, 114, 0, 97, 0, 110, 0, 115, 0, 99, 0, 101, 0, 105, 0, 118
+   \              0x72 0x00    
+   \              0x61 0x00    
+   \              0x6E 0x00    
+   \              0x73 0x00    
+   \              0x63 0x00    
+   \              0x65 0x00    
+   \              0x69 0x00    
+   \              0x76         
+   \   0000006B   0x00 0x65          DC8 0, 101, 0, 114, 0
+   \              0x00 0x72    
+   \              0x00         
+    213          {
+    214            VIRTUAL_COM_PORT_SIZ_STRING_PRODUCT,          /* bLength */
+    215            USB_STRING_DESCRIPTOR_TYPE,        /* bDescriptorType */
+    216            /* Product name: "Spirit1 low data rate transceiver" */
+    217            'S', 0, 'P', 0, 'I', 0, 'R', 0, 'I', 0, 'T', 0, '1', 0, ' ', 0,
+    218            '-', 0, ' ', 0, 'L', 0, 'o', 0, 'w', 0, ' ', 0, 'd', 0, 'a', 0,
+    219            't', 0, 'a', 0, ' ', 0, 'r', 0, 'a', 0, 't', 0, 'e', 0, ' ', 0,
+    220            'l', 0, 'o', 0, 'w', 0, ' ', 0, 'p', 0, 'o', 0, 'w', 0, 'e', 0,
+    221            'r', 0, ' ', 0, 's', 0, 'u', 0, 'b', 0, '-', 0, '1', 0, ' ', 0,
+    222            'G', 0, 'H', 0, 'z', 0, ' ', 0, 't', 0, 'r', 0, 'a', 0, 'n', 0,
+    223            's', 0, 'c', 0, 'e', 0, 'i', 0, 'v', 0, 'e', 0, 'r', 0
+    224          };
+    225          
+    226          
+    227          
+    228          /**
+    229           * @brief   Virtual Com Port String Serial Descriptor
+    230           */
+
+   \                                 In section .data, align 4
+    231          uint8_t g_vectcVCPortStringSerial[VIRTUAL_COM_PORT_SIZ_STRING_SERIAL] =
+   \                     g_vectcVCPortStringSerial:
+   \   00000000   0x1A 0x03          DC8 26, 3, 83, 0, 84, 0, 77, 0, 51, 0, 50, 0, 49, 0, 48, 0, 0, 0, 0, 0
+   \              0x53 0x00    
+   \              0x54 0x00    
+   \              0x4D 0x00    
+   \              0x33 0x00    
+   \              0x32 0x00    
+   \              0x31 0x00    
+   \              0x30 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000014   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+    232          {
+    233            VIRTUAL_COM_PORT_SIZ_STRING_SERIAL,           /* bLength */
+    234            USB_STRING_DESCRIPTOR_TYPE,                   /* bDescriptorType */
+    235            'S', 0, 'T', 0, 'M', 0, '3', 0, '2', 0, '1', 0, '0', 0
+    236          };
+    237          
+    238          
+    239          /**
+    240           * @}
+    241           */
+    242          
+    243          
+    244          /** @defgroup SDK_EVAL_VC_Descriptor_Private_FunctionPrototypes   SDK EVAL VC Descriptor Private FunctionPrototypes
+    245           * @{
+    246           */
+    247          
+    248          /**
+    249           * @}
+    250           */
+    251          
+    252          
+    253          /** @defgroup SDK_EVAL_VC_Descriptor_Private_Functions    SDK EVAL VC Descriptor Private Functions
+    254           * @{
+    255           */
+    256          
+    257          /**
+    258           * @}
+    259           */
+    260          
+    261          
+    262          /**
+    263           * @}
+    264           */
+    265          
+    266          
+    267          /**
+    268           * @}
+    269           */
+    270          
+    271          
+    272          
+    273          /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      68  g_vectcVCPortConfigDescriptor
+      20  g_vectcVCPortDeviceDescriptor
+       4  g_vectcVCPortStringLangID
+     112  g_vectcVCPortStringProduct
+      28  g_vectcVCPortStringSerial
+      40  g_vectcVCPortStringVendor
+
+ 
+  28 bytes in section .data
+ 244 bytes in section .rodata
+ 
+ 244 bytes of CONST memory
+  28 bytes of DATA  memory
+
+Errors: none
+Warnings: none

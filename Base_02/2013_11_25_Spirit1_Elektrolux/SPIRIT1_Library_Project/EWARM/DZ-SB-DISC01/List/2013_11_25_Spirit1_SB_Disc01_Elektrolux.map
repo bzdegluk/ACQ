@@ -1,0 +1,835 @@
+###############################################################################
+#
+# IAR ELF Linker V7.40.2.8542/W32 for ARM                 20/Nov/2015  05:05:58
+# Copyright 2007-2015 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Exe\2013_11_25_Spirit1_SB_Disc01_Elektrolux.out
+#    Map file     =  
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\List\2013_11_25_Spirit1_SB_Disc01_Elektrolux.map
+#    Command line =  
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\Base_Station.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\misc.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SDK_EVAL_Button.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SDK_EVAL_Com.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SDK_EVAL_Config.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SDK_EVAL_Gpio.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SDK_EVAL_Led.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SDK_EVAL_PM.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SDK_EVAL_Spi_Driver.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SDK_EVAL_Timers.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_Aes.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_Calibration.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_Commands.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_Csma.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_DirectRF.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_General.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_Gpio.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_Irq.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_LinearFifo.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_Management.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_PktBasic.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_PktCommon.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_PktMbus.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_PktStack.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_Qi.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_Radio.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_SDK_Application.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_Timer.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SPIRIT_Types.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\startup_stm32l1xx_hd.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_adc.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_comp.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_crc.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_dac.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_dbgmcu.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_dma.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_exti.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_flash.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_flash_ramfunc.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_gpio.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_i2c.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_it.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_iwdg.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_lcd.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_pwr.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_rcc.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_rtc.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_spi.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_syscfg.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_tim.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_usart.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\stm32l1xx_wwdg.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\system_stm32l1xx.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\usb_core.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\usb_init.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\usb_int.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\usb_mem.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\usb_regs.o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\usb_sil.o
+#        -o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Exe\2013_11_25_Spirit1_SB_Disc01_Elektrolux.out
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --map
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\List\2013_11_25_Spirit1_SB_Disc01_Elektrolux.map
+#        --log libraries,modules --log_file
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\List\2013_11_25_Spirit1_SB_Disc01_Elektrolux.log
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\config\linker\ST\stm32l151xB.icf" --semihosting --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0801ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20003fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                      0x124
+  .intvec            ro code  0x08000000   0x124  startup_stm32l1xx_hd.o [1]
+                            - 0x08000124   0x124
+
+"P1":                                     0x89bc
+  .text              ro code  0x08000124  0x1348  SPIRIT_Radio.o [1]
+  .text              ro code  0x0800146c    0x3c  SPIRIT_General.o [1]
+  .text              ro code  0x080014a8   0x738  SDK_EVAL_Spi_Driver.o [1]
+  .text              ro code  0x08001be0    0x30  I32ToDbl.o [4]
+  .text              ro code  0x08001c10   0x256  DblDiv.o [4]
+  .text              ro code  0x08001e66    0x22  zero_init3.o [5]
+  .text              ro code  0x08001e88    0x58  DblToI32.o [4]
+  .text              ro code  0x08001ee0    0x38  SPIRIT_Types.o [1]
+  .text              ro code  0x08001f18   0x53c  SPIRIT_Management.o [1]
+  .text              ro code  0x08002454   0x174  SPIRIT_Calibration.o [1]
+  .text              ro code  0x080025c8   0x1a2  DblMul.o [4]
+  .rodata            const    0x0800276a     0x2  SDK_EVAL_Gpio.o [1]
+  .text              ro code  0x0800276c    0x44  round.o [4]
+  .text              ro code  0x080027b0   0x114  SDK_EVAL_Config.o [1]
+  .text              ro code  0x080028c4   0x334  stm32l1xx_rcc.o [1]
+  .text              ro code  0x08002bf8   0x3b8  stm32l1xx_gpio.o [1]
+  .text              ro code  0x08002fb0   0x2b4  stm32l1xx_spi.o [1]
+  .text              ro code  0x08003264    0x24  printf.o [3]
+  .text              ro code  0x08003288    0x90  SPIRIT_Commands.o [1]
+  .text              ro code  0x08003318    0x7e  xdint.o [4]
+  .rodata            const    0x08003396     0x2  SDK_EVAL_Gpio.o [1]
+  .text              ro code  0x08003398    0xe8  DblAdd.o [4]
+  .text              ro code  0x08003480   0x664  Base_Station.o [1]
+  .text              ro code  0x08003ae4   0xdae  xprintffull.o [3]
+  .rodata            const    0x08004892     0x2  SDK_EVAL_Gpio.o [1]
+  .text              ro code  0x08004894   0x180  DblSub.o [4]
+  .text              ro code  0x08004a14   0x1d0  stm32l1xx_exti.o [1]
+  .text              ro code  0x08004be4   0x1c8  SPIRIT_Irq.o [1]
+  .text              ro code  0x08004dac    0x48  SPIRIT_LinearFifo.o [1]
+  .text              ro code  0x08004df4    0xf8  SDK_EVAL_Led.o [1]
+  .text              ro code  0x08004eec   0x4e8  stm32l1xx_usart.o [1]
+  .text              ro code  0x080053d4    0xc4  SDK_EVAL_Timers.o [1]
+  .text              ro code  0x08005498   0x12c  misc.o [1]
+  .text              ro code  0x080055c4   0x198  SDK_EVAL_Gpio.o [1]
+  .text              ro code  0x0800575c   0x630  SPIRIT_SDK_Application.o [1]
+  .text              ro code  0x08005d8c   0x30c  SPIRIT_Gpio.o [1]
+  .text              ro code  0x08006098   0x47c  SPIRIT_PktBasic.o [1]
+  .text              ro code  0x08006514    0xf8  SPIRIT_Qi.o [1]
+  .text              ro code  0x0800660c   0x270  SPIRIT_Timer.o [1]
+  .text              ro code  0x0800687c    0x32  I32ToFlt.o [4]
+  .rodata            const    0x080068ae     0x2  SDK_EVAL_Gpio.o [1]
+  .text              ro code  0x080068b0    0xfc  FltDiv.o [4]
+  .text              ro code  0x080069ac    0x4e  FltToDbl.o [4]
+  .rodata            const    0x080069fa     0x1  SDK_EVAL_Gpio.o [1]
+  .rodata            const    0x080069fb     0x1  SDK_EVAL_Gpio.o [1]
+  .text              ro code  0x080069fc    0x90  DblToFlt.o [4]
+  .text              ro code  0x08006a8c    0xd8  FltMul.o [4]
+  .text              ro code  0x08006b64    0x24  FltCmpLe.o [4]
+  .text              ro code  0x08006b88    0x24  FltToU32.o [4]
+  .text              ro code  0x08006bac    0x16  strchr.o [5]
+  .rodata            const    0x08006bc2     0x1  SDK_EVAL_Gpio.o [1]
+  .rodata            const    0x08006bc3     0x1  SDK_EVAL_Gpio.o [1]
+  .text              ro code  0x08006bc4    0x36  strlen.o [5]
+  .text              ro code  0x08006bfc    0x58  memchr.o [5]
+  .text              ro code  0x08006c54    0xee  I64DivMod.o [5]
+  .text              ro code  0x08006d44    0x76  ABImemcpy_unaligned.o [5]
+  .text              ro code  0x08006dba    0x42  xdnorm.o [4]
+  .text              ro code  0x08006dfc    0x2e  DblCmpLe.o [4]
+  .text              ro code  0x08006e2c    0x2e  DblCmpGe.o [4]
+  .text              ro code  0x08006e5c   0x110  xdscale.o [4]
+  .text              ro code  0x08006f6c     0xe  div.o [3]
+  .text              ro code  0x08006f7c    0xfc  stm32l1xx_syscfg.o [1]
+  .text              ro code  0x08007078   0x65c  stm32l1xx_tim.o [1]
+  .text              ro code  0x080076d4    0xe6  FltSub.o [4]
+  .text              ro code  0x080077bc    0x24  FltCmpGe.o [4]
+  .text              ro code  0x080077e0    0x98  SPIRIT_PktCommon.o [1]
+  .text              ro code  0x08007878     0x2  I64DivZer.o [5]
+  .text              ro code  0x0800787c    0x74  FltAdd.o [4]
+  .text              ro code  0x080078f0   0x174  system_stm32l1xx.o [1]
+  .rodata            const    0x08007a64    0xb4  SPIRIT_Radio.o [1]
+  .rodata            const    0x08007b18    0x9c  stm32l1xx_syscfg.o [1]
+  .rodata            const    0x08007bb4    0x9c  stm32l1xx_usart.o [1]
+  .rodata            const    0x08007c50    0x98  stm32l1xx_exti.o [1]
+  .rodata            const    0x08007ce8    0x98  stm32l1xx_gpio.o [1]
+  .rodata            const    0x08007d80    0x98  stm32l1xx_rcc.o [1]
+  .rodata            const    0x08007e18    0x98  stm32l1xx_spi.o [1]
+  .rodata            const    0x08007eb0    0x98  stm32l1xx_tim.o [1]
+  .rodata            const    0x08007f48    0x90  misc.o [1]
+  .text              ro code  0x08007fd8    0x90  stm32l1xx_it.o [1]
+  .rodata            const    0x08008068    0x8c  SPIRIT_Calibration.o [1]
+  .rodata            const    0x080080f4    0x8c  SPIRIT_Management.o [1]
+  .rodata            const    0x08008180    0x88  SPIRIT_Commands.o [1]
+  .rodata            const    0x08008208    0x88  SPIRIT_PktBasic.o [1]
+  .rodata            const    0x08008290    0x88  SPIRIT_PktCommon.o [1]
+  .rodata            const    0x08008318    0x84  SPIRIT_Gpio.o [1]
+  .rodata            const    0x0800839c    0x84  SPIRIT_Irq.o [1]
+  .rodata            const    0x08008420    0x84  SPIRIT_Qi.o [1]
+  .rodata            const    0x080084a4    0x84  SPIRIT_Radio.o [1]
+  .rodata            const    0x08008528    0x84  SPIRIT_Timer.o [1]
+  .rodata            const    0x080085ac    0x74  SDK_EVAL_Gpio.o [1]
+  .text              ro code  0x08008620    0x6c  iarttio.o [6]
+  .text              ro code  0x0800868c     0x8  XShttio.o [3]
+  .rodata            const    0x08008694    0x30  Base_Station.o [1]
+  .rodata            const    0x080086c4    0x30  SPIRIT_Types.o [1]
+  .text              ro code  0x080086f4    0x2c  copy_init3.o [5]
+  .text              ro code  0x08008720    0x28  putchar.o [3]
+  .text              ro code  0x08008748    0x10  write.o [6]
+  .text              ro code  0x08008758    0x1e  dwrite.o [6]
+  .text              ro code  0x08008776    0x20  iarwstd.o [6]
+  .text              ro code  0x08008796    0x22  iarwrite.o [6]
+  .text              ro code  0x080087b8    0x28  data_init.o [5]
+  .iar.init_table    const    0x080087e0    0x24  - Linker created -
+  .rodata            const    0x08008804    0x20  SPIRIT_Radio.o [1]
+  .text              ro code  0x08008824    0x1a  cmain.o [5]
+  .text              ro code  0x0800883e     0x4  low_level_init.o [3]
+  .text              ro code  0x08008842     0x4  exit.o [3]
+  .text              ro code  0x08008848     0xa  cexit.o [5]
+  .text              ro code  0x08008854    0x14  exit.o [6]
+  .rodata            const    0x08008868    0x18  SDK_EVAL_Led.o [1]
+  .text              ro code  0x08008880    0x16  xprout.o [3]
+  .rodata            const    0x08008898    0x10  SDK_EVAL_Gpio.o [1]
+  .text              ro code  0x080088a8    0x10  startup_stm32l1xx_hd.o [1]
+  .rodata            const    0x080088b8     0xc  SDK_EVAL_Led.o [1]
+  .rodata            const    0x080088c4     0xc  SPIRIT_SDK_Application.o [1]
+  .text              ro code  0x080088d0     0xc  cstartup_M.o [5]
+  .rodata            const    0x080088dc     0x8  SDK_EVAL_Spi_Driver.o [1]
+  .rodata            const    0x080088e4     0x4  SDK_EVAL_Gpio.o [1]
+  .rodata            const    0x080088e8     0x4  SDK_EVAL_Gpio.o [1]
+  .rodata            const    0x080088ec     0x4  SPIRIT_Management.o [1]
+  .rodata            const    0x080088f0     0x4  SPIRIT_Management.o [1]
+  .rodata            const    0x080088f4     0x4  SPIRIT_Radio.o [1]
+  .rodata            const    0x080088f8     0x4  SPIRIT_Radio.o [1]
+  .rodata            const    0x080088fc     0x4  SPIRIT_SDK_Application.o [1]
+  .rodata            const    0x08008900     0x4  SPIRIT_SDK_Application.o [1]
+  .rodata            const    0x08008904     0x4  SPIRIT_SDK_Application.o [1]
+  .rodata            const    0x08008908     0x4  SPIRIT_SDK_Application.o [1]
+  .text              ro code  0x0800890c     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008910     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008914     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008918     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x0800891c     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008920     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008924     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008928     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x0800892c     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008930     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008934     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008938     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x0800893c     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008940     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008944     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008948     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x0800894c     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008950     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008954     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008958     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x0800895c     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008960     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008964     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008968     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x0800896c     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008970     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008974     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008978     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x0800897c     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008980     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008984     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008988     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x0800898c     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008990     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008994     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x08008998     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x0800899c     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089a0     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089a4     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089a8     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089ac     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089b0     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089b4     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089b8     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089bc     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089c0     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089c4     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089c8     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089cc     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089d0     0x4  startup_stm32l1xx_hd.o [1]
+  .text              ro code  0x080089d4     0x4  startup_stm32l1xx_hd.o [1]
+  .rodata            const    0x080089d8     0x0  zero_init3.o [5]
+  .rodata            const    0x080089d8     0x0  copy_init3.o [5]
+  Initializer bytes  const    0x080089d8   0x108  <for P2 s0>
+                            - 0x08008ae0  0x89bc
+
+"P2":                                      0xa68
+  P2 s0                       0x20000000   0x108  <Init block>
+    .data            inited   0x20000000    0x60  Base_Station.o [1]
+    .data            inited   0x20000060    0x1c  Base_Station.o [1]
+    .data            inited   0x2000007c    0x18  SDK_EVAL_Led.o [1]
+    .data            inited   0x20000094    0x10  Base_Station.o [1]
+    .data            inited   0x200000a4    0x10  SDK_EVAL_Gpio.o [1]
+    .data            inited   0x200000b4    0x10  stm32l1xx_rcc.o [1]
+    .data            inited   0x200000c4     0xc  SDK_EVAL_Spi_Driver.o [1]
+    .data            inited   0x200000d0     0xc  SDK_EVAL_Spi_Driver.o [1]
+    .data            inited   0x200000dc     0xc  stm32l1xx_rcc.o [1]
+    .data            inited   0x200000e8     0x8  Base_Station.o [1]
+    .data            inited   0x200000f0     0x8  XShttio.o [3]
+    .data            inited   0x200000f8     0x4  Base_Station.o [1]
+    .data            inited   0x200000fc     0x4  Base_Station.o [1]
+    .data            inited   0x20000100     0x4  system_stm32l1xx.o [1]
+    .data            inited   0x20000104     0x1  SDK_EVAL_Config.o [1]
+    .data            inited   0x20000105     0x1  SPIRIT_General.o [1]
+    .data            inited   0x20000106     0x1  SPIRIT_Management.o [1]
+  .bss               zero     0x20000108    0xd4  Base_Station.o [1]
+  .bss               zero     0x200001dc    0x3c  Base_Station.o [1]
+  .bss               zero     0x20000218     0xc  Base_Station.o [1]
+  .bss               zero     0x20000224     0x4  Base_Station.o [1]
+  .bss               zero     0x20000228     0x4  Base_Station.o [1]
+  .bss               zero     0x2000022c     0x4  Base_Station.o [1]
+  .bss               zero     0x20000230     0x4  SDK_EVAL_Led.o [1]
+  .bss               zero     0x20000234     0x4  SDK_EVAL_Led.o [1]
+  .bss               zero     0x20000238     0x4  SDK_EVAL_Led.o [1]
+  .bss               zero     0x2000023c     0x4  SDK_EVAL_Spi_Driver.o [1]
+  .bss               zero     0x20000240     0x4  SDK_EVAL_Spi_Driver.o [1]
+  .bss               zero     0x20000244     0x4  SDK_EVAL_Spi_Driver.o [1]
+  .bss               zero     0x20000248     0x4  SDK_EVAL_Timers.o [1]
+  .bss               zero     0x2000024c     0x4  SDK_EVAL_Timers.o [1]
+  .bss               zero     0x20000250     0x4  SPIRIT_Management.o [1]
+  .bss               zero     0x20000254     0x4  SPIRIT_Radio.o [1]
+  .bss               zero     0x20000258     0x4  SPIRIT_Types.o [1]
+  .bss               zero     0x2000025c     0x1  Base_Station.o [1]
+  .bss               zero     0x2000025d     0x1  Base_Station.o [1]
+  .bss               zero     0x2000025e     0x1  Base_Station.o [1]
+  .bss               zero     0x2000025f     0x1  Base_Station.o [1]
+  .bss               zero     0x20000260     0x1  Base_Station.o [1]
+  .bss               zero     0x20000261     0x1  Base_Station.o [1]
+  .bss               zero     0x20000262     0x1  SPIRIT_SDK_Application.o [1]
+  CSTACK                      0x20000268   0x800  <Block>
+    CSTACK           uninit   0x20000268   0x800  <Block tail>
+                            - 0x20000a68   0xa68
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x15b:
+          0x20000108  0x15b
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x108 (100% of destination):
+          0x080089d8  0x108
+    1 destination range, total size 0x107:
+          0x20000000  0x107
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                    ro code  ro data  rw data
+    ------                    -------  -------  -------
+E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj: [1]
+    Base_Station.o              1 636      204      458
+    SDK_EVAL_Config.o             276        1        1
+    SDK_EVAL_Gpio.o               408      168       16
+    SDK_EVAL_Led.o                248       60       36
+    SDK_EVAL_Spi_Driver.o       1 848       32       36
+    SDK_EVAL_Timers.o             196                 8
+    SPIRIT_Calibration.o          372      140
+    SPIRIT_Commands.o             144      136
+    SPIRIT_General.o               60        1        1
+    SPIRIT_Gpio.o                 780      132
+    SPIRIT_Irq.o                  456      132
+    SPIRIT_LinearFifo.o            72
+    SPIRIT_Management.o         1 340      149        5
+    SPIRIT_PktBasic.o           1 148      136
+    SPIRIT_PktCommon.o            152      136
+    SPIRIT_Qi.o                   248      132
+    SPIRIT_Radio.o              4 936      352        4
+    SPIRIT_SDK_Application.o    1 584       28        1
+    SPIRIT_Timer.o                624      132
+    SPIRIT_Types.o                 56       48        4
+    misc.o                        300      144
+    startup_stm32l1xx_hd.o        512
+    stm32l1xx_exti.o              464      152
+    stm32l1xx_gpio.o              952      152
+    stm32l1xx_it.o                144
+    stm32l1xx_rcc.o               820      180       28
+    stm32l1xx_spi.o               692      152
+    stm32l1xx_syscfg.o            252      156
+    stm32l1xx_tim.o             1 628      152
+    stm32l1xx_usart.o           1 256      156
+    system_stm32l1xx.o            372        4        4
+    ---------------------------------------------------
+    Total:                     23 976    3 367      602
+
+command line: [2]
+    ---------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    XShttio.o                       8        8        8
+    div.o                          14
+    exit.o                          4
+    low_level_init.o                4
+    printf.o                       36
+    putchar.o                      40
+    xprintffull.o               3 502
+    xprout.o                       22
+    ---------------------------------------------------
+    Total:                      3 630        8        8
+
+m7M_tl.a: [4]
+    DblAdd.o                      232
+    DblCmpGe.o                     46
+    DblCmpLe.o                     46
+    DblDiv.o                      598
+    DblMul.o                      418
+    DblSub.o                      384
+    DblToFlt.o                    144
+    DblToI32.o                     88
+    FltAdd.o                      116
+    FltCmpGe.o                     36
+    FltCmpLe.o                     36
+    FltDiv.o                      252
+    FltMul.o                      216
+    FltSub.o                      230
+    FltToDbl.o                     78
+    FltToU32.o                     36
+    I32ToDbl.o                     48
+    I32ToFlt.o                     50
+    round.o                        68
+    xdint.o                       126
+    xdnorm.o                       66
+    xdscale.o                     272
+    ---------------------------------------------------
+    Total:                      3 586
+
+rt7M_tl.a: [5]
+    ABImemcpy_unaligned.o         118
+    I64DivMod.o                   238
+    I64DivZer.o                     2
+    cexit.o                        10
+    cmain.o                        26
+    copy_init3.o                   44
+    cstartup_M.o                   12
+    data_init.o                    40
+    memchr.o                       88
+    strchr.o                       22
+    strlen.o                       54
+    zero_init3.o                   34
+    ---------------------------------------------------
+    Total:                        688
+
+shb_l.a: [6]
+    dwrite.o                       30
+    exit.o                         20
+    iarttio.o                     108
+    iarwrite.o                     34
+    iarwstd.o                      32
+    write.o                        16
+    ---------------------------------------------------
+    Total:                        240
+
+    Gaps                           18        2
+    Linker created                          37    2 048
+-------------------------------------------------------
+    Grand Total:               32 138    3 414    2 658
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x080087e0          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08008804          --   Gb  - Linker created -
+?main                   0x08008825         Code  Gb  cmain.o [5]
+APBAHBPrescTable        0x200000b4   0x10  Data  Lc  stm32l1xx_rcc.o [1]
+BusFault_Handler        0x08007fdf    0x2  Code  Gb  stm32l1xx_it.o [1]
+CSTACK$$Base            0x20000268          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000a68          --   Gb  - Linker created -
+DebugMon_Handler        0x08007fe5    0x2  Code  Gb  stm32l1xx_it.o [1]
+EXTI0_IRQHandler        0x08003899   0x16  Code  Gb  Base_Station.o [1]
+EXTI9_5_IRQHandler      0x08003497  0x19e  Code  Gb  Base_Station.o [1]
+EXTI_ClearITPendingBit  0x08004bab   0x20  Code  Gb  stm32l1xx_exti.o [1]
+EXTI_GetITStatus        0x08004afb   0xb0  Code  Gb  stm32l1xx_exti.o [1]
+EXTI_Init               0x08004a15   0xe6  Code  Gb  stm32l1xx_exti.o [1]
+GPIO_Init               0x08002bf9  0x170  Code  Gb  stm32l1xx_gpio.o [1]
+GPIO_PinAFConfig        0x08002e09  0x18c  Code  Gb  stm32l1xx_gpio.o [1]
+GPIO_ResetBits          0x08002dc1   0x48  Code  Gb  stm32l1xx_gpio.o [1]
+GPIO_SetBits            0x08002d69   0x58  Code  Gb  stm32l1xx_gpio.o [1]
+HardFault_Handler       0x08007fdb    0x2  Code  Gb  stm32l1xx_it.o [1]
+LoadInt                 0x08004071   0x6e  Code  Lc  xprintffull.o [3]
+MemManage_Handler       0x08007fdd    0x2  Code  Gb  stm32l1xx_it.o [1]
+NMI_Handler             0x08007fd9    0x2  Code  Gb  stm32l1xx_it.o [1]
+NVIC_EnableIRQ          0x08003481   0x16  Code  Lc  Base_Station.o [1]
+NVIC_Init               0x08005499   0x9c  Code  Gb  misc.o [1]
+NVIC_SetPriority        0x080053d5   0x26  Code  Lc  SDK_EVAL_Timers.o [1]
+NVIC_SetVectorTable     0x08005535   0x34  Code  Gb  misc.o [1]
+PLLMulTable             0x200000dc    0xc  Data  Lc  stm32l1xx_rcc.o [1]
+PendSV_Handler          0x08007fe7    0x2  Code  Gb  stm32l1xx_it.o [1]
+RCC_AHBPeriphClockCmd   0x08002a03   0x5c  Code  Gb  stm32l1xx_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x08002abb   0x5c  Code  Gb  stm32l1xx_rcc.o [1]
+RCC_APB1PeriphResetCmd  0x08002b6f   0x4e  Code  Gb  stm32l1xx_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x08002a5f   0x5c  Code  Gb  stm32l1xx_rcc.o [1]
+RCC_APB2PeriphResetCmd  0x08002b17   0x58  Code  Gb  stm32l1xx_rcc.o [1]
+RCC_GetClocksFreq       0x080028c5  0x13e  Code  Gb  stm32l1xx_rcc.o [1]
+RSSI_TO_UART            0x080039a5   0xbe  Code  Gb  Base_Station.o [1]
+Region$$Table$$Base     0x080087e0          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08008804          --   Gb  - Linker created -
+SPI_Cmd                 0x08003159   0x52  Code  Gb  stm32l1xx_spi.o [1]
+SPI_I2S_DeInit          0x08002fb1   0x5a  Code  Gb  stm32l1xx_spi.o [1]
+SPI_I2S_GetFlagStatus   0x080031f5   0x62  Code  Gb  stm32l1xx_spi.o [1]
+SPI_I2S_ReceiveData     0x080031ab   0x24  Code  Gb  stm32l1xx_spi.o [1]
+SPI_I2S_SendData        0x080031cf   0x26  Code  Gb  stm32l1xx_spi.o [1]
+SPI_Init                0x0800300b  0x14e  Code  Gb  stm32l1xx_spi.o [1]
+SVC_Handler             0x08007fe3    0x2  Code  Gb  stm32l1xx_it.o [1]
+SYSCFG_EXTILineConfig   0x08006f7d   0xf2  Code  Gb  stm32l1xx_syscfg.o [1]
+SdkDelayMs              0x08005453   0x26  Code  Gb  SDK_EVAL_Timers.o [1]
+SdkEvalEnterShutdown    0x080056f1    0xe  Code  Gb  SDK_EVAL_Gpio.o [1]
+SdkEvalExitShutdown     0x080056ff   0x22  Code  Gb  SDK_EVAL_Gpio.o [1]
+SdkEvalGetVersion       0x080028a3    0x6  Code  Gb  SDK_EVAL_Config.o [1]
+SdkEvalIdentification   0x080027b1   0xf2  Code  Gb  SDK_EVAL_Config.o [1]
+SdkEvalLedInit          0x08004df5   0xb8  Code  Gb  SDK_EVAL_Led.o [1]
+SdkEvalLedToggle        0x08004ead   0x26  Code  Gb  SDK_EVAL_Led.o [1]
+SdkEvalM2SGpioInit      0x080055c5  0x104  Code  Gb  SDK_EVAL_Gpio.o [1]
+SdkEvalM2SGpioInterruptCmd
+                        0x080056c9   0x28  Code  Gb  SDK_EVAL_Gpio.o [1]
+SdkEvalSpiCommandStrobes
+                        0x080018f1   0xbe  Code  Gb  SDK_EVAL_Spi_Driver.o [1]
+SdkEvalSpiInit          0x080014a9  0x1fc  Code  Gb  SDK_EVAL_Spi_Driver.o [1]
+SdkEvalSpiReadFifo      0x08001aa9  0x116  Code  Gb  SDK_EVAL_Spi_Driver.o [1]
+SdkEvalSpiReadRegisters
+                        0x080017cf  0x122  Code  Gb  SDK_EVAL_Spi_Driver.o [1]
+SdkEvalSpiWriteFifo     0x080019af   0xfa  Code  Gb  SDK_EVAL_Spi_Driver.o [1]
+SdkEvalSpiWriteRegisters
+                        0x080016a5  0x12a  Code  Gb  SDK_EVAL_Spi_Driver.o [1]
+SdkStartSysTick         0x08005441   0x12  Code  Gb  SDK_EVAL_Timers.o [1]
+SetSysClock             0x08007943   0xf8  Code  Lc  system_stm32l1xx.o [1]
+SpiritCalibrationGetVcoCalData
+                        0x080024b7   0x22  Code  Gb  SPIRIT_Calibration.o [1]
+SpiritCalibrationSelectVco
+                        0x08002561   0x5e  Code  Gb  SPIRIT_Calibration.o [1]
+SpiritCalibrationSetVcoCalDataRx
+                        0x0800251d   0x44  Code  Gb  SPIRIT_Calibration.o [1]
+SpiritCalibrationSetVcoCalDataTx
+                        0x080024d9   0x44  Code  Gb  SPIRIT_Calibration.o [1]
+SpiritCalibrationVco    0x08002455   0x62  Code  Gb  SPIRIT_Calibration.o [1]
+SpiritCmdStrobeCommand  0x08003289   0x90  Code  Gb  SPIRIT_Commands.o [1]
+SpiritGeneralGetDevicePartNumber
+                        0x0800146d   0x28  Code  Gb  SPIRIT_General.o [1]
+SpiritGeneralGetSpiritVersion
+                        0x0800149b    0x6  Code  Gb  SPIRIT_General.o [1]
+SpiritGeneralSetSpiritVersion
+                        0x08001495    0x6  Code  Gb  SPIRIT_General.o [1]
+SpiritGpioClockOutput   0x08005f5f   0x62  Code  Gb  SPIRIT_Gpio.o [1]
+SpiritGpioClockOutputInit
+                        0x08005fc1   0xd0  Code  Gb  SPIRIT_Gpio.o [1]
+SpiritGpioInit          0x08005d8d  0x140  Code  Gb  SPIRIT_Gpio.o [1]
+SpiritGpioSetLevel      0x08005ecd   0x92  Code  Gb  SPIRIT_Gpio.o [1]
+SpiritIrq               0x08004c0d  0x148  Code  Gb  SPIRIT_Irq.o [1]
+SpiritIrqClearStatus    0x08004d8b   0x1a  Code  Gb  SPIRIT_Irq.o [1]
+SpiritIrqDeInit         0x08004be5   0x28  Code  Gb  SPIRIT_Irq.o [1]
+SpiritIrqGetStatus      0x08004d55   0x36  Code  Gb  SPIRIT_Irq.o [1]
+SpiritLinearFifoReadNumElementsRxFifo
+                        0x08004dad   0x22  Code  Gb  SPIRIT_LinearFifo.o [1]
+SpiritLinearFifoReadNumElementsTxFifo
+                        0x08004dcf   0x22  Code  Gb  SPIRIT_LinearFifo.o [1]
+SpiritManagementComputeSpiritVersion
+                        0x08005c8f   0xb2  Code  Gb  SPIRIT_SDK_Application.o [1]
+SpiritManagementComputeXtalFrequency
+                        0x080057e9  0x27a  Code  Gb  SPIRIT_SDK_Application.o [1]
+SpiritManagementComputeXtalFrequencyGpio0
+                        0x08005a63  0x22c  Code  Gb  SPIRIT_SDK_Application.o [1]
+SpiritManagementIdentificationRFBoard
+                        0x08005d41    0xc  Code  Gb  SPIRIT_SDK_Application.o [1]
+SpiritManagementSetFrequencyBase
+                        0x08001f19  0x1fa  Code  Gb  SPIRIT_Management.o [1]
+SpiritManagementWaCmdStrobeRx
+                        0x08002397   0x50  Code  Gb  SPIRIT_Management.o [1]
+SpiritManagementWaCmdStrobeTx
+                        0x08002301   0x96  Code  Gb  SPIRIT_Management.o [1]
+SpiritManagementWaRxStartup
+                        0x0800227d   0x42  Code  Gb  SPIRIT_Management.o [1]
+SpiritManagementWaRxStartupInit
+                        0x080022bf   0x42  Code  Gb  SPIRIT_Management.o [1]
+SpiritManagementWaTRxFcMem
+                        0x080023e7    0xc  Code  Gb  SPIRIT_Management.o [1]
+SpiritManagementWaVcoCalibration
+                        0x08002113  0x16a  Code  Gb  SPIRIT_Management.o [1]
+SpiritPktBasicAddressesInit
+                        0x0800639f   0xfe  Code  Gb  SPIRIT_PktBasic.o [1]
+SpiritPktBasicGetAddressField
+                        0x0800649d   0x2a  Code  Gb  SPIRIT_PktBasic.o [1]
+SpiritPktBasicInit      0x08006099  0x306  Code  Gb  SPIRIT_PktBasic.o [1]
+SpiritPktBasicSetPayloadLength
+                        0x080064c7   0x44  Code  Gb  SPIRIT_PktBasic.o [1]
+SpiritPktCommonFilterOnCrc
+                        0x08007805   0x6a  Code  Gb  SPIRIT_PktCommon.o [1]
+SpiritPktCommonGetControlLength
+                        0x080077e1   0x24  Code  Gb  SPIRIT_PktCommon.o [1]
+SpiritQiGetRssi         0x080065e7   0x1e  Code  Gb  SPIRIT_Qi.o [1]
+SpiritQiSetSqiThreshold
+                        0x0800657d   0x6a  Code  Gb  SPIRIT_Qi.o [1]
+SpiritQiSqiCheck        0x08006515   0x68  Code  Gb  SPIRIT_Qi.o [1]
+SpiritRadioAFCFreezeOnSync
+                        0x080012dd   0x60  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioGetBand      0x080009a5   0x4e  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioGetChannel   0x080009f3   0x1e  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioGetChannelSpace
+                        0x08000a11   0x26  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioGetDigDiv    0x08001427   0x2e  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioGetFrequencyBase
+                        0x08000cb9   0x62  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioGetFrequencyOffset
+                        0x08000a65   0x48  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioGetRefDiv    0x0800139f   0x2e  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioGetSynthWord
+                        0x08000969   0x3c  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioGetXtalFrequency
+                        0x08001455    0x6  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioInit         0x08000125  0x5fc  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioSearchChannelBwME
+                        0x08000e99  0x228  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioSearchDatarateME
+                        0x08000d35  0x15a  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioSearchFreqDevME
+                        0x080010c1  0x168  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioSearchWCP    0x08000791  0x1d8  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioSetDigDiv    0x080013cd   0x5a  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioSetFrequencyBase
+                        0x08000ac1  0x1f8  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioSetPACwc     0x0800127d   0x60  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioSetRefDiv    0x08001345   0x5a  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioSetXtalFlag  0x08000721   0x70  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRadioSetXtalFrequency
+                        0x0800145b    0x6  Code  Gb  SPIRIT_Radio.o [1]
+SpiritRefreshStatus     0x08001efd   0x12  Code  Gb  SPIRIT_Types.o [1]
+SpiritTimerComputeRxTimeoutValues
+                        0x08006635  0x15c  Code  Gb  SPIRIT_Timer.o [1]
+SpiritTimerSetRxTimeoutMs
+                        0x0800660d   0x28  Code  Gb  SPIRIT_Timer.o [1]
+SpiritTimerSetRxTimeoutStopCondition
+                        0x08006791   0xba  Code  Gb  SPIRIT_Timer.o [1]
+SysTick_CLKSourceConfig
+                        0x08005569   0x36  Code  Gb  misc.o [1]
+SysTick_Config          0x080053fb   0x30  Code  Lc  SDK_EVAL_Timers.o [1]
+SysTick_Handler         0x0800542b   0x16  Code  Gb  SDK_EVAL_Timers.o [1]
+SystemCoreClock         0x20000100    0x4  Data  Gb  system_stm32l1xx.o [1]
+SystemInit              0x080078f1   0x52  Code  Gb  system_stm32l1xx.o [1]
+SysyTickCnt             0x20000248    0x4  Data  Gb  SDK_EVAL_Timers.o [1]
+TI1_Config              0x080075d9   0x38  Code  Lc  stm32l1xx_tim.o [1]
+TI2_Config              0x08007611   0x42  Code  Lc  stm32l1xx_tim.o [1]
+TI3_Config              0x08007653   0x40  Code  Lc  stm32l1xx_tim.o [1]
+TI4_Config              0x08007693   0x42  Code  Lc  stm32l1xx_tim.o [1]
+TIM3_IRQHandler         0x0800575d   0x46  Code  Gb  SPIRIT_SDK_Application.o [1]
+TIM4_IRQHandler         0x080057a3   0x46  Code  Gb  SPIRIT_SDK_Application.o [1]
+TIM_ClearITPendingBit   0x0800753f   0x6e  Code  Gb  stm32l1xx_tim.o [1]
+TIM_Cmd                 0x08007079   0x74  Code  Gb  stm32l1xx_tim.o [1]
+TIM_GetCapture2         0x0800721f   0x30  Code  Gb  stm32l1xx_tim.o [1]
+TIM_GetITStatus         0x0800748b   0xb4  Code  Gb  stm32l1xx_tim.o [1]
+TIM_ICInit              0x0800710d  0x112  Code  Gb  stm32l1xx_tim.o [1]
+TIM_ITConfig            0x080073f1   0x9a  Code  Gb  stm32l1xx_tim.o [1]
+TIM_SetIC1Prescaler     0x08007255   0x76  Code  Gb  stm32l1xx_tim.o [1]
+TIM_SetIC2Prescaler     0x080072cb   0x68  Code  Gb  stm32l1xx_tim.o [1]
+TIM_SetIC3Prescaler     0x08007333   0x5e  Code  Gb  stm32l1xx_tim.o [1]
+TIM_SetIC4Prescaler     0x08007391   0x60  Code  Gb  stm32l1xx_tim.o [1]
+UARTBuff                0x20000218    0xc  Data  Gb  Base_Station.o [1]
+USART1_IRQHandler       0x08007feb   0x66  Code  Gb  stm32l1xx_it.o [1]
+USART1_Init             0x08003811   0x88  Code  Gb  Base_Station.o [1]
+USART_Cmd               0x0800509d   0x5e  Code  Gb  stm32l1xx_usart.o [1]
+USART_GetFlagStatus     0x08005241   0x84  Code  Gb  stm32l1xx_usart.o [1]
+USART_GetITStatus       0x080052cd   0xf4  Code  Gb  stm32l1xx_usart.o [1]
+USART_ITConfig          0x08005141   0xf4  Code  Gb  stm32l1xx_usart.o [1]
+USART_Init              0x08004eed  0x1b0  Code  Gb  stm32l1xx_usart.o [1]
+USART_SendData          0x080050fb   0x46  Code  Gb  stm32l1xx_usart.o [1]
+USB_LP_IRQHandler       0x08007fe9    0x2  Code  Gb  stm32l1xx_it.o [1]
+UsageFault_Handler      0x08007fe1    0x2  Code  Gb  stm32l1xx_it.o [1]
+_GenldFull              0x080045e7  0x264  Code  Lc  xprintffull.o [3]
+_LdtobFull              0x080041e5  0x3fc  Code  Lc  xprintffull.o [3]
+_LitobFull              0x080040df  0x106  Code  Lc  xprintffull.o [3]
+_PrintfFull             0x08003ae5  0x586  Code  Gb  xprintffull.o [3]
+_Prout                  0x08008881   0x16  Code  Gb  xprout.o [3]
+_PutcharsFull           0x0800484b   0x2e  Code  Lc  xprintffull.o [3]
+__aeabi_cdcmple         0x08006dfd         Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x08006e2d         Code  Gb  DblCmpGe.o [4]
+__aeabi_cfcmple         0x08006b65         Code  Gb  FltCmpLe.o [4]
+__aeabi_cfrcmple        0x080077bd         Code  Gb  FltCmpGe.o [4]
+__aeabi_d2f             0x080069fd         Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz            0x08001e89         Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x08001eb5         Code  Gb  DblToI32.o [4]
+__aeabi_dadd            0x08003399         Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x08001c11         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x080025c9         Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x08004895         Code  Gb  DblSub.o [4]
+__aeabi_f2d             0x080069ad         Code  Gb  FltToDbl.o [4]
+__aeabi_f2uiz           0x08006b89         Code  Gb  FltToU32.o [4]
+__aeabi_fdiv            0x080068b1         Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x08006a8d         Code  Gb  FltMul.o [4]
+__aeabi_fsub            0x080076d5         Code  Gb  FltSub.o [4]
+__aeabi_i2d             0x08001be1         Code  Gb  I32ToDbl.o [4]
+__aeabi_i2f             0x0800687d         Code  Gb  I32ToFlt.o [4]
+__aeabi_ldiv0           0x08007879         Code  Gb  I64DivZer.o [5]
+__aeabi_ui2d            0x08001bf5         Code  Gb  I32ToDbl.o [4]
+__aeabi_ui2f            0x08006891         Code  Gb  I32ToFlt.o [4]
+__aeabi_uldivmod        0x08006c55         Code  Gb  I64DivMod.o [5]
+__cmain                 0x08008825         Code  Gb  cmain.o [5]
+__dwrite                0x08008759   0x1e  Code  Gb  dwrite.o [6]
+__exit                  0x08008855   0x14  Code  Gb  exit.o [6]
+__iar_Dint              0x08003319   0x7e  Code  Gb  xdint.o [4]
+__iar_Dnorm             0x08006dbb   0x42  Code  Gb  xdnorm.o [4]
+__iar_Dscale            0x08006e5d  0x110  Code  Gb  xdscale.o [4]
+__iar_Memchr            0x08006bfd         Code  Gb  memchr.o [5]
+__iar_Strchr            0x08006bad         Code  Gb  strchr.o [5]
+__iar_close_ttio        0x08008621   0x2e  Code  Gb  iarttio.o [6]
+__iar_copy_init3        0x080086f5   0x2c  Code  Gb  copy_init3.o [5]
+__iar_d2uiz             0x08001ec1         Code  Gb  DblToI32.o [4]
+__iar_dadd              0x080033ad         Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x080087b9   0x28  Code  Gb  data_init.o [5]
+__iar_dsub              0x080048a9         Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x080048bb         Code  Gb  DblSub.o [4]
+__iar_fadd              0x0800787d         Code  Gb  FltAdd.o [4]
+__iar_fsub              0x080076e5         Code  Gb  FltSub.o [4]
+__iar_fsubStart         0x080076f5         Code  Gb  FltSub.o [4]
+__iar_get_ttio          0x08008651   0x38  Code  Gb  iarttio.o [6]
+__iar_lookup_ttioh      0x0800868d    0x8  Code  Gb  XShttio.o [3]
+__iar_program_start     0x080088d1         Code  Gb  cstartup_M.o [5]
+__iar_sh_stdout         0x08008777   0x20  Code  Gb  iarwstd.o [6]
+__iar_sh_write          0x08008797   0x22  Code  Gb  iarwrite.o [6]
+__iar_ttio_handles      0x200000f0    0x8  Data  Lc  XShttio.o [3]
+__iar_ui2d              0x08001bf9         Code  Gb  I32ToDbl.o [4]
+__iar_ui2f              0x08006895         Code  Gb  I32ToFlt.o [4]
+__iar_unaligned___aeabi_memcpy
+                        0x08006d45         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy4
+                        0x08006d65         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy8
+                        0x08006d65         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_zero_init3        0x08001e67   0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0800883f    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32l1xx_hd.o [1]
+__write                 0x08008749   0x10  Code  Gb  write.o [6]
+_call_main              0x08008831         Code  Gb  cmain.o [5]
+_exit                   0x08008849         Code  Gb  cexit.o [5]
+_main                   0x0800883b         Code  Gb  cmain.o [5]
+assert_failed           0x08003a63   0x12  Code  Gb  Base_Station.o [1]
+bajty                   0x20000261    0x1  Data  Gb  Base_Station.o [1]
+cRxData                 0x20000260    0x1  Data  Gb  Base_Station.o [1]
+command_buffer          0x200001dc   0x3c  Data  Gb  Base_Station.o [1]
+command_index           0x20000228    0x4  Data  Gb  Base_Station.o [1]
+command_size            0x200000fc    0x4  Data  Gb  Base_Station.o [1]
+command_transfer        0x08003635   0x96  Code  Gb  Base_Station.o [1]
+convert_into_char       0x080038af   0xf6  Code  Gb  Base_Station.o [1]
+crc                     0x2000025e    0x1  Data  Gb  Base_Station.o [1]
+div                     0x08006f6d    0xe  Code  Gb  div.o [3]
+dziesiatki              0x2000025d    0x1  Data  Gb  Base_Station.o [1]
+exit                    0x08008843    0x4  Code  Gb  exit.o [3]
+g_xStatus               0x20000258    0x4  Data  Gb  SPIRIT_Types.o [1]
+jednostki               0x2000025c    0x1  Data  Gb  Base_Station.o [1]
+lSystickCounter         0x2000024c    0x4  Data  Gb  SDK_EVAL_Timers.o [1]
+main                    0x080036f5  0x11c  Code  Gb  Base_Station.o [1]
+memchr                  0x08006bfd         Code  Gb  memchr.o [5]
+printf                  0x08003265   0x24  Code  Gb  printf.o [3]
+putchar                 0x08008721   0x28  Code  Gb  putchar.o [3]
+round                   0x0800276d   0x44  Code  Gb  round.o [4]
+s_SdkEvalVersion        0x20000104    0x1  Data  Lc  SDK_EVAL_Config.o [1]
+s_SpiPort               0x2000023c    0x4  Data  Lc  SDK_EVAL_Spi_Driver.o [1]
+s_SpiPortVersion        0x200000c4    0xc  Data  Lc  SDK_EVAL_Spi_Driver.o [1]
+s_assert_failed         0x08001ee1   0x1c  Code  Gb  SPIRIT_Types.o [1]
+s_cCommunicationState   0x20000106    0x1  Data  Lc  SPIRIT_Management.o [1]
+s_lXtalFrequency        0x20000254    0x4  Data  Lc  SPIRIT_Radio.o [1]
+s_nDesiredFrequency     0x20000250    0x4  Data  Lc  SPIRIT_Management.o [1]
+s_vectcBHalfFactor      0x080088f0    0x4  Data  Lc  SPIRIT_Management.o [1]
+s_vectcBHalfFactor      0x080088f4    0x4  Data  Lc  SPIRIT_Radio.o [1]
+s_vectcBandRegValue     0x080088ec    0x4  Data  Lc  SPIRIT_Management.o [1]
+s_vectcBandRegValue     0x080088f8    0x4  Data  Lc  SPIRIT_Radio.o [1]
+s_vectcM2SGpioExtiIrqn  0x08006bc3    0x1  Data  Lc  SDK_EVAL_Gpio.o [1]
+s_vectcM2SGpioExtiPinSource
+                        0x080069fa    0x1  Data  Lc  SDK_EVAL_Gpio.o [1]
+s_vectcM2SGpioExtiPortSource
+                        0x080068ae    0x2  Data  Lc  SDK_EVAL_Gpio.o [1]
+s_vectlGpioClk          0x20000238    0x4  Data  Lc  SDK_EVAL_Led.o [1]
+s_vectlGpioClkVersion   0x08008868   0x18  Data  Lc  SDK_EVAL_Led.o [1]
+s_vectlM2SExtiLine      0x080088e8    0x4  Data  Lc  SDK_EVAL_Gpio.o [1]
+s_vectlM2SGpioClk       0x08008898   0x10  Data  Lc  SDK_EVAL_Gpio.o [1]
+s_vectnBandwidth26M     0x08007a64   0xb4  Data  Lc  SPIRIT_Radio.o [1]
+s_vectnGpioPin          0x20000234    0x4  Data  Lc  SDK_EVAL_Led.o [1]
+s_vectnGpioPinVersion   0x080088b8    0xc  Data  Lc  SDK_EVAL_Led.o [1]
+s_vectnM2SGpioPin       0x080088e4    0x4  Data  Lc  SDK_EVAL_Gpio.o [1]
+s_vectnSpiPin           0x20000244    0x4  Data  Lc  SDK_EVAL_Spi_Driver.o [1]
+s_vectnVCOFreq          0x08008804   0x20  Data  Lc  SPIRIT_Radio.o [1]
+s_vectpxSpiCsPinVersion
+                        0x080088dc    0x8  Data  Lc  SDK_EVAL_Spi_Driver.o [1]
+s_vectpxSpiCsPortVersion
+                        0x200000d0    0xc  Data  Gb  SDK_EVAL_Spi_Driver.o [1]
+s_vectpxSpiPort         0x20000240    0x4  Data  Lc  SDK_EVAL_Spi_Driver.o [1]
+s_vectxM2SGpioExtiTrigger
+                        0x08006bc2    0x1  Data  Lc  SDK_EVAL_Gpio.o [1]
+s_vectxM2SGpioOType     0x08004892    0x2  Data  Lc  SDK_EVAL_Gpio.o [1]
+s_vectxM2SGpioPuPd      0x08003396    0x2  Data  Lc  SDK_EVAL_Gpio.o [1]
+s_vectxM2SGpioSpeed     0x0800276a    0x2  Data  Lc  SDK_EVAL_Gpio.o [1]
+s_vectxM2sGpioExtiMode  0x080069fb    0x1  Data  Lc  SDK_EVAL_Gpio.o [1]
+s_xSpiritVersion        0x20000105    0x1  Data  Lc  SPIRIT_General.o [1]
+s_xTIMChCompareModeRaised
+                        0x20000262    0x1  Data  Lc  SPIRIT_SDK_Application.o [1]
+start_buffer            0x20000000   0x60  Data  Gb  Base_Station.o [1]
+start_sequence          0x080036cb   0x2a  Code  Gb  Base_Station.o [1]
+strchr                  0x08006bad         Code  Gb  strchr.o [5]
+strlen                  0x08006bc5         Code  Gb  strlen.o [5]
+transfer                0x2000022c    0x4  Data  Gb  Base_Station.o [1]
+vectcRxBuff             0x20000108   0xd4  Data  Gb  Base_Station.o [1]
+vectpxGpioPort          0x20000230    0x4  Data  Lc  SDK_EVAL_Led.o [1]
+vectpxGpioPortVersion   0x2000007c   0x18  Data  Gb  SDK_EVAL_Led.o [1]
+vectpxM2SGpioPort       0x200000a4   0x10  Data  Gb  SDK_EVAL_Gpio.o [1]
+xAddressInit            0x200000e8    0x8  Data  Gb  Base_Station.o [1]
+xBasicInit              0x20000094   0x10  Data  Gb  Base_Station.o [1]
+xGpioIRQ                0x200000f8    0x4  Data  Gb  Base_Station.o [1]
+xIrqStatus              0x20000224    0x4  Data  Gb  Base_Station.o [1]
+xRadioInit              0x20000060   0x1c  Data  Gb  Base_Station.o [1]
+xSpiritVersionMap       0x080088c4    0xc  Data  Gb  SPIRIT_SDK_Application.o [1]
+xTxDoneFlag             0x2000025f    0x1  Data  Gb  Base_Station.o [1]
+
+
+[1] = E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  32 138 bytes of readonly  code memory
+   3 414 bytes of readonly  data memory
+   2 658 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

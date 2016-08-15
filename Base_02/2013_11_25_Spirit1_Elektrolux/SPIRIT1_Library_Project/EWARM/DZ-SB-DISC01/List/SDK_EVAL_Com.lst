@@ -1,0 +1,411 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.2.8542/W32 for ARM        20/Nov/2015  05:05:23
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\STM32L\SDK_Eval_STM32L\Source\src\SDK_EVAL_Com.c
+#    Command line =  
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\STM32L\SDK_Eval_STM32L\Source\src\SDK_EVAL_Com.c
+#        -D USE_STDPERIPH_DRIVER -D VECT_TAB_FLASH -D STM32L1XX_MD -D
+#        IAR_ARM_CM3 -D USE_FULL_ASSERT -D SPIRIT_USE_FULL_ASSERT -D
+#        USE_SYSTICK_DELAY -D SDK -lC
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\List\
+#        -o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Normal.h" -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\.\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\Application\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\Application\examples\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\Application\runtime\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\SDK_Eval_STM32L\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\SPIRIT1_Library\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\SDK_Eval_Util\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\STM32L1xx_StdPeriph_Lib\Source\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\STM32L1xx_StdPeriph_Lib\Source\STM32L1xx_StdPeriph_Driver\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\SDK_Virtual_Com\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\STM32_USB-FS-Device_Lib\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\ACQ\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\List\SDK_EVAL_Com.lst
+#    Object file  =  
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\SDK_EVAL_Com.o
+#
+###############################################################################
+
+E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\STM32L\SDK_Eval_STM32L\Source\src\SDK_EVAL_Com.c
+      1          /**
+      2           * @file    SDK_EVAL_Com.c
+      3           * @author  High End Analog & RF BU - AMS / ART Team IMS-Systems Lab
+      4           * @version V3.0.0
+      5           * @date    August 7, 2012
+      6           * @brief   This file provides all the low level API to manage SDK UART.
+      7           * @details
+      8           *
+      9           * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+     10           * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
+     11           * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
+     12           * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
+     13           * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
+     14           * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+     15           *
+     16           * THIS SOURCE CODE IS PROTECTED BY A LICENSE.
+     17           * FOR MORE INFORMATION PLEASE CAREFULLY READ THE LICENSE AGREEMENT FILE LOCATED
+     18           * IN THE ROOT DIRECTORY OF THIS FIRMWARE PACKAGE.
+     19           *
+     20           * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+     21           */
+     22          
+     23          
+     24          /* Includes ------------------------------------------------------------------*/
+     25          #include "SDK_EVAL_Com.h"
+     26          
+     27          
+     28          /** @addtogroup SDK_EVAL_STM32L
+     29           * @{
+     30           */
+     31          
+     32          
+     33          /** @addtogroup SDK_EVAL_Com
+     34           * @{
+     35           */
+     36          
+     37          
+     38          /** @defgroup SDK_EVAL_Com_Private_TypesDefinitions             SDK EVAL Com Private Types Definitions
+     39           * @{
+     40           */
+     41          
+     42          /**
+     43           * @}
+     44           */
+     45          
+     46          
+     47          /** @defgroup SDK_EVAL_Com_Private_Defines                      SDK EVAL Com Private Defines
+     48           * @{
+     49           */
+     50          
+     51          /**
+     52           * @}
+     53           */
+     54          
+     55          
+     56          /** @defgroup SDK_EVAL_Com_Private_Macros                       SDK EVAL Com Private Macros
+     57           * @{
+     58           */
+     59          
+     60          /**
+     61           * @}
+     62           */
+     63          
+     64          /** @defgroup SDK_EVAL_Com_Private_Variables                    SDK EVAL Com Private Variables
+     65           * @{
+     66           */
+     67          
+     68          
+
+   \                                 In section .data, align 4
+     69          USART_TypeDef* vectpxComUsart[COMn] = {EVAL_COM1};
+   \                     vectpxComUsart:
+   \   00000000   0x40004400         DC32 40004400H
+     70          
+
+   \                                 In section .data, align 4
+     71          GPIO_TypeDef* vectpxComTxPort[COMn] = {EVAL_COM1_TX_GPIO_PORT};
+   \                     vectpxComTxPort:
+   \   00000000   0x40020000         DC32 40020000H
+     72          
+
+   \                                 In section .data, align 4
+     73          GPIO_TypeDef* vectpxComRxPort[COMn] = {EVAL_COM1_RX_GPIO_PORT};
+   \                     vectpxComRxPort:
+   \   00000000   0x40020000         DC32 40020000H
+     74          
+
+   \                                 In section .rodata, align 4
+     75          static const uint32_t s_vectlComUsartClk[COMn] = {EVAL_COM1_CLK};
+   \                     s_vectlComUsartClk:
+   \   00000000   0x00020000         DC32 131072
+     76          
+
+   \                                 In section .rodata, align 4
+     77          static const uint32_t s_vectlComTxPortClk[COMn] = {EVAL_COM1_TX_GPIO_CLK};
+   \                     s_vectlComTxPortClk:
+   \   00000000   0x00000001         DC32 1
+     78          
+
+   \                                 In section .rodata, align 4
+     79          static const uint32_t s_vectlComRxPortClk[COMn] = {EVAL_COM1_RX_GPIO_CLK};
+   \                     s_vectlComRxPortClk:
+   \   00000000   0x00000001         DC32 1
+     80          
+
+   \                                 In section .rodata, align 2
+     81          static const uint16_t s_vectnComTxPin[COMn] = {EVAL_COM1_TX_PIN};
+   \                     s_vectnComTxPin:
+   \   00000000   0x0004             DC16 4
+     82          
+
+   \                                 In section .rodata, align 2
+     83          static const uint16_t s_vectnComRxPin[COMn] = {EVAL_COM1_RX_PIN};
+   \                     s_vectnComRxPin:
+   \   00000000   0x0008             DC16 8
+     84          
+
+   \                                 In section .rodata, align 2
+     85          static const uint16_t s_vectnComTxPinSource[COMn] = {EVAL_COM1_TX_SOURCE};
+   \                     s_vectnComTxPinSource:
+   \   00000000   0x0002             DC16 2
+     86          
+
+   \                                 In section .rodata, align 2
+     87          static const uint16_t s_vectnComRxPinSource[COMn] = {EVAL_COM1_RX_SOURCE};
+   \                     s_vectnComRxPinSource:
+   \   00000000   0x0003             DC16 3
+     88          
+
+   \                                 In section .rodata, align 2
+     89          static const uint16_t s_vectnComTxAF[COMn] = {EVAL_COM1_TX_AF};
+   \                     s_vectnComTxAF:
+   \   00000000   0x0007             DC16 7
+     90          
+
+   \                                 In section .rodata, align 2
+     91          static const uint16_t s_vectnComRxAF[COMn] = {EVAL_COM1_RX_AF};
+   \                     s_vectnComRxAF:
+   \   00000000   0x0007             DC16 7
+     92          
+     93          
+     94          /**
+     95           * @}
+     96           */
+     97          
+     98          
+     99          /** @defgroup SDK_EVAL_Com_Private_FunctionPrototypes                   SDK EVAL Com Private Function Prototypes
+    100           * @{
+    101           */
+    102          
+    103          /**
+    104           * @}
+    105           */
+    106          
+    107          
+    108          /** @defgroup SDK_EVAL_Com_Private_Functions                            SDK EVAL Com Private Functions
+    109           * @{
+    110           */
+    111          
+    112          /**
+    113           * @brief  Configures COM port.
+    114           * @param  xCom Specifies the COM port to be configured.
+    115           *         This parameter can be one of following parameters:
+    116           *         @arg COM1
+    117           *         @arg COM2
+    118           * @param  xUsartInit pointer to a USART_InitTypeDef structure that
+    119           *         contains the configuration information for the specified USART peripheral.
+    120           * @retval None.
+    121           */
+
+   \                                 In section .text, align 4, keep-with-next
+    122          void SdkEvalComInit(SdkEvalCom xCom, USART_InitTypeDef* xUsartInit)
+    123          {
+   \                     SdkEvalComInit: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+    124            GPIO_InitTypeDef GPIO_InitStructure;
+    125          
+    126            /* Enable GPIO clock */
+    127            RCC_AHBPeriphClockCmd(s_vectlComTxPortClk[xCom] | s_vectlComRxPortClk[xCom], ENABLE);
+   \   00000008   0x2101             MOVS     R1,#+1
+   \   0000000A   0x4831             LDR.N    R0,??SdkEvalComInit_0
+   \   0000000C   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000000E   0xF850 0x0024      LDR      R0,[R0, R4, LSL #+2]
+   \   00000012   0x4A30             LDR.N    R2,??SdkEvalComInit_0+0x4
+   \   00000014   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000016   0xF852 0x2024      LDR      R2,[R2, R4, LSL #+2]
+   \   0000001A   0x4310             ORRS     R0,R2,R0
+   \   0000001C   0x.... 0x....      BL       RCC_AHBPeriphClockCmd
+    128          
+    129            /* Enable UART clock */
+    130            RCC_APB1PeriphClockCmd(s_vectlComUsartClk[xCom], ENABLE);
+   \   00000020   0x2101             MOVS     R1,#+1
+   \   00000022   0x482D             LDR.N    R0,??SdkEvalComInit_0+0x8
+   \   00000024   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000026   0xF850 0x0024      LDR      R0,[R0, R4, LSL #+2]
+   \   0000002A   0x.... 0x....      BL       RCC_APB1PeriphClockCmd
+    131          
+    132            /* Connect PXx to USARTx_Tx*/
+    133            GPIO_PinAFConfig(vectpxComTxPort[xCom], s_vectnComTxPinSource[xCom], s_vectnComTxAF[xCom]);
+   \   0000002E   0x482B             LDR.N    R0,??SdkEvalComInit_0+0xC
+   \   00000030   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000032   0xF830 0x2014      LDRH     R2,[R0, R4, LSL #+1]
+   \   00000036   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000038   0x4829             LDR.N    R0,??SdkEvalComInit_0+0x10
+   \   0000003A   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000003C   0xF830 0x1014      LDRH     R1,[R0, R4, LSL #+1]
+   \   00000040   0x4828             LDR.N    R0,??SdkEvalComInit_0+0x14
+   \   00000042   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000044   0xF850 0x0024      LDR      R0,[R0, R4, LSL #+2]
+   \   00000048   0x.... 0x....      BL       GPIO_PinAFConfig
+    134          
+    135            /* Connect PXx to USARTx_Rx*/
+    136            GPIO_PinAFConfig(vectpxComRxPort[xCom], s_vectnComRxPinSource[xCom], s_vectnComRxAF[xCom]);
+   \   0000004C   0x4826             LDR.N    R0,??SdkEvalComInit_0+0x18
+   \   0000004E   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000050   0xF830 0x2014      LDRH     R2,[R0, R4, LSL #+1]
+   \   00000054   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000056   0x4825             LDR.N    R0,??SdkEvalComInit_0+0x1C
+   \   00000058   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000005A   0xF830 0x1014      LDRH     R1,[R0, R4, LSL #+1]
+   \   0000005E   0x4824             LDR.N    R0,??SdkEvalComInit_0+0x20
+   \   00000060   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000062   0xF850 0x0024      LDR      R0,[R0, R4, LSL #+2]
+   \   00000066   0x.... 0x....      BL       GPIO_PinAFConfig
+    137          
+    138            /* Configure USART Tx as alternate function push-pull */
+    139            GPIO_InitStructure.GPIO_Pin = s_vectnComTxPin[xCom];
+   \   0000006A   0x4822             LDR.N    R0,??SdkEvalComInit_0+0x24
+   \   0000006C   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000006E   0xF830 0x0014      LDRH     R0,[R0, R4, LSL #+1]
+   \   00000072   0x9000             STR      R0,[SP, #+0]
+    140            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+   \   00000074   0x2002             MOVS     R0,#+2
+   \   00000076   0xF88D 0x0004      STRB     R0,[SP, #+4]
+    141            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_40MHz;
+   \   0000007A   0x2003             MOVS     R0,#+3
+   \   0000007C   0xF88D 0x0005      STRB     R0,[SP, #+5]
+    142            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+   \   00000080   0x2000             MOVS     R0,#+0
+   \   00000082   0xF88D 0x0006      STRB     R0,[SP, #+6]
+    143            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+   \   00000086   0x2001             MOVS     R0,#+1
+   \   00000088   0xF88D 0x0007      STRB     R0,[SP, #+7]
+    144            GPIO_Init(vectpxComTxPort[xCom], &GPIO_InitStructure);
+   \   0000008C   0xA900             ADD      R1,SP,#+0
+   \   0000008E   0x4815             LDR.N    R0,??SdkEvalComInit_0+0x14
+   \   00000090   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000092   0xF850 0x0024      LDR      R0,[R0, R4, LSL #+2]
+   \   00000096   0x.... 0x....      BL       GPIO_Init
+    145          
+    146            /* Configure USART Rx as input floating */
+    147            GPIO_InitStructure.GPIO_Pin = s_vectnComRxPin[xCom];
+   \   0000009A   0x4817             LDR.N    R0,??SdkEvalComInit_0+0x28
+   \   0000009C   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000009E   0xF830 0x0014      LDRH     R0,[R0, R4, LSL #+1]
+   \   000000A2   0x9000             STR      R0,[SP, #+0]
+    148            GPIO_Init(vectpxComRxPort[xCom], &GPIO_InitStructure);
+   \   000000A4   0xA900             ADD      R1,SP,#+0
+   \   000000A6   0x4812             LDR.N    R0,??SdkEvalComInit_0+0x20
+   \   000000A8   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   000000AA   0xF850 0x0024      LDR      R0,[R0, R4, LSL #+2]
+   \   000000AE   0x.... 0x....      BL       GPIO_Init
+    149          
+    150            /* USART configuration */
+    151            USART_Init(vectpxComUsart[xCom], xUsartInit);
+   \   000000B2   0x0029             MOVS     R1,R5
+   \   000000B4   0x4811             LDR.N    R0,??SdkEvalComInit_0+0x2C
+   \   000000B6   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   000000B8   0xF850 0x0024      LDR      R0,[R0, R4, LSL #+2]
+   \   000000BC   0x.... 0x....      BL       USART_Init
+    152          
+    153            /* Enable USART */
+    154            USART_Cmd(vectpxComUsart[xCom], ENABLE);
+   \   000000C0   0x2101             MOVS     R1,#+1
+   \   000000C2   0x480E             LDR.N    R0,??SdkEvalComInit_0+0x2C
+   \   000000C4   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   000000C6   0xF850 0x0024      LDR      R0,[R0, R4, LSL #+2]
+   \   000000CA   0x.... 0x....      BL       USART_Cmd
+    155          }
+   \   000000CE   0xBD37             POP      {R0-R2,R4,R5,PC}  ;; return
+   \                     ??SdkEvalComInit_0:
+   \   000000D0   0x........         DC32     s_vectlComTxPortClk
+   \   000000D4   0x........         DC32     s_vectlComRxPortClk
+   \   000000D8   0x........         DC32     s_vectlComUsartClk
+   \   000000DC   0x........         DC32     s_vectnComTxAF
+   \   000000E0   0x........         DC32     s_vectnComTxPinSource
+   \   000000E4   0x........         DC32     vectpxComTxPort
+   \   000000E8   0x........         DC32     s_vectnComRxAF
+   \   000000EC   0x........         DC32     s_vectnComRxPinSource
+   \   000000F0   0x........         DC32     vectpxComRxPort
+   \   000000F4   0x........         DC32     s_vectnComTxPin
+   \   000000F8   0x........         DC32     s_vectnComRxPin
+   \   000000FC   0x........         DC32     vectpxComUsart
+    156          
+    157          /**
+    158           * @}
+    159           */
+    160          
+    161          
+    162          /**
+    163           * @}
+    164           */
+    165          
+    166          
+    167          /**
+    168           * @}
+    169           */
+    170          
+    171          
+    172          /******************* (C) COPYRIGHT 2012 STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   SdkEvalComInit
+        24   -> GPIO_Init
+        24   -> GPIO_PinAFConfig
+        24   -> RCC_AHBPeriphClockCmd
+        24   -> RCC_APB1PeriphClockCmd
+        24   -> USART_Cmd
+        24   -> USART_Init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     256  SdkEvalComInit
+       4  s_vectlComRxPortClk
+       4  s_vectlComTxPortClk
+       4  s_vectlComUsartClk
+       2  s_vectnComRxAF
+       2  s_vectnComRxPin
+       2  s_vectnComRxPinSource
+       2  s_vectnComTxAF
+       2  s_vectnComTxPin
+       2  s_vectnComTxPinSource
+       4  vectpxComRxPort
+       4  vectpxComTxPort
+       4  vectpxComUsart
+
+ 
+  12 bytes in section .data
+  24 bytes in section .rodata
+ 256 bytes in section .text
+ 
+ 256 bytes of CODE  memory
+  24 bytes of CONST memory
+  12 bytes of DATA  memory
+
+Errors: none
+Warnings: none

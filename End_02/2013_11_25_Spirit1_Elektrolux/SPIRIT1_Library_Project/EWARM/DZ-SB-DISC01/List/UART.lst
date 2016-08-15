@@ -1,0 +1,204 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.70.1.5641/W32 for ARM      14/Mar/2014  09:34:41 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Libr #
+#                    ary_Project\Application\examples\BasicGeneric\UART.c     #
+#    Command line =  C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Libr #
+#                    ary_Project\Application\examples\BasicGeneric\UART.c -D  #
+#                    USE_STDPERIPH_DRIVER -D VECT_TAB_FLASH -D STM32L1XX_MD   #
+#                    -D IAR_ARM_CM3 -D USE_FULL_ASSERT -D                     #
+#                    SPIRIT_USE_FULL_ASSERT -D USE_SYSTICK_DELAY -D SDK -lC   #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Libr #
+#                    ary_Project\EWARM\DZ-SB-DISC01\List\ -o                  #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Libr #
+#                    ary_Project\EWARM\DZ-SB-DISC01\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Normal.h" -I                   #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Libr #
+#                    ary_Project\EWARM\.\ -I C:\Users\bzdegluk.PLY\Desktop\AC #
+#                    Q_SYS\Projekt_po_poprawie_ver01_z_ACQ\2013_11_25_Spirit1 #
+#                    _Elektrolux\SPIRIT1_Library_Project\EWARM\..\Application #
+#                    \ -I C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_po #
+#                    prawie_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1 #
+#                    _Library_Project\EWARM\..\Application\examples\ -I       #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Libr #
+#                    ary_Project\EWARM\..\Application\runtime\ -I             #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Libr #
+#                    ary_Project\EWARM\..\..\STM32L\SDK_Eval_STM32L\Source\in #
+#                    c\ -I C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_p #
+#                    oprawie_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT #
+#                    1_Library_Project\EWARM\..\SPIRIT1_Library\Source\inc\   #
+#                    -I C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_popr #
+#                    awie_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_L #
+#                    ibrary_Project\EWARM\..\SDK_Eval_Util\Source\inc\ -I     #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Libr #
+#                    ary_Project\EWARM\..\..\STM32L\STM32L1xx_StdPeriph_Lib\S #
+#                    ource\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\ -I           #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Libr #
+#                    ary_Project\EWARM\..\..\STM32L\STM32L1xx_StdPeriph_Lib\S #
+#                    ource\STM32L1xx_StdPeriph_Driver\inc\ -I                 #
+#                    C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Libr #
+#                    ary_Project\EWARM\..\..\STM32L\SDK_Virtual_Com\Source\in #
+#                    c\ -I C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_p #
+#                    oprawie_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT #
+#                    1_Library_Project\EWARM\..\..\STM32L\STM32_USB-FS-Device #
+#                    _Lib\Source\inc\ -On --use_c++_inline -I "C:\Program     #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Libr #
+#                    ary_Project\EWARM\DZ-SB-DISC01\List\UART.lst             #
+#    Object file  =  C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawi #
+#                    e_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Libr #
+#                    ary_Project\EWARM\DZ-SB-DISC01\Obj\UART.o                #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie_ver01_z_ACQ\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\Application\examples\BasicGeneric\UART.c
+      1           
+      2          #include "stm32l1xx_gpio.h"
+      3          
+      4          
+
+   \                                 In section .text, align 4, keep-with-next
+      5          void USART_Conf(void)
+      6          {
+   \                     USART_Conf: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB087             SUB      SP,SP,#+28
+      7            GPIO_InitTypeDef GPIO_InitStructure;
+      8             /* USART Tx as alternate function push-pull */
+      9             GPIO_InitStructure.GPIO_Pin   = GPIO_Pin_9; /* PA.09 USART1.TX */
+   \   00000004   0xF44F 0x7000      MOV      R0,#+512
+   \   00000008   0x9000             STR      R0,[SP, #+0]
+     10             GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_AF;
+   \   0000000A   0x2002             MOVS     R0,#+2
+   \   0000000C   0xF88D 0x0004      STRB     R0,[SP, #+4]
+     11             GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+   \   00000010   0x2000             MOVS     R0,#+0
+   \   00000012   0xF88D 0x0006      STRB     R0,[SP, #+6]
+     12             GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
+   \   00000016   0x2000             MOVS     R0,#+0
+   \   00000018   0xF88D 0x0007      STRB     R0,[SP, #+7]
+     13             GPIO_InitStructure.GPIO_Speed = GPIO_Speed_40MHz;
+   \   0000001C   0x2003             MOVS     R0,#+3
+   \   0000001E   0xF88D 0x0005      STRB     R0,[SP, #+5]
+     14             GPIO_Init(GPIOA, &GPIO_InitStructure);
+   \   00000022   0xA900             ADD      R1,SP,#+0
+   \   00000024   0x481B             LDR.N    R0,??USART_Conf_0  ;; 0x40020000
+   \   00000026   0x.... 0x....      BL       GPIO_Init
+     15          
+     16             /* USART Rx as input floating */
+     17             GPIO_InitStructure.GPIO_Pin   = GPIO_Pin_10; /* PA.10 USART1.RX */
+   \   0000002A   0xF44F 0x6080      MOV      R0,#+1024
+   \   0000002E   0x9000             STR      R0,[SP, #+0]
+     18             GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_AF;
+   \   00000030   0x2002             MOVS     R0,#+2
+   \   00000032   0xF88D 0x0004      STRB     R0,[SP, #+4]
+     19             GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+   \   00000036   0x2000             MOVS     R0,#+0
+   \   00000038   0xF88D 0x0006      STRB     R0,[SP, #+6]
+     20             GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
+   \   0000003C   0x2000             MOVS     R0,#+0
+   \   0000003E   0xF88D 0x0007      STRB     R0,[SP, #+7]
+     21             GPIO_InitStructure.GPIO_Speed = GPIO_Speed_40MHz;
+   \   00000042   0x2003             MOVS     R0,#+3
+   \   00000044   0xF88D 0x0005      STRB     R0,[SP, #+5]
+     22             GPIO_Init(GPIOA, &GPIO_InitStructure);
+   \   00000048   0xA900             ADD      R1,SP,#+0
+   \   0000004A   0x4812             LDR.N    R0,??USART_Conf_0  ;; 0x40020000
+   \   0000004C   0x.... 0x....      BL       GPIO_Init
+     23            
+     24            
+     25          	USART_InitTypeDef USART_InitStructure;
+     26          
+     27          	USART_InitStructure.USART_BaudRate = 9600;
+   \   00000050   0xF44F 0x5016      MOV      R0,#+9600
+   \   00000054   0x9002             STR      R0,[SP, #+8]
+     28          	USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+   \   00000056   0x2000             MOVS     R0,#+0
+   \   00000058   0xF8AD 0x000C      STRH     R0,[SP, #+12]
+     29          	USART_InitStructure.USART_StopBits = USART_StopBits_1;
+   \   0000005C   0x2000             MOVS     R0,#+0
+   \   0000005E   0xF8AD 0x000E      STRH     R0,[SP, #+14]
+     30          	USART_InitStructure.USART_Parity = USART_Parity_No;
+   \   00000062   0x2000             MOVS     R0,#+0
+   \   00000064   0xF8AD 0x0010      STRH     R0,[SP, #+16]
+     31          	USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+   \   00000068   0x2000             MOVS     R0,#+0
+   \   0000006A   0xF8AD 0x0014      STRH     R0,[SP, #+20]
+     32          	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+   \   0000006E   0x200C             MOVS     R0,#+12
+   \   00000070   0xF8AD 0x0012      STRH     R0,[SP, #+18]
+     33          	USART_Init(USART1, &USART_InitStructure);
+   \   00000074   0xA902             ADD      R1,SP,#+8
+   \   00000076   0x4808             LDR.N    R0,??USART_Conf_0+0x4  ;; 0x40013800
+   \   00000078   0x.... 0x....      BL       USART_Init
+     34          
+     35          	 /* Enable the EVAL_COM1 Transmoit interrupt: this interrupt is generated when the
+     36          	     EVAL_COM1 transmit data register is empty */
+     37          //	USART_ITConfig(USART1, USART_IT_TXE, ENABLE);
+     38          
+     39          	  /* Enable the EVAL_COM1 Receive interrupt: this interrupt is generated when the
+     40          	     EVAL_COM1 receive data register is not empty */
+     41          	USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+   \   0000007C   0x2201             MOVS     R2,#+1
+   \   0000007E   0xF240 0x5125      MOVW     R1,#+1317
+   \   00000082   0x4805             LDR.N    R0,??USART_Conf_0+0x4  ;; 0x40013800
+   \   00000084   0x.... 0x....      BL       USART_ITConfig
+     42          
+     43          	USART_Cmd(USART1, ENABLE);
+   \   00000088   0x2101             MOVS     R1,#+1
+   \   0000008A   0x4803             LDR.N    R0,??USART_Conf_0+0x4  ;; 0x40013800
+   \   0000008C   0x.... 0x....      BL       USART_Cmd
+     44          
+     45          }
+   \   00000090   0xB007             ADD      SP,SP,#+28
+   \   00000092   0xBD00             POP      {PC}             ;; return
+   \                     ??USART_Conf_0:
+   \   00000094   0x40020000         DC32     0x40020000
+   \   00000098   0x40013800         DC32     0x40013800
+     46          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   USART_Conf
+        32   -> GPIO_Init
+        32   -> USART_Cmd
+        32   -> USART_ITConfig
+        32   -> USART_Init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     156  USART_Conf
+
+ 
+ 156 bytes in section .text
+ 
+ 156 bytes of CODE memory
+
+Errors: none
+Warnings: none

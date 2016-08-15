@@ -1,0 +1,66 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.2.8542/W32 for ARM        16/Nov/2015  17:27:00
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\Serwer\Serwer.cpp
+#    Command line =  
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\Serwer\Serwer.cpp
+#        -D USE_STDPERIPH_DRIVER -D VECT_TAB_FLASH -D STM32L1XX_MD -D
+#        IAR_ARM_CM3 -D USE_FULL_ASSERT -D SPIRIT_USE_FULL_ASSERT -D
+#        USE_SYSTICK_DELAY -D SDK -lC
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\List\
+#        -o
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Normal.h" -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\.\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\Application\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\Application\examples\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\Application\runtime\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\SDK_Eval_STM32L\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\SPIRIT1_Library\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\SDK_Eval_Util\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\STM32L1xx_StdPeriph_Lib\Source\CMSIS\CM3\DeviceSupport\ST\STM32L1xx\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\STM32L1xx_StdPeriph_Lib\Source\STM32L1xx_StdPeriph_Driver\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\SDK_Virtual_Com\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\..\STM32L\STM32_USB-FS-Device_Lib\Source\inc\
+#        -I
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\..\ACQ\
+#        -On --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\List\Serwer.lst
+#    Object file  =  
+#        E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SB-DISC01\Obj\Serwer.o
+#
+###############################################################################
+
+E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\Serwer\Serwer.cpp
+      1          ///Serwer.cppp///
+      2          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

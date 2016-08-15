@@ -1,0 +1,1931 @@
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\End_Point.o.
+              reference :  EXTI_ClearFlag
+              reference :  EXTI_GetFlagStatus
+              reference :  NVIC_SetVectorTable
+              reference :  RCC_AHBPeriphClockCmd
+              reference :  SdkDelayMs
+              reference :  SdkEvalEnterShutdown
+              reference :  SdkEvalExitShutdown
+              reference :  SdkEvalIdentification
+              reference :  SdkEvalLedInit
+              reference :  SdkEvalLedToggle
+              reference :  SdkEvalM2SGpioInit
+              reference :  SdkEvalM2SGpioInterruptCmd
+              reference :  SdkEvalSpiInit
+              reference :  SdkEvalSpiWriteFifo
+              reference :  SdkStartSysTick
+              reference :  SpiritCmdStrobeCommand
+              reference :  SpiritGpioInit
+              reference :  SpiritIrq
+              reference :  SpiritIrqCheckFlag
+              reference :  SpiritIrqClearStatus
+              reference :  SpiritIrqDeInit
+              reference :  SpiritManagementIdentificationRFBoard
+              reference :  SpiritManagementWaCmdStrobeTx
+              reference :  SpiritPktBasicAddressesInit
+              reference :  SpiritPktBasicInit
+              reference :  SpiritPktBasicSetPayloadLength
+              reference :  SpiritQiSetSqiThreshold
+              reference :  SpiritQiSqiCheck
+              reference :  SpiritRadioInit
+              reference :  SysTick_CLKSourceConfig
+              reference :  USART_Conf
+              reference :  printf
+              definition:  EXTI9_5_IRQHandler
+              definition:  assert_failed
+              definition:  cRxData
+              definition:  main
+              definition:  vectcRxBuff
+              definition:  vectcTxBuff
+              definition:  xAddressInit
+              definition:  xBasicInit
+              definition:  __iar_cc..h_YJNNaKgA9
+              definition:  xGpioIRQ
+              definition:  __iar_cc..vtMshdzy$K8
+              definition:  xIrqStatus
+              definition:  xRadioInit
+              definition:  xTxDoneFlag
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\misc.o.
+              reference :  assert_failed
+              definition:  NVIC_Init
+              definition:  NVIC_PriorityGroupConfig
+              definition:  NVIC_SetVectorTable
+              definition:  NVIC_SystemLPConfig
+              definition:  SysTick_CLKSourceConfig
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_Button.o.
+              reference :  EXTI_ClearITPendingBit
+              reference :  EXTI_Init
+              reference :  GPIO_Init
+              reference :  GPIO_ReadInputDataBit
+              reference :  NVIC_Init
+              reference :  RCC_AHBPeriphClockCmd
+              reference :  RCC_APB2PeriphClockCmd
+              reference :  SYSCFG_EXTILineConfig
+              reference :  SdkEvalGetVersion
+              definition:  SdkEvalPushButtonGetState
+              definition:  SdkEvalPushButtonInit
+              definition:  s_vectpxButtonPortVersion
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_Com.o.
+              reference :  GPIO_Init
+              reference :  GPIO_PinAFConfig
+              reference :  RCC_AHBPeriphClockCmd
+              reference :  RCC_APB1PeriphClockCmd
+              reference :  USART_Cmd
+              reference :  USART_Init
+              definition:  SdkEvalComInit
+              definition:  vectpxComRxPort
+              definition:  vectpxComTxPort
+              definition:  vectpxComUsart
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_Config.o.
+              reference :  GPIO_Init
+              reference :  RCC_AHBPeriphClockCmd
+              definition:  SdkEvalGetVersion
+              definition:  SdkEvalIdentification
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_Gpio.o.
+              reference :  EXTI_Init
+              reference :  GPIO_Init
+              reference :  GPIO_ReadInputData
+              reference :  GPIO_ResetBits
+              reference :  GPIO_SetBits
+              reference :  GPIO_WriteBit
+              reference :  NVIC_Init
+              reference :  RCC_AHBPeriphClockCmd
+              reference :  RCC_APB2PeriphClockCmd
+              reference :  SYSCFG_EXTILineConfig
+              reference :  SdkEvalGetVersion
+              reference :  assert_failed
+              definition:  SdkEvalCheckShutdown
+              definition:  SdkEvalEnterShutdown
+              definition:  SdkEvalExitShutdown
+              definition:  SdkEvalGpioGetLevel
+              definition:  SdkEvalGpioSetLevel
+              definition:  SdkEvalM2SGpioInit
+              definition:  SdkEvalM2SGpioInterruptCmd
+              definition:  vectpxM2SGpioPort
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_Led.o.
+              reference :  GPIO_Init
+              reference :  GPIO_PinAFConfig
+              reference :  RCC_AHBPeriphClockCmd
+              reference :  SdkDelayMs
+              reference :  SdkEvalGetVersion
+              definition:  LED_Flash
+              definition:  SdkEvalLedGetState
+              definition:  SdkEvalLedInit
+              definition:  SdkEvalLedInitPWM
+              definition:  SdkEvalLedOff
+              definition:  SdkEvalLedOn
+              definition:  SdkEvalLedToggle
+              definition:  vectpxGpioPortVersion
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_PM.o.
+              reference :  ADC_Cmd
+              reference :  ADC_GetConversionValue
+              reference :  ADC_GetFlagStatus
+              reference :  ADC_Init
+              reference :  ADC_RegularChannelConfig
+              reference :  ADC_SoftwareStartConv
+              reference :  GPIO_Init
+              reference :  GPIO_PinAFConfig
+              reference :  I2C_AcknowledgeConfig
+              reference :  I2C_CheckEvent
+              reference :  I2C_Cmd
+              reference :  I2C_DeInit
+              reference :  I2C_GenerateSTART
+              reference :  I2C_GenerateSTOP
+              reference :  I2C_GetFlagStatus
+              reference :  I2C_Init
+              reference :  I2C_ReceiveData
+              reference :  I2C_Send7bitAddress
+              reference :  I2C_SendData
+              reference :  RCC_AHBPeriphClockCmd
+              reference :  RCC_APB1PeriphClockCmd
+              reference :  RCC_APB2PeriphClockCmd
+              reference :  RCC_HSICmd
+              reference :  SdkEvalGetVersion
+              reference :  __aeabi_d2f
+              reference :  __aeabi_ddiv
+              reference :  __aeabi_dmul
+              reference :  __aeabi_f2d
+              reference :  __aeabi_f2iz
+              reference :  __aeabi_fmul
+              reference :  __aeabi_fsub
+              reference :  __aeabi_i2f
+              reference :  __aeabi_ui2f
+              definition:  SdkEvalPmADCInit
+              definition:  SdkEvalPmDigipotRead
+              definition:  SdkEvalPmDigipotWrite
+              definition:  SdkEvalPmGetSettledV
+              definition:  SdkEvalPmGetV
+              definition:  SdkEvalPmI2CInit
+              definition:  SdkEvalPmRegulateVoltage
+              definition:  SdkEvalPmRegulateVoltageI
+              definition:  SdkEvalPmRfSwitchInit
+              definition:  SdkEvalPmRfSwitchToRcal
+              definition:  SdkEvalPmRfSwitchToVRf
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_Spi_Driver.o.
+              reference :  GPIO_Init
+              reference :  GPIO_PinAFConfig
+              reference :  RCC_AHBPeriphClockCmd
+              reference :  RCC_APB2PeriphClockCmd
+              reference :  SPI_Cmd
+              reference :  SPI_I2S_DeInit
+              reference :  SPI_I2S_GetFlagStatus
+              reference :  SPI_I2S_ReceiveData
+              reference :  SPI_I2S_SendData
+              reference :  SPI_Init
+              reference :  SdkEvalGetVersion
+              definition:  SdkEvalSpiCommandStrobes
+              definition:  SdkEvalSpiInit
+              definition:  SdkEvalSpiReadFifo
+              definition:  SdkEvalSpiReadRegisters
+              definition:  SdkEvalSpiWriteFifo
+              definition:  SdkEvalSpiWriteRegisters
+              definition:  s_vectpxSpiCsPortVersion
+              definition:  __iar_cc..urTYDha1hn8
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_Timers.o.
+              reference :  NVIC_Init
+              reference :  RCC_APB1PeriphClockCmd
+              reference :  TIM_ClearITPendingBit
+              reference :  TIM_Cmd
+              reference :  TIM_ITConfig
+              reference :  TIM_TimeBaseInit
+              reference :  TIM_TimeBaseStructInit
+              definition:  SdkDelayMs
+              definition:  SdkEvalTimersFindFactors
+              definition:  SdkEvalTimersTimConfig
+              definition:  SdkGetCurrentSysTick
+              definition:  SdkStartSysTick
+              definition:  SysTick_Handler
+              definition:  lSystickCounter
+              definition:  __iar_cc.IRQn.DM0OtXeBdq0
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_VC_Desc.o.
+              definition:  g_vectcVCPortConfigDescriptor
+              definition:  g_vectcVCPortDeviceDescriptor
+              definition:  g_vectcVCPortStringLangID
+              definition:  g_vectcVCPortStringProduct
+              definition:  g_vectcVCPortStringSerial
+              definition:  g_vectcVCPortStringVendor
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_VC_Endp.o.
+              reference :  SdkEvalVCSendData
+              reference :  SetEPRxValid
+              reference :  SetEPTxCount
+              reference :  SetEPTxValid
+              reference :  USB_SIL_Read
+              reference :  USB_Tx_State
+              reference :  UserToPMABufferCopy
+              reference :  bDeviceState
+              reference :  enqueueRxChars
+              reference :  s_lVCTxBufferOutIndex
+              reference :  s_lVCTxDataLength
+              reference :  s_vectcVCTxBuffer
+              definition:  EP1_IN_Callback
+              definition:  EP3_OUT_Callback
+              definition:  SOF_Callback
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_VC_General.o.
+              reference :  Device_Info
+              reference :  NVIC_Init
+              reference :  NVIC_PriorityGroupConfig
+              reference :  RCC_APB1PeriphClockCmd
+              reference :  RCC_APB2PeriphClockCmd
+              reference :  SYSCFG_USBPuCmd
+              reference :  SetEPTxCount
+              reference :  SetEPTxValid
+              reference :  USB_Init
+              reference :  UserToPMABufferCopy
+              reference :  bDeviceState
+              reference :  g_vectcVCPortStringSerial
+              definition:  SdkEvalVCCableConfig
+              definition:  SdkEvalVCEnterLowPowerMode
+              definition:  SdkEvalVCGetSerialNum
+              definition:  SdkEvalVCInit
+              definition:  SdkEvalVCLeaveLowPowerMode
+              definition:  SdkEvalVCResetCounter
+              definition:  SdkEvalVCSendData
+              definition:  SdkEvalVCSetCounter
+              definition:  SdkEvalVCWriteTxBuffer
+              definition:  USB_Tx_State
+              definition:  __io_flush
+              definition:  __io_getchar
+              definition:  __io_getcharNonBlocking
+              definition:  __io_putchar
+              definition:  __read
+              definition:  __write
+              definition:  enqueueRxChars
+              definition:  fflush
+              definition:  rxHead
+              definition:  rxQ
+              definition:  rxTail
+              definition:  rxUsed
+              definition:  s_lVCTxBufferInIndex
+              definition:  s_lVCTxBufferOutIndex
+              definition:  s_lVCTxDataLength
+              definition:  s_vectcVCTxBuffer
+              definition:  __iar_cc.IRQn.DM0OtXeBdq0
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_VC_Istr.o.
+              reference :  CTR_LP
+              reference :  Device_Property
+              reference :  EP1_IN_Callback
+              reference :  EP3_OUT_Callback
+              reference :  NOP_Process
+              reference :  SOF_Callback
+              reference :  wInterrupt_Mask
+              definition:  SdkEvalVCIntServRoutine
+              definition:  bIntPackSOF
+              definition:  pEpInt_IN
+              definition:  pEpInt_OUT
+              definition:  wIstr
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_VC_Prop.o.
+              reference :  Clear_Status_Out
+              reference :  Device_Info
+              reference :  NOP_Process
+              reference :  SdkEvalVCGetSerialNum
+              reference :  SdkEvalVCPowerOn
+              reference :  SetBTABLE
+              reference :  SetDeviceAddress
+              reference :  SetEPRxAddr
+              reference :  SetEPRxCount
+              reference :  SetEPRxStatus
+              reference :  SetEPRxValid
+              reference :  SetEPTxAddr
+              reference :  SetEPTxStatus
+              reference :  SetEPType
+              reference :  Standard_GetDescriptorData
+              reference :  USB_SIL_Init
+              reference :  bDeviceState
+              reference :  g_vectcVCPortConfigDescriptor
+              reference :  g_vectcVCPortDeviceDescriptor
+              reference :  g_vectcVCPortStringLangID
+              reference :  g_vectcVCPortStringProduct
+              reference :  g_vectcVCPortStringSerial
+              reference :  g_vectcVCPortStringVendor
+              reference :  pInformation
+              definition:  Config_Descriptor
+              definition:  Device_Descriptor
+              definition:  Device_Property
+              definition:  Device_Table
+              definition:  Request
+              definition:  SdkEvalVCPortDataSetup
+              definition:  SdkEvalVCPortGetConfigDescriptor
+              definition:  SdkEvalVCPortGetDeviceDescriptor
+              definition:  SdkEvalVCPortGetInterfaceSetting
+              definition:  SdkEvalVCPortGetLineCoding
+              definition:  SdkEvalVCPortGetStringDescriptor
+              definition:  SdkEvalVCPortInit
+              definition:  SdkEvalVCPortNoDataSetup
+              definition:  SdkEvalVCPortReset
+              definition:  SdkEvalVCPortSetConfiguration
+              definition:  SdkEvalVCPortSetDeviceAddress
+              definition:  SdkEvalVCPortSetLineCoding
+              definition:  SdkEvalVCPortStatusIn
+              definition:  SdkEvalVCPortStatusOut
+              definition:  String_Descriptor
+              definition:  User_Standard_Requests
+              definition:  xLinecoding
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_VC_Pwr.o.
+              reference :  SdkEvalVCCableConfig
+              reference :  SdkEvalVCEnterLowPowerMode
+              reference :  SdkEvalVCLeaveLowPowerMode
+              reference :  wInterrupt_Mask
+              definition:  ResumeS
+              definition:  SdkEvalVCPowerOff
+              definition:  SdkEvalVCPowerOn
+              definition:  SdkEvalVCResume
+              definition:  SdkEvalVCResumeInit
+              definition:  SdkEvalVCSuspend
+              definition:  bDeviceState
+              definition:  fSuspendEnabled
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Aes.o.
+              reference :  SdkEvalSpiCommandStrobes
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritAesDeriveDecKeyExecuteDec
+              definition:  SpiritAesDeriveDecKeyFromEnc
+              definition:  SpiritAesExecuteDecryption
+              definition:  SpiritAesExecuteEncryption
+              definition:  SpiritAesMode
+              definition:  SpiritAesReadDataOut
+              definition:  SpiritAesReadKey
+              definition:  SpiritAesWriteDataIn
+              definition:  SpiritAesWriteKey
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Calibration.o.
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritCalibrationGetRcoCalWords
+              definition:  SpiritCalibrationGetVcoCalData
+              definition:  SpiritCalibrationGetVcoCalDataRx
+              definition:  SpiritCalibrationGetVcoCalDataTx
+              definition:  SpiritCalibrationGetVcoSelecttion
+              definition:  SpiritCalibrationGetVcoWindow
+              definition:  SpiritCalibrationRco
+              definition:  SpiritCalibrationSelectVco
+              definition:  SpiritCalibrationSetRcoCalWords
+              definition:  SpiritCalibrationSetVcoCalDataRx
+              definition:  SpiritCalibrationSetVcoCalDataTx
+              definition:  SpiritCalibrationSetVcoWindow
+              definition:  SpiritCalibrationVco
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Commands.o.
+              reference :  SdkEvalSpiCommandStrobes
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritCmdStrobeCommand
+              definition:  __iar_cc..7QWRu3Gdx69
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Csma.o.
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritCsma
+              definition:  SpiritCsmaGetBuCounterSeed
+              definition:  SpiritCsmaGetBuPrescaler
+              definition:  SpiritCsmaGetCcaLength
+              definition:  SpiritCsmaGetCcaPeriod
+              definition:  SpiritCsmaGetCsma
+              definition:  SpiritCsmaGetInfo
+              definition:  SpiritCsmaGetMaxNumberBackoff
+              definition:  SpiritCsmaGetPersistentMode
+              definition:  SpiritCsmaGetSeedReloadMode
+              definition:  SpiritCsmaInit
+              definition:  SpiritCsmaPersistentMode
+              definition:  SpiritCsmaSeedReloadMode
+              definition:  SpiritCsmaSetBuCounterSeed
+              definition:  SpiritCsmaSetBuPrescaler
+              definition:  SpiritCsmaSetCcaLength
+              definition:  SpiritCsmaSetCcaPeriod
+              definition:  SpiritCsmaSetMaxNumberBackoff
+              definition:  __iar_cc..HSMySD6N5l7
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_DirectRF.o.
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritDirectRfGetRxMode
+              definition:  SpiritDirectRfGetTxMode
+              definition:  SpiritDirectRfSetRxMode
+              definition:  SpiritDirectRfSetTxMode
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_General.o.
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritGeneralBatteryLevel
+              definition:  SpiritGeneralBrownOut
+              definition:  SpiritGeneralGetBatteryLevel
+              definition:  SpiritGeneralGetDevicePartNumber
+              definition:  SpiritGeneralGetExtRef
+              definition:  SpiritGeneralGetPktType
+              definition:  SpiritGeneralGetSpiritVersion
+              definition:  SpiritGeneralGetXoGm
+              definition:  SpiritGeneralHighPwr
+              definition:  SpiritGeneralSetBatteryLevel
+              definition:  SpiritGeneralSetExtRef
+              definition:  SpiritGeneralSetSpiritVersion
+              definition:  SpiritGeneralSetXoGm
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Gpio.o.
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritGpioClockOutput
+              definition:  SpiritGpioClockOutputInit
+              definition:  SpiritGpioGetExtraClockCycles
+              definition:  SpiritGpioGetLevel
+              definition:  SpiritGpioGetRCOPrescaler
+              definition:  SpiritGpioGetXOPrescaler
+              definition:  SpiritGpioInit
+              definition:  SpiritGpioSetExtraClockCycles
+              definition:  SpiritGpioSetLevel
+              definition:  SpiritGpioSetRCOPrescaler
+              definition:  SpiritGpioSetXOPrescaler
+              definition:  SpiritGpioTemperatureSensor
+              definition:  __iar_cc..vtMshdzy$K8
+              definition:  __iar_cc..VKIFgWqlk53
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Irq.o.
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritIrq
+              definition:  SpiritIrqCheckFlag
+              definition:  SpiritIrqClearStatus
+              definition:  SpiritIrqDeInit
+              definition:  SpiritIrqGetMask
+              definition:  SpiritIrqGetStatus
+              definition:  SpiritIrqInit
+              definition:  __iar_cc..5wrGz5jmrq_
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_LinearFifo.o.
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritLinearFifoGetAlmostEmptyThresholdRx
+              definition:  SpiritLinearFifoGetAlmostEmptyThresholdTx
+              definition:  SpiritLinearFifoGetAlmostFullThresholdRx
+              definition:  SpiritLinearFifoGetAlmostFullThresholdTx
+              definition:  SpiritLinearFifoReadNumElementsRxFifo
+              definition:  SpiritLinearFifoReadNumElementsTxFifo
+              definition:  SpiritLinearFifoSetAlmostEmptyThresholdRx
+              definition:  SpiritLinearFifoSetAlmostEmptyThresholdTx
+              definition:  SpiritLinearFifoSetAlmostFullThresholdRx
+              definition:  SpiritLinearFifoSetAlmostFullThresholdTx
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Management.o.
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  SpiritCalibrationGetVcoCalData
+              reference :  SpiritCalibrationSelectVco
+              reference :  SpiritCalibrationSetVcoCalDataRx
+              reference :  SpiritCalibrationSetVcoCalDataTx
+              reference :  SpiritCalibrationVco
+              reference :  SpiritCmdStrobeCommand
+              reference :  SpiritGeneralGetSpiritVersion
+              reference :  SpiritRadioGetChannel
+              reference :  SpiritRadioGetChannelSpace
+              reference :  SpiritRadioGetFrequencyBase
+              reference :  SpiritRadioGetFrequencyOffset
+              reference :  SpiritRadioGetRefDiv
+              reference :  SpiritRadioGetXtalFrequency
+              reference :  SpiritRadioSearchWCP
+              reference :  SpiritRadioSetPACwc
+              reference :  SpiritRadioSetRefDiv
+              reference :  SpiritRefreshStatus
+              reference :  __aeabi_d2uiz
+              reference :  __aeabi_ddiv
+              reference :  __aeabi_dmul
+              reference :  __aeabi_i2d
+              reference :  __aeabi_ui2d
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritManagementSetFrequencyBase
+              definition:  SpiritManagementWaCmdStrobeRx
+              definition:  SpiritManagementWaCmdStrobeTx
+              definition:  SpiritManagementWaRcoCalibration
+              definition:  SpiritManagementWaRcoRangeExtCalibration
+              definition:  SpiritManagementWaRxStartup
+              definition:  SpiritManagementWaRxStartupInit
+              definition:  SpiritManagementWaTRxFcMem
+              definition:  SpiritManagementWaVcoCalibration
+              definition:  __iar_cc..urTYDha1hn8
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_PktBasic.o.
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  SpiritPktCommonFilterOnCrc
+              reference :  SpiritPktCommonGetControlLength
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritPktBasicAddressField
+              definition:  SpiritPktBasicAddressesInit
+              definition:  SpiritPktBasicGetAddressField
+              definition:  SpiritPktBasicGetAddressesInfo
+              definition:  SpiritPktBasicGetInfo
+              definition:  SpiritPktBasicGetPayloadLength
+              definition:  SpiritPktBasicGetReceivedPktLength
+              definition:  SpiritPktBasicInit
+              definition:  SpiritPktBasicSetFormat
+              definition:  SpiritPktBasicSetPayloadLength
+              definition:  SpiritPktBasicSetVarLengthWidth
+              definition:  __iar_cc..h_YJNNaKgA9
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_PktCommon.o.
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritPktCommonAutoAck
+              definition:  SpiritPktCommonFec
+              definition:  SpiritPktCommonFilterOnBroadcastAddress
+              definition:  SpiritPktCommonFilterOnControlField
+              definition:  SpiritPktCommonFilterOnCrc
+              definition:  SpiritPktCommonFilterOnMulticastAddress
+              definition:  SpiritPktCommonFilterOnMyAddress
+              definition:  SpiritPktCommonGetBroadcastAddress
+              definition:  SpiritPktCommonGetControlLength
+              definition:  SpiritPktCommonGetCrcMode
+              definition:  SpiritPktCommonGetCtrlMask
+              definition:  SpiritPktCommonGetCtrlReference
+              definition:  SpiritPktCommonGetFilterOnBroadcastAddress
+              definition:  SpiritPktCommonGetFilterOnControlField
+              definition:  SpiritPktCommonGetFilterOnCrc
+              definition:  SpiritPktCommonGetFilterOnMulticastAddress
+              definition:  SpiritPktCommonGetFilterOnMyAddress
+              definition:  SpiritPktCommonGetMulticastAddress
+              definition:  SpiritPktCommonGetMyAddress
+              definition:  SpiritPktCommonGetNMaxReTx
+              definition:  SpiritPktCommonGetNReTx
+              definition:  SpiritPktCommonGetPreambleLength
+              definition:  SpiritPktCommonGetReceivedCrcField
+              definition:  SpiritPktCommonGetReceivedCtrlField
+              definition:  SpiritPktCommonGetReceivedDestAddress
+              definition:  SpiritPktCommonGetReceivedNackRx
+              definition:  SpiritPktCommonGetReceivedSeqNumber
+              definition:  SpiritPktCommonGetReceivedSourceAddress
+              definition:  SpiritPktCommonGetSyncLength
+              definition:  SpiritPktCommonGetSyncWords
+              definition:  SpiritPktCommonGetSyncxWord
+              definition:  SpiritPktCommonGetTransmittedCtrlField
+              definition:  SpiritPktCommonGetTransmittedDestAddress
+              definition:  SpiritPktCommonGetTransmittedSeqNumber
+              definition:  SpiritPktCommonGetVarLengthWidth
+              definition:  SpiritPktCommonRequireAck
+              definition:  SpiritPktCommonSetBroadcastAddress
+              definition:  SpiritPktCommonSetControlLength
+              definition:  SpiritPktCommonSetCrcMode
+              definition:  SpiritPktCommonSetCtrlMask
+              definition:  SpiritPktCommonSetCtrlReference
+              definition:  SpiritPktCommonSetDestinationAddress
+              definition:  SpiritPktCommonSetFixVarLength
+              definition:  SpiritPktCommonSetMulticastAddress
+              definition:  SpiritPktCommonSetMyAddress
+              definition:  SpiritPktCommonSetNMaxReTx
+              definition:  SpiritPktCommonSetPreambleLength
+              definition:  SpiritPktCommonSetSyncLength
+              definition:  SpiritPktCommonSetSyncWords
+              definition:  SpiritPktCommonSetSyncxWord
+              definition:  SpiritPktCommonSetTransmittedCtrlField
+              definition:  SpiritPktCommonSetTransmittedSeqNumberReload
+              definition:  SpiritPktCommonWhitening
+              definition:  __iar_cc..h_YJNNaKgA9
+              definition:  __iar_cc..N$YLd2vA0b1
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_PktMbus.o.
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritPktMbusGetInfo
+              definition:  SpiritPktMbusGetPayloadLength
+              definition:  SpiritPktMbusGetPostamble
+              definition:  SpiritPktMbusGetPreamble
+              definition:  SpiritPktMbusGetSubmode
+              definition:  SpiritPktMbusInit
+              definition:  SpiritPktMbusSetFormat
+              definition:  SpiritPktMbusSetPayloadLength
+              definition:  SpiritPktMbusSetPostamble
+              definition:  SpiritPktMbusSetPreamble
+              definition:  SpiritPktMbusSetSubmode
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_PktStack.o.
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  SpiritPktCommonFilterOnCrc
+              reference :  SpiritPktCommonGetControlLength
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritPktStackAddressesInit
+              definition:  SpiritPktStackFilterOnSourceAddress
+              definition:  SpiritPktStackGetAddressesInfo
+              definition:  SpiritPktStackGetInfo
+              definition:  SpiritPktStackGetPayloadLength
+              definition:  SpiritPktStackGetReceivedPktLength
+              definition:  SpiritPktStackGetRxSourceMask
+              definition:  SpiritPktStackInit
+              definition:  SpiritPktStackLlpGetInfo
+              definition:  SpiritPktStackLlpInit
+              definition:  SpiritPktStackSetAddressLength
+              definition:  SpiritPktStackSetFormat
+              definition:  SpiritPktStackSetPayloadLength
+              definition:  SpiritPktStackSetRxSourceMask
+              definition:  SpiritPktStackSetVarLengthWidth
+              definition:  __iar_cc..h_YJNNaKgA9
+              definition:  __iar_cc..N$YLd2vA0b1
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Qi.o.
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritQiComputeRssiThreshold
+              definition:  SpiritQiCsTimeoutMask
+              definition:  SpiritQiGetCs
+              definition:  SpiritQiGetCsMode
+              definition:  SpiritQiGetLqi
+              definition:  SpiritQiGetPqi
+              definition:  SpiritQiGetPqiThreshold
+              definition:  SpiritQiGetRssi
+              definition:  SpiritQiGetRssiFilterGain
+              definition:  SpiritQiGetRssiThreshold
+              definition:  SpiritQiGetSqi
+              definition:  SpiritQiGetSqiThreshold
+              definition:  SpiritQiPqiCheck
+              definition:  SpiritQiPqiTimeoutMask
+              definition:  SpiritQiSetCsMode
+              definition:  SpiritQiSetPqiThreshold
+              definition:  SpiritQiSetRssiFilterGain
+              definition:  SpiritQiSetRssiThreshold
+              definition:  SpiritQiSetRssiThresholddBm
+              definition:  SpiritQiSetSqiThreshold
+              definition:  SpiritQiSqiCheck
+              definition:  SpiritQiSqiTimeoutMask
+              definition:  __iar_cc..7Z6lkjE3dM0
+              definition:  __iar_cc..UAlv7hsYb$C
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Radio.o.
+              reference :  SdkEvalSpiCommandStrobes
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  SpiritCalibrationSelectVco
+              reference :  SpiritGeneralGetSpiritVersion
+              reference :  SpiritManagementWaTRxFcMem
+              reference :  SpiritManagementWaVcoCalibration
+              reference :  SpiritRefreshStatus
+              reference :  __aeabi_cdrcmple
+              reference :  __aeabi_cfcmple
+              reference :  __aeabi_cfrcmple
+              reference :  __aeabi_d2f
+              reference :  __aeabi_d2iz
+              reference :  __aeabi_d2uiz
+              reference :  __aeabi_dadd
+              reference :  __aeabi_ddiv
+              reference :  __aeabi_dmul
+              reference :  __aeabi_dsub
+              reference :  __aeabi_f2d
+              reference :  __aeabi_i2d
+              reference :  __aeabi_ui2d
+              reference :  __aeabi_ui2f
+              reference :  g_xStatus
+              reference :  log2
+              reference :  lroundf
+              reference :  pow
+              reference :  round
+              reference :  s_assert_failed
+              definition:  SpiritRadioAFC
+              definition:  SpiritRadioAFCFreezeOnSync
+              definition:  SpiritRadioAGC
+              definition:  SpiritRadioAGCFreezeOnSteady
+              definition:  SpiritRadioAGCFreezeOnSync
+              definition:  SpiritRadioAGCStartMaxAttenuation
+              definition:  SpiritRadioAutoSetFOffset
+              definition:  SpiritRadioCWTransmitMode
+              definition:  SpiritRadioCsBlanking
+              definition:  SpiritRadioGetAFCCorrectionHz
+              definition:  SpiritRadioGetAFCCorrectionReg
+              definition:  SpiritRadioGetAFCFastGain
+              definition:  SpiritRadioGetAFCFastPeriod
+              definition:  SpiritRadioGetAFCMode
+              definition:  SpiritRadioGetAFCPDLeakage
+              definition:  SpiritRadioGetAFCSlowGain
+              definition:  SpiritRadioGetAGCHighThreshold
+              definition:  SpiritRadioGetAGCHoldTime
+              definition:  SpiritRadioGetAGCHoldTimeUs
+              definition:  SpiritRadioGetAGCLowThreshold
+              definition:  SpiritRadioGetAGCMeasureTime
+              definition:  SpiritRadioGetAGCMeasureTimeUs
+              definition:  SpiritRadioGetAGCMode
+              definition:  SpiritRadioGetBand
+              definition:  SpiritRadioGetCenterFrequency
+              definition:  SpiritRadioGetChannel
+              definition:  SpiritRadioGetChannelBW
+              definition:  SpiritRadioGetChannelSpace
+              definition:  SpiritRadioGetClkRecIGain
+              definition:  SpiritRadioGetClkRecMode
+              definition:  SpiritRadioGetClkRecPGain
+              definition:  SpiritRadioGetClkRecPstFltLength
+              definition:  SpiritRadioGetDatarate
+              definition:  SpiritRadioGetDigDiv
+              definition:  SpiritRadioGetFrequencyBase
+              definition:  SpiritRadioGetFrequencyDev
+              definition:  SpiritRadioGetFrequencyOffset
+              definition:  SpiritRadioGetInfo
+              definition:  SpiritRadioGetModulation
+              definition:  SpiritRadioGetOokPeakDecay
+              definition:  SpiritRadioGetPACwc
+              definition:  SpiritRadioGetPALevel
+              definition:  SpiritRadioGetPALevelMaxIndex
+              definition:  SpiritRadioGetPALeveldBm
+              definition:  SpiritRadioGetPARamping
+              definition:  SpiritRadioGetPAStepWidth
+              definition:  SpiritRadioGetPATable
+              definition:  SpiritRadioGetPATabledBm
+              definition:  SpiritRadioGetRefDiv
+              definition:  SpiritRadioGetSynthWord
+              definition:  SpiritRadioGetXtalFlag
+              definition:  SpiritRadioGetXtalFrequency
+              definition:  SpiritRadioInit
+              definition:  SpiritRadioPARamping
+              definition:  SpiritRadioPersistenRx
+              definition:  SpiritRadioSearchChannelBwME
+              definition:  SpiritRadioSearchDatarateME
+              definition:  SpiritRadioSearchFreqDevME
+              definition:  SpiritRadioSearchWCP
+              definition:  SpiritRadioSetAFCFastGain
+              definition:  SpiritRadioSetAFCFastPeriod
+              definition:  SpiritRadioSetAFCMode
+              definition:  SpiritRadioSetAFCPDLeakage
+              definition:  SpiritRadioSetAFCSlowGain
+              definition:  SpiritRadioSetAGCHighThreshold
+              definition:  SpiritRadioSetAGCHoldTime
+              definition:  SpiritRadioSetAGCHoldTimeUs
+              definition:  SpiritRadioSetAGCLowThreshold
+              definition:  SpiritRadioSetAGCMeasureTime
+              definition:  SpiritRadioSetAGCMeasureTimeUs
+              definition:  SpiritRadioSetAGCMode
+              definition:  SpiritRadioSetBand
+              definition:  SpiritRadioSetChannel
+              definition:  SpiritRadioSetChannelBW
+              definition:  SpiritRadioSetChannelSpace
+              definition:  SpiritRadioSetClkRecIGain
+              definition:  SpiritRadioSetClkRecMode
+              definition:  SpiritRadioSetClkRecPGain
+              definition:  SpiritRadioSetClkRecPstFltLength
+              definition:  SpiritRadioSetDatarate
+              definition:  SpiritRadioSetDigDiv
+              definition:  SpiritRadioSetFrequencyBase
+              definition:  SpiritRadioSetFrequencyDev
+              definition:  SpiritRadioSetFrequencyOffset
+              definition:  SpiritRadioSetFrequencyOffsetPpm
+              definition:  SpiritRadioSetModulation
+              definition:  SpiritRadioSetOokPeakDecay
+              definition:  SpiritRadioSetPACwc
+              definition:  SpiritRadioSetPALevel
+              definition:  SpiritRadioSetPALevelMaxIndex
+              definition:  SpiritRadioSetPALeveldBm
+              definition:  SpiritRadioSetPAStepWidth
+              definition:  SpiritRadioSetPATable
+              definition:  SpiritRadioSetPATabledBm
+              definition:  SpiritRadioSetRefDiv
+              definition:  SpiritRadioSetSynthWord
+              definition:  SpiritRadioSetXtalFlag
+              definition:  SpiritRadioSetXtalFrequency
+              definition:  __iar_cc..urTYDha1hn8
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_SDK_Application.o.
+              reference :  GPIO_Init
+              reference :  GPIO_PinAFConfig
+              reference :  NVIC_Init
+              reference :  RCC_AHBPeriphClockCmd
+              reference :  RCC_APB1PeriphClockCmd
+              reference :  SdkEvalGetVersion
+              reference :  SdkEvalM2SGpioInit
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  SpiritGeneralGetDevicePartNumber
+              reference :  SpiritGeneralGetSpiritVersion
+              reference :  SpiritGeneralSetSpiritVersion
+              reference :  SpiritGpioClockOutput
+              reference :  SpiritGpioClockOutputInit
+              reference :  SpiritGpioInit
+              reference :  SpiritGpioSetLevel
+              reference :  SpiritRadioSetXtalFrequency
+              reference :  SystemCoreClock
+              reference :  TIM_ClearITPendingBit
+              reference :  TIM_Cmd
+              reference :  TIM_GetCapture2
+              reference :  TIM_GetITStatus
+              reference :  TIM_ICInit
+              reference :  TIM_ITConfig
+              reference :  __aeabi_cfrcmple
+              reference :  __aeabi_d2f
+              reference :  __aeabi_d2uiz
+              reference :  __aeabi_dadd
+              reference :  __aeabi_ddiv
+              reference :  __aeabi_dmul
+              reference :  __aeabi_f2d
+              reference :  __aeabi_f2uiz
+              reference :  __aeabi_fsub
+              reference :  __aeabi_ui2f
+              definition:  SpiritManagementComputeSpiritVersion
+              definition:  SpiritManagementComputeXtalFrequency
+              definition:  SpiritManagementComputeXtalFrequencyGpio0
+              definition:  SpiritManagementGetBand
+              definition:  SpiritManagementIdentificationRFBoard
+              definition:  SpiritManagementSetBand
+              definition:  TIM3_IRQHandler
+              definition:  TIM4_IRQHandler
+              definition:  xSpiritVersionMap
+              definition:  __iar_cc.IRQn.DM0OtXeBdq0
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Timer.o.
+              reference :  SdkEvalSpiCommandStrobes
+              reference :  SdkEvalSpiReadRegisters
+              reference :  SdkEvalSpiWriteRegisters
+              reference :  SpiritRadioGetXtalFrequency
+              reference :  __aeabi_cfrcmple
+              reference :  __aeabi_d2f
+              reference :  __aeabi_d2uiz
+              reference :  __aeabi_ddiv
+              reference :  __aeabi_dmul
+              reference :  __aeabi_f2d
+              reference :  __aeabi_f2uiz
+              reference :  __aeabi_fdiv
+              reference :  __aeabi_fmul
+              reference :  __aeabi_i2d
+              reference :  __aeabi_ui2d
+              reference :  __aeabi_ui2f
+              reference :  g_xStatus
+              reference :  s_assert_failed
+              definition:  SpiritTimerComputeRxTimeoutValues
+              definition:  SpiritTimerComputeWakeUpValues
+              definition:  SpiritTimerGetRxTimeout
+              definition:  SpiritTimerGetWakeUpTimer
+              definition:  SpiritTimerGetWakeUpTimerReload
+              definition:  SpiritTimerLdcrAutoReload
+              definition:  SpiritTimerLdcrGetAutoReload
+              definition:  SpiritTimerLdcrMode
+              definition:  SpiritTimerReloadStrobe
+              definition:  SpiritTimerSetRxTimeout
+              definition:  SpiritTimerSetRxTimeoutCounter
+              definition:  SpiritTimerSetRxTimeoutMs
+              definition:  SpiritTimerSetRxTimeoutPrescaler
+              definition:  SpiritTimerSetRxTimeoutStopCondition
+              definition:  SpiritTimerSetWakeUpTimer
+              definition:  SpiritTimerSetWakeUpTimerCounter
+              definition:  SpiritTimerSetWakeUpTimerMs
+              definition:  SpiritTimerSetWakeUpTimerPrescaler
+              definition:  SpiritTimerSetWakeUpTimerReload
+              definition:  SpiritTimerSetWakeUpTimerReloadCounter
+              definition:  SpiritTimerSetWakeUpTimerReloadMs
+              definition:  SpiritTimerSetWakeUpTimerReloadPrescaler
+              definition:  __iar_cc..mXOEqgRreE4
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Types.o.
+              reference :  SdkEvalSpiReadRegisters
+              reference :  printf
+              definition:  SpiritRefreshStatus
+              definition:  g_xStatus
+              definition:  __iar_cc..urTYDha1hn8
+              definition:  s_assert_failed
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o.
+              reference :  __iar_program_start
+              reference :  SystemInit
+              definition:  __vector_table
+              weak def  :  Reset_Handler
+              weak def  :  NMI_Handler
+              weak def  :  HardFault_Handler
+              weak def  :  MemManage_Handler
+              weak def  :  BusFault_Handler
+              weak def  :  UsageFault_Handler
+              weak def  :  SVC_Handler
+              weak def  :  DebugMon_Handler
+              weak def  :  PendSV_Handler
+              weak def  :  SysTick_Handler
+              weak def  :  WWDG_IRQHandler
+              weak def  :  PVD_IRQHandler
+              weak def  :  TAMPER_STAMP_IRQHandler
+              weak def  :  RTC_WKUP_IRQHandler
+              weak def  :  FLASH_IRQHandler
+              weak def  :  RCC_IRQHandler
+              weak def  :  EXTI0_IRQHandler
+              weak def  :  EXTI1_IRQHandler
+              weak def  :  EXTI2_IRQHandler
+              weak def  :  EXTI3_IRQHandler
+              weak def  :  EXTI4_IRQHandler
+              weak def  :  DMA1_Channel1_IRQHandler
+              weak def  :  DMA1_Channel2_IRQHandler
+              weak def  :  DMA1_Channel3_IRQHandler
+              weak def  :  DMA1_Channel4_IRQHandler
+              weak def  :  DMA1_Channel5_IRQHandler
+              weak def  :  DMA1_Channel6_IRQHandler
+              weak def  :  DMA1_Channel7_IRQHandler
+              weak def  :  ADC1_IRQHandler
+              weak def  :  USB_HP_IRQHandler
+              weak def  :  USB_LP_IRQHandler
+              weak def  :  DAC_IRQHandler
+              weak def  :  COMP_IRQHandler
+              weak def  :  EXTI9_5_IRQHandler
+              weak def  :  LCD_IRQHandler
+              weak def  :  TIM9_IRQHandler
+              weak def  :  TIM10_IRQHandler
+              weak def  :  TIM11_IRQHandler
+              weak def  :  TIM2_IRQHandler
+              weak def  :  TIM3_IRQHandler
+              weak def  :  TIM4_IRQHandler
+              weak def  :  I2C1_EV_IRQHandler
+              weak def  :  I2C1_ER_IRQHandler
+              weak def  :  I2C2_EV_IRQHandler
+              weak def  :  I2C2_ER_IRQHandler
+              weak def  :  SPI1_IRQHandler
+              weak def  :  SPI2_IRQHandler
+              weak def  :  USART1_IRQHandler
+              weak def  :  USART2_IRQHandler
+              weak def  :  USART3_IRQHandler
+              weak def  :  EXTI15_10_IRQHandler
+              weak def  :  RTC_Alarm_IRQHandler
+              weak def  :  USB_FS_WKUP_IRQHandler
+              weak def  :  TIM6_IRQHandler
+              weak def  :  TIM7_IRQHandler
+              weak def  :  SDIO_IRQHandler
+              weak def  :  TIM5_IRQHandler
+              weak def  :  SPI3_IRQHandler
+              weak def  :  UART4_IRQHandler
+              weak def  :  UART5_IRQHandler
+              weak def  :  DMA2_Channel1_IRQHandler
+              weak def  :  DMA2_Channel2_IRQHandler
+              weak def  :  DMA2_Channel3_IRQHandler
+              weak def  :  DMA2_Channel4_IRQHandler
+              weak def  :  DMA2_Channel5_IRQHandler
+              weak def  :  AES_IRQHandler
+              weak def  :  COMP_ACQ_IRQHandler
+              reference :  CSTACK$$Limit
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_adc.o.
+              reference :  RCC_APB2PeriphResetCmd
+              reference :  assert_failed
+              definition:  ADC_AnalogWatchdogCmd
+              definition:  ADC_AnalogWatchdogSingleChannelConfig
+              definition:  ADC_AnalogWatchdogThresholdsConfig
+              definition:  ADC_AutoInjectedConvCmd
+              definition:  ADC_ClearFlag
+              definition:  ADC_ClearITPendingBit
+              definition:  ADC_Cmd
+              definition:  ADC_CommonInit
+              definition:  ADC_CommonStructInit
+              definition:  ADC_ContinuousModeCmd
+              definition:  ADC_DMACmd
+              definition:  ADC_DMARequestAfterLastTransferCmd
+              definition:  ADC_DeInit
+              definition:  ADC_DelaySelectionConfig
+              definition:  ADC_DiscModeChannelCountConfig
+              definition:  ADC_DiscModeCmd
+              definition:  ADC_EOCOnEachRegularChannelCmd
+              definition:  ADC_ExternalTrigInjectedConvConfig
+              definition:  ADC_ExternalTrigInjectedConvEdgeConfig
+              definition:  ADC_GetConversionValue
+              definition:  ADC_GetFlagStatus
+              definition:  ADC_GetITStatus
+              definition:  ADC_GetInjectedConversionValue
+              definition:  ADC_GetSoftwareStartConvStatus
+              definition:  ADC_GetSoftwareStartInjectedConvCmdStatus
+              definition:  ADC_ITConfig
+              definition:  ADC_Init
+              definition:  ADC_InjectedChannelConfig
+              definition:  ADC_InjectedDiscModeCmd
+              definition:  ADC_InjectedSequencerLengthConfig
+              definition:  ADC_PowerDownCmd
+              definition:  ADC_RegularChannelConfig
+              definition:  ADC_SetInjectedOffset
+              definition:  ADC_SoftwareStartConv
+              definition:  ADC_SoftwareStartInjectedConv
+              definition:  ADC_StructInit
+              definition:  ADC_TempSensorVrefintCmd
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_comp.o.
+              reference :  assert_failed
+              definition:  COMP_Cmd
+              definition:  COMP_DeInit
+              definition:  COMP_GetOutputLevel
+              definition:  COMP_Init
+              definition:  COMP_VrefintOutputCmd
+              definition:  COMP_WindowCmd
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_crc.o.
+              definition:  CRC_CalcBlockCRC
+              definition:  CRC_CalcCRC
+              definition:  CRC_GetCRC
+              definition:  CRC_GetIDRegister
+              definition:  CRC_ResetDR
+              definition:  CRC_SetIDRegister
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_dac.o.
+              reference :  RCC_APB1PeriphResetCmd
+              reference :  assert_failed
+              definition:  DAC_ClearFlag
+              definition:  DAC_ClearITPendingBit
+              definition:  DAC_Cmd
+              definition:  DAC_DMACmd
+              definition:  DAC_DeInit
+              definition:  DAC_DualSoftwareTriggerCmd
+              definition:  DAC_GetDataOutputValue
+              definition:  DAC_GetFlagStatus
+              definition:  DAC_GetITStatus
+              definition:  DAC_ITConfig
+              definition:  DAC_Init
+              definition:  DAC_SetChannel1Data
+              definition:  DAC_SetChannel2Data
+              definition:  DAC_SetDualChannelData
+              definition:  DAC_SoftwareTriggerCmd
+              definition:  DAC_StructInit
+              definition:  DAC_WaveGenerationCmd
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_dbgmcu.o.
+              reference :  assert_failed
+              definition:  DBGMCU_APB1PeriphConfig
+              definition:  DBGMCU_APB2PeriphConfig
+              definition:  DBGMCU_Config
+              definition:  DBGMCU_GetDEVID
+              definition:  DBGMCU_GetREVID
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_dma.o.
+              reference :  assert_failed
+              definition:  DMA_ClearFlag
+              definition:  DMA_ClearITPendingBit
+              definition:  DMA_Cmd
+              definition:  DMA_DeInit
+              definition:  DMA_GetCurrDataCounter
+              definition:  DMA_GetFlagStatus
+              definition:  DMA_GetITStatus
+              definition:  DMA_ITConfig
+              definition:  DMA_Init
+              definition:  DMA_SetCurrDataCounter
+              definition:  DMA_StructInit
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_exti.o.
+              reference :  assert_failed
+              definition:  EXTI_ClearFlag
+              definition:  EXTI_ClearITPendingBit
+              definition:  EXTI_DeInit
+              definition:  EXTI_GenerateSWInterrupt
+              definition:  EXTI_GetFlagStatus
+              definition:  EXTI_GetITStatus
+              definition:  EXTI_Init
+              definition:  EXTI_StructInit
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_flash.o.
+              reference :  assert_failed
+              definition:  DATA_EEPROM_EraseWord
+              definition:  DATA_EEPROM_FastProgramByte
+              definition:  DATA_EEPROM_FastProgramHalfWord
+              definition:  DATA_EEPROM_FastProgramWord
+              definition:  DATA_EEPROM_FixedTimeProgramCmd
+              definition:  DATA_EEPROM_Lock
+              definition:  DATA_EEPROM_ProgramByte
+              definition:  DATA_EEPROM_ProgramHalfWord
+              definition:  DATA_EEPROM_ProgramWord
+              definition:  DATA_EEPROM_Unlock
+              definition:  FLASH_ClearFlag
+              definition:  FLASH_ErasePage
+              definition:  FLASH_FastProgramWord
+              definition:  FLASH_GetFlagStatus
+              definition:  FLASH_GetStatus
+              definition:  FLASH_ITConfig
+              definition:  FLASH_Lock
+              definition:  FLASH_OB_BORConfig
+              definition:  FLASH_OB_GetBOR
+              definition:  FLASH_OB_GetRDP
+              definition:  FLASH_OB_GetUser
+              definition:  FLASH_OB_GetWRP
+              definition:  FLASH_OB_Launch
+              definition:  FLASH_OB_Lock
+              definition:  FLASH_OB_RDPConfig
+              definition:  FLASH_OB_Unlock
+              definition:  FLASH_OB_UserConfig
+              definition:  FLASH_OB_WRPConfig
+              definition:  FLASH_PrefetchBufferCmd
+              definition:  FLASH_ReadAccess64Cmd
+              definition:  FLASH_SLEEPPowerDownCmd
+              definition:  FLASH_SetLatency
+              definition:  FLASH_Unlock
+              definition:  FLASH_WaitForLastOperation
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_flash_ramfunc.o.
+              definition:  DATA_EEPROM_EraseDoubleWord
+              definition:  DATA_EEPROM_ProgramDoubleWord
+              definition:  FLASH_ProgramHalfPage
+              definition:  FLASH_RUNPowerDownCmd
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_gpio.o.
+              reference :  RCC_AHBPeriphResetCmd
+              reference :  assert_failed
+              definition:  GPIO_DeInit
+              definition:  GPIO_Init
+              definition:  GPIO_PinAFConfig
+              definition:  GPIO_PinLockConfig
+              definition:  GPIO_ReadInputData
+              definition:  GPIO_ReadInputDataBit
+              definition:  GPIO_ReadOutputData
+              definition:  GPIO_ReadOutputDataBit
+              definition:  GPIO_ResetBits
+              definition:  GPIO_SetBits
+              definition:  GPIO_StructInit
+              definition:  GPIO_Write
+              definition:  GPIO_WriteBit
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_i2c.o.
+              reference :  RCC_APB1PeriphResetCmd
+              reference :  RCC_GetClocksFreq
+              reference :  assert_failed
+              definition:  I2C_ARPCmd
+              definition:  I2C_AcknowledgeConfig
+              definition:  I2C_CalculatePEC
+              definition:  I2C_CheckEvent
+              definition:  I2C_ClearFlag
+              definition:  I2C_ClearITPendingBit
+              definition:  I2C_Cmd
+              definition:  I2C_DMACmd
+              definition:  I2C_DMALastTransferCmd
+              definition:  I2C_DeInit
+              definition:  I2C_DualAddressCmd
+              definition:  I2C_FastModeDutyCycleConfig
+              definition:  I2C_GeneralCallCmd
+              definition:  I2C_GenerateSTART
+              definition:  I2C_GenerateSTOP
+              definition:  I2C_GetFlagStatus
+              definition:  I2C_GetITStatus
+              definition:  I2C_GetLastEvent
+              definition:  I2C_GetPEC
+              definition:  I2C_ITConfig
+              definition:  I2C_Init
+              definition:  I2C_OwnAddress2Config
+              definition:  I2C_PECPositionConfig
+              definition:  I2C_ReadRegister
+              definition:  I2C_ReceiveData
+              definition:  I2C_SMBusAlertConfig
+              definition:  I2C_Send7bitAddress
+              definition:  I2C_SendData
+              definition:  I2C_SoftwareResetCmd
+              definition:  I2C_StretchClockCmd
+              definition:  I2C_StructInit
+              definition:  I2C_TransmitPEC
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_it.o.
+              reference :  SdkEvalVCIntServRoutine
+              reference :  USART_GetFlagStatus
+              reference :  USART_GetITStatus
+              reference :  USART_ReceiveData
+              reference :  USART_SendData
+              definition:  BusFault_Handler
+              definition:  DebugMon_Handler
+              definition:  HardFault_Handler
+              definition:  MemManage_Handler
+              definition:  NMI_Handler
+              definition:  PendSV_Handler
+              definition:  SVC_Handler
+              definition:  USART1_IRQHandler
+              definition:  USB_LP_IRQHandler
+              definition:  UsageFault_Handler
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_iwdg.o.
+              reference :  assert_failed
+              definition:  IWDG_Enable
+              definition:  IWDG_GetFlagStatus
+              definition:  IWDG_ReloadCounter
+              definition:  IWDG_SetPrescaler
+              definition:  IWDG_SetReload
+              definition:  IWDG_WriteAccessCmd
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_lcd.o.
+              reference :  RCC_APB1PeriphResetCmd
+              reference :  assert_failed
+              definition:  LCD_BlinkConfig
+              definition:  LCD_ClearFlag
+              definition:  LCD_ClearITPendingBit
+              definition:  LCD_Cmd
+              definition:  LCD_ContrastConfig
+              definition:  LCD_DeInit
+              definition:  LCD_DeadTimeConfig
+              definition:  LCD_GetFlagStatus
+              definition:  LCD_GetITStatus
+              definition:  LCD_HighDriveCmd
+              definition:  LCD_ITConfig
+              definition:  LCD_Init
+              definition:  LCD_MuxSegmentCmd
+              definition:  LCD_PulseOnDurationConfig
+              definition:  LCD_StructInit
+              definition:  LCD_UpdateDisplayRequest
+              definition:  LCD_WaitForSynchro
+              definition:  LCD_Write
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_pwr.o.
+              reference :  RCC_APB1PeriphResetCmd
+              reference :  assert_failed
+              definition:  PWR_ClearFlag
+              definition:  PWR_DeInit
+              definition:  PWR_EnterLowPowerRunMode
+              definition:  PWR_EnterSTANDBYMode
+              definition:  PWR_EnterSTOPMode
+              definition:  PWR_EnterSleepMode
+              definition:  PWR_FastWakeUpCmd
+              definition:  PWR_GetFlagStatus
+              definition:  PWR_PVDCmd
+              definition:  PWR_PVDLevelConfig
+              definition:  PWR_RTCAccessCmd
+              definition:  PWR_UltraLowPowerCmd
+              definition:  PWR_VoltageScalingConfig
+              definition:  PWR_WakeUpPinCmd
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_rcc.o.
+              reference :  assert_failed
+              definition:  RCC_AHBPeriphClockCmd
+              definition:  RCC_AHBPeriphClockLPModeCmd
+              definition:  RCC_AHBPeriphResetCmd
+              definition:  RCC_APB1PeriphClockCmd
+              definition:  RCC_APB1PeriphClockLPModeCmd
+              definition:  RCC_APB1PeriphResetCmd
+              definition:  RCC_APB2PeriphClockCmd
+              definition:  RCC_APB2PeriphClockLPModeCmd
+              definition:  RCC_APB2PeriphResetCmd
+              definition:  RCC_AdjustHSICalibrationValue
+              definition:  RCC_AdjustMSICalibrationValue
+              definition:  RCC_ClearFlag
+              definition:  RCC_ClearITPendingBit
+              definition:  RCC_ClockSecuritySystemCmd
+              definition:  RCC_DeInit
+              definition:  RCC_GetClocksFreq
+              definition:  RCC_GetFlagStatus
+              definition:  RCC_GetITStatus
+              definition:  RCC_GetSYSCLKSource
+              definition:  RCC_HCLKConfig
+              definition:  RCC_HSEConfig
+              definition:  RCC_HSICmd
+              definition:  RCC_ITConfig
+              definition:  RCC_LSEConfig
+              definition:  RCC_LSICmd
+              definition:  RCC_MCOConfig
+              definition:  RCC_MSICmd
+              definition:  RCC_MSIRangeConfig
+              definition:  RCC_PCLK1Config
+              definition:  RCC_PCLK2Config
+              definition:  RCC_PLLCmd
+              definition:  RCC_PLLConfig
+              definition:  RCC_RTCCLKCmd
+              definition:  RCC_RTCCLKConfig
+              definition:  RCC_RTCResetCmd
+              definition:  RCC_SYSCLKConfig
+              definition:  RCC_WaitForHSEStartUp
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_rtc.o.
+              reference :  assert_failed
+              definition:  RTC_AlarmCmd
+              definition:  RTC_AlarmStructInit
+              definition:  RTC_CalibOutputCmd
+              definition:  RTC_ClearFlag
+              definition:  RTC_ClearITPendingBit
+              definition:  RTC_DateStructInit
+              definition:  RTC_DayLightSavingConfig
+              definition:  RTC_DeInit
+              definition:  RTC_DigitalCalibCmd
+              definition:  RTC_DigitalCalibConfig
+              definition:  RTC_EnterInitMode
+              definition:  RTC_ExitInitMode
+              definition:  RTC_GetAlarm
+              definition:  RTC_GetDate
+              definition:  RTC_GetFlagStatus
+              definition:  RTC_GetITStatus
+              definition:  RTC_GetStoreOperation
+              definition:  RTC_GetTime
+              definition:  RTC_GetTimeStamp
+              definition:  RTC_GetWakeUpCounter
+              definition:  RTC_ITConfig
+              definition:  RTC_Init
+              definition:  RTC_OutputConfig
+              definition:  RTC_OutputTypeConfig
+              definition:  RTC_ReadBackupRegister
+              definition:  RTC_RefClockCmd
+              definition:  RTC_SetAlarm
+              definition:  RTC_SetDate
+              definition:  RTC_SetTime
+              definition:  RTC_SetWakeUpCounter
+              definition:  RTC_StructInit
+              definition:  RTC_TamperCmd
+              definition:  RTC_TamperTriggerConfig
+              definition:  RTC_TimeStampCmd
+              definition:  RTC_TimeStructInit
+              definition:  RTC_WaitForSynchro
+              definition:  RTC_WakeUpClockConfig
+              definition:  RTC_WakeUpCmd
+              definition:  RTC_WriteBackupRegister
+              definition:  RTC_WriteProtectionCmd
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_spi.o.
+              reference :  RCC_APB1PeriphResetCmd
+              reference :  RCC_APB2PeriphResetCmd
+              reference :  assert_failed
+              definition:  SPI_BiDirectionalLineConfig
+              definition:  SPI_CalculateCRC
+              definition:  SPI_Cmd
+              definition:  SPI_DataSizeConfig
+              definition:  SPI_GetCRC
+              definition:  SPI_GetCRCPolynomial
+              definition:  SPI_I2S_ClearFlag
+              definition:  SPI_I2S_ClearITPendingBit
+              definition:  SPI_I2S_DMACmd
+              definition:  SPI_I2S_DeInit
+              definition:  SPI_I2S_GetFlagStatus
+              definition:  SPI_I2S_GetITStatus
+              definition:  SPI_I2S_ITConfig
+              definition:  SPI_I2S_ReceiveData
+              definition:  SPI_I2S_SendData
+              definition:  SPI_Init
+              definition:  SPI_NSSInternalSoftwareConfig
+              definition:  SPI_SSOutputCmd
+              definition:  SPI_StructInit
+              definition:  SPI_TransmitCRC
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_syscfg.o.
+              reference :  RCC_APB2PeriphResetCmd
+              reference :  assert_failed
+              definition:  SYSCFG_DeInit
+              definition:  SYSCFG_EXTILineConfig
+              definition:  SYSCFG_MemoryRemapConfig
+              definition:  SYSCFG_RIDeInit
+              definition:  SYSCFG_RIHysteresisConfig
+              definition:  SYSCFG_RIIOSwitchConfig
+              definition:  SYSCFG_RIResistorConfig
+              definition:  SYSCFG_RISwitchControlModeCmd
+              definition:  SYSCFG_RITIMInputCaptureConfig
+              definition:  SYSCFG_RITIMSelect
+              definition:  SYSCFG_USBPuCmd
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_tim.o.
+              reference :  RCC_APB1PeriphResetCmd
+              reference :  RCC_APB2PeriphResetCmd
+              reference :  assert_failed
+              definition:  TIM_ARRPreloadConfig
+              definition:  TIM_CCxCmd
+              definition:  TIM_ClearFlag
+              definition:  TIM_ClearITPendingBit
+              definition:  TIM_ClearOC1Ref
+              definition:  TIM_ClearOC2Ref
+              definition:  TIM_ClearOC3Ref
+              definition:  TIM_ClearOC4Ref
+              definition:  TIM_Cmd
+              definition:  TIM_CounterModeConfig
+              definition:  TIM_DMACmd
+              definition:  TIM_DMAConfig
+              definition:  TIM_DeInit
+              definition:  TIM_ETRClockMode1Config
+              definition:  TIM_ETRClockMode2Config
+              definition:  TIM_ETRConfig
+              definition:  TIM_EncoderInterfaceConfig
+              definition:  TIM_ForcedOC1Config
+              definition:  TIM_ForcedOC2Config
+              definition:  TIM_ForcedOC3Config
+              definition:  TIM_ForcedOC4Config
+              definition:  TIM_GenerateEvent
+              definition:  TIM_GetCapture1
+              definition:  TIM_GetCapture2
+              definition:  TIM_GetCapture3
+              definition:  TIM_GetCapture4
+              definition:  TIM_GetCounter
+              definition:  TIM_GetFlagStatus
+              definition:  TIM_GetITStatus
+              definition:  TIM_GetPrescaler
+              definition:  TIM_ICInit
+              definition:  TIM_ICStructInit
+              definition:  TIM_ITConfig
+              definition:  TIM_ITRxExternalClockConfig
+              definition:  TIM_InternalClockConfig
+              definition:  TIM_OC1FastConfig
+              definition:  TIM_OC1Init
+              definition:  TIM_OC1PolarityConfig
+              definition:  TIM_OC1PreloadConfig
+              definition:  TIM_OC2FastConfig
+              definition:  TIM_OC2Init
+              definition:  TIM_OC2PolarityConfig
+              definition:  TIM_OC2PreloadConfig
+              definition:  TIM_OC3FastConfig
+              definition:  TIM_OC3Init
+              definition:  TIM_OC3PolarityConfig
+              definition:  TIM_OC3PreloadConfig
+              definition:  TIM_OC4FastConfig
+              definition:  TIM_OC4Init
+              definition:  TIM_OC4PolarityConfig
+              definition:  TIM_OC4PreloadConfig
+              definition:  TIM_OCStructInit
+              definition:  TIM_PWMIConfig
+              definition:  TIM_PrescalerConfig
+              definition:  TIM_RemapConfig
+              definition:  TIM_SelectCCDMA
+              definition:  TIM_SelectHallSensor
+              definition:  TIM_SelectInputTrigger
+              definition:  TIM_SelectMasterSlaveMode
+              definition:  TIM_SelectOCREFClear
+              definition:  TIM_SelectOCxM
+              definition:  TIM_SelectOnePulseMode
+              definition:  TIM_SelectOutputTrigger
+              definition:  TIM_SelectSlaveMode
+              definition:  TIM_SetAutoreload
+              definition:  TIM_SetClockDivision
+              definition:  TIM_SetCompare1
+              definition:  TIM_SetCompare2
+              definition:  TIM_SetCompare3
+              definition:  TIM_SetCompare4
+              definition:  TIM_SetCounter
+              definition:  TIM_SetIC1Prescaler
+              definition:  TIM_SetIC2Prescaler
+              definition:  TIM_SetIC3Prescaler
+              definition:  TIM_SetIC4Prescaler
+              definition:  TIM_TIxExternalClockConfig
+              definition:  TIM_TimeBaseInit
+              definition:  TIM_TimeBaseStructInit
+              definition:  TIM_UpdateDisableConfig
+              definition:  TIM_UpdateRequestConfig
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_usart.o.
+              reference :  RCC_APB1PeriphResetCmd
+              reference :  RCC_APB2PeriphResetCmd
+              reference :  RCC_GetClocksFreq
+              reference :  assert_failed
+              definition:  USART_ClearFlag
+              definition:  USART_ClearITPendingBit
+              definition:  USART_ClockInit
+              definition:  USART_ClockStructInit
+              definition:  USART_Cmd
+              definition:  USART_DMACmd
+              definition:  USART_DeInit
+              definition:  USART_GetFlagStatus
+              definition:  USART_GetITStatus
+              definition:  USART_HalfDuplexCmd
+              definition:  USART_ITConfig
+              definition:  USART_Init
+              definition:  USART_IrDACmd
+              definition:  USART_IrDAConfig
+              definition:  USART_LINBreakDetectLengthConfig
+              definition:  USART_LINCmd
+              definition:  USART_OneBitMethodCmd
+              definition:  USART_OverSampling8Cmd
+              definition:  USART_ReceiveData
+              definition:  USART_ReceiverWakeUpCmd
+              definition:  USART_SendBreak
+              definition:  USART_SendData
+              definition:  USART_SetAddress
+              definition:  USART_SetGuardTime
+              definition:  USART_SetPrescaler
+              definition:  USART_SmartCardCmd
+              definition:  USART_SmartCardNACKCmd
+              definition:  USART_StructInit
+              definition:  USART_WakeUpConfig
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_wwdg.o.
+              reference :  RCC_APB1PeriphResetCmd
+              reference :  assert_failed
+              definition:  WWDG_ClearFlag
+              definition:  WWDG_DeInit
+              definition:  WWDG_Enable
+              definition:  WWDG_EnableIT
+              definition:  WWDG_GetFlagStatus
+              definition:  WWDG_SetCounter
+              definition:  WWDG_SetPrescaler
+              definition:  WWDG_SetWindowValue
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\system_stm32l1xx.o.
+              definition:  AHBPrescTable
+              definition:  PLLMulTable
+              definition:  SystemCoreClock
+              definition:  SystemCoreClockUpdate
+              definition:  SystemInit
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\UART.o.
+              reference :  GPIO_Init
+              reference :  USART_Cmd
+              reference :  USART_ITConfig
+              reference :  USART_Init
+              definition:  USART_Conf
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\usb_core.o.
+              reference :  ByteSwap
+              reference :  ClearDTOG_RX
+              reference :  ClearDTOG_TX
+              reference :  Device_Property
+              reference :  Device_Table
+              reference :  GetEPRxAddr
+              reference :  GetEPTxAddr
+              reference :  PMAToUserBufferCopy
+              reference :  SaveRState
+              reference :  SaveTState
+              reference :  SetEPRxCount
+              reference :  SetEPTxCount
+              reference :  SetEPTxStatus
+              reference :  UserToPMABufferCopy
+              reference :  pInformation
+              reference :  pProperty
+              reference :  pUser_Standard_Requests
+              definition:  Data_Mul_MaxPacketSize
+              definition:  In0_Process
+              definition:  NOP_Process
+              definition:  Out0_Process
+              definition:  Post0_Process
+              definition:  SetDeviceAddress
+              definition:  Setup0_Process
+              definition:  Standard_ClearFeature
+              definition:  Standard_GetConfiguration
+              definition:  Standard_GetDescriptorData
+              definition:  Standard_GetInterface
+              definition:  Standard_GetStatus
+              definition:  Standard_SetConfiguration
+              definition:  Standard_SetDeviceFeature
+              definition:  Standard_SetEndPointFeature
+              definition:  Standard_SetInterface
+              definition:  StatusInfo
+              definition:  __iar_cc._CONTROL_STATE.bgukA51OTH_
+              definition:  __iar_cc._STANDARD_REQUESTS.jrVXzXir9o5
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\usb_init.o.
+              reference :  Device_Property
+              reference :  User_Standard_Requests
+              definition:  Device_Info
+              definition:  EPindex
+              definition:  SaveState
+              definition:  USB_Init
+              definition:  pInformation
+              definition:  pProperty
+              definition:  pUser_Standard_Requests
+              definition:  wInterrupt_Mask
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\usb_int.o.
+              reference :  EPindex
+              reference :  In0_Process
+              reference :  Out0_Process
+              reference :  Setup0_Process
+              reference :  pEpInt_IN
+              reference :  pEpInt_OUT
+              reference :  wIstr
+              definition:  CTR_HP
+              definition:  CTR_LP
+              definition:  SaveRState
+              definition:  SaveTState
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\usb_mem.o.
+              definition:  PMAToUserBufferCopy
+              definition:  UserToPMABufferCopy
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\usb_regs.o.
+              definition:  ByteSwap
+              definition:  ClearDTOG_RX
+              definition:  ClearDTOG_TX
+              definition:  ClearEPDoubleBuff
+              definition:  ClearEP_CTR_RX
+              definition:  ClearEP_CTR_TX
+              definition:  ClearEP_KIND
+              definition:  Clear_Status_Out
+              definition:  FreeUserBuffer
+              definition:  GetBTABLE
+              definition:  GetCNTR
+              definition:  GetDADDR
+              definition:  GetENDPOINT
+              definition:  GetEPAddress
+              definition:  GetEPDblBuf0Addr
+              definition:  GetEPDblBuf0Count
+              definition:  GetEPDblBuf1Addr
+              definition:  GetEPDblBuf1Count
+              definition:  GetEPDblBufDir
+              definition:  GetEPRxAddr
+              definition:  GetEPRxCount
+              definition:  GetEPRxStatus
+              definition:  GetEPTxAddr
+              definition:  GetEPTxCount
+              definition:  GetEPTxStatus
+              definition:  GetEPType
+              definition:  GetFNR
+              definition:  GetISTR
+              definition:  GetRxStallStatus
+              definition:  GetTxStallStatus
+              definition:  SetBTABLE
+              definition:  SetCNTR
+              definition:  SetDADDR
+              definition:  SetDouBleBuffEPStall
+              definition:  SetENDPOINT
+              definition:  SetEPAddress
+              definition:  SetEPCountRxReg
+              definition:  SetEPDblBuf0Addr
+              definition:  SetEPDblBuf0Count
+              definition:  SetEPDblBuf1Addr
+              definition:  SetEPDblBuf1Count
+              definition:  SetEPDblBuffAddr
+              definition:  SetEPDblBuffCount
+              definition:  SetEPDoubleBuff
+              definition:  SetEPRxAddr
+              definition:  SetEPRxCount
+              definition:  SetEPRxStatus
+              definition:  SetEPRxValid
+              definition:  SetEPTxAddr
+              definition:  SetEPTxCount
+              definition:  SetEPTxStatus
+              definition:  SetEPTxValid
+              definition:  SetEPType
+              definition:  SetEP_KIND
+              definition:  SetISTR
+              definition:  Set_Status_Out
+              definition:  ToWord
+              definition:  ToggleDTOG_RX
+              definition:  ToggleDTOG_TX
+Loading object \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\usb_sil.o.
+              reference :  GetEPRxAddr
+              reference :  GetEPRxCount
+              reference :  GetEPTxAddr
+              reference :  PMAToUserBufferCopy
+              reference :  SetEPTxCount
+              reference :  UserToPMABufferCopy
+              reference :  wInterrupt_Mask
+              definition:  USB_SIL_Init
+              definition:  USB_SIL_Read
+              definition:  USB_SIL_Write
+
+Auto library: shb_l.a -> C:\Program Files\IAR Systems\Embedded Workbench 6.5\arm\lib\shb_l.a
+Auto library: rt7M_tl.a -> C:\Program Files\IAR Systems\Embedded Workbench 6.5\arm\lib\rt7M_tl.a
+Auto library: m7M_tl.a -> C:\Program Files\IAR Systems\Embedded Workbench 6.5\arm\lib\m7M_tl.a
+Auto library: dl7M_tln.a -> C:\Program Files\IAR Systems\Embedded Workbench 6.5\arm\lib\dl7M_tln.a
+
+Library configuration:
+
+  extra init __iar_cstart_call_ctors
+  no_inline  __DebugBreak
+  no_inline  __iar_return_from_swi
+  no_inline  __iar_semihosting
+  no_inline  __iar_sh_stdout_swo
+Selecting member cstartup_M.o(rt7M_tl.a) to define __iar_program_start.
+              reference :  __cmain
+              reference :  __vector_table
+              weak ref  :  __iar_init_core
+              weak ref  :  __iar_init_vfp
+              definition:  __iar_program_start
+Selecting member printf.o(dl7M_tln.a) to define printf.
+              reference :  _PrintfFull
+              reference :  _Prout
+              definition:  __iar_default_requirements$$_Printf<unknown>printf
+              definition:  printf
+Selecting member DblToFlt.o(m7M_tl.a) to define __aeabi_d2f.
+              definition:  __aeabi_d2f
+Selecting member DblDiv.o(m7M_tl.a) to define __aeabi_ddiv.
+              definition:  __aeabi_ddiv
+Selecting member DblMul.o(m7M_tl.a) to define __aeabi_dmul.
+              definition:  __aeabi_dmul
+Selecting member FltToDbl.o(m7M_tl.a) to define __aeabi_f2d.
+              definition:  __aeabi_f2d
+Selecting member FltToS32.o(m7M_tl.a) to define __aeabi_f2iz.
+              definition:  __aeabi_f2iz
+Selecting member FltMul.o(m7M_tl.a) to define __aeabi_fmul.
+              definition:  __aeabi_fmul
+Selecting member FltSub.o(m7M_tl.a) to define __aeabi_fsub.
+              reference :  __iar_fadd
+              definition:  __aeabi_fsub
+              definition:  __iar_fsub
+              definition:  __iar_fsubStart
+Selecting member I32ToFlt.o(m7M_tl.a) to define __aeabi_i2f.
+              definition:  __aeabi_i2f
+              definition:  __aeabi_ui2f
+              definition:  __iar_ui2f
+Selecting member DblToI32.o(m7M_tl.a) to define __aeabi_d2uiz.
+              definition:  __aeabi_d2iz
+              definition:  __aeabi_d2uiz
+              definition:  __iar_d2uiz
+Selecting member I32ToDbl.o(m7M_tl.a) to define __aeabi_i2d.
+              definition:  __aeabi_i2d
+              definition:  __aeabi_ui2d
+              definition:  __iar_ui2d
+Selecting member DblCmpGe.o(m7M_tl.a) to define __aeabi_cdrcmple.
+              definition:  __aeabi_cdrcmple
+Selecting member FltCmpLe.o(m7M_tl.a) to define __aeabi_cfcmple.
+              definition:  __aeabi_cfcmple
+Selecting member FltCmpGe.o(m7M_tl.a) to define __aeabi_cfrcmple.
+              definition:  __aeabi_cfrcmple
+Selecting member DblAdd.o(m7M_tl.a) to define __aeabi_dadd.
+              reference :  __iar_dsub
+              definition:  __aeabi_dadd
+              definition:  __iar_dadd
+Selecting member DblSub.o(m7M_tl.a) to define __aeabi_dsub.
+              reference :  __iar_dadd
+              definition:  __iar_dsub
+              definition:  __aeabi_dsub
+              definition:  __iar_dsubStart
+Selecting member log2.o(m7M_tl.a) to define log2.
+              reference :  __iar_Log
+              definition:  log2
+Selecting member lroundf.o(m7M_tl.a) to define lroundf.
+              reference :  __aeabi_cfcmple
+              reference :  __aeabi_cfrcmple
+              reference :  __aeabi_errno_addr
+              reference :  __aeabi_f2iz
+              reference :  roundf
+              definition:  lroundf
+Selecting member pow.o(m7M_tl.a) to define pow.
+              reference :  __aeabi_cdcmpeq
+              reference :  __aeabi_cdcmple
+              reference :  __aeabi_cdrcmple
+              reference :  __aeabi_d2iz
+              reference :  __aeabi_dadd
+              reference :  __aeabi_ddiv
+              reference :  __aeabi_dmul
+              reference :  __aeabi_dsub
+              reference :  __aeabi_errno_addr
+              reference :  __aeabi_i2d
+              reference :  __iar_Dint
+              reference :  __iar_Dnorm
+              reference :  __iar_Exp
+              reference :  __iar_Logpoly
+              definition:  pow
+Selecting member round.o(m7M_tl.a) to define round.
+              reference :  __aeabi_dadd
+              reference :  __iar_Dint
+              definition:  round
+Selecting member FltToU32.o(m7M_tl.a) to define __aeabi_f2uiz.
+              definition:  __aeabi_f2uiz
+Selecting member FltDiv.o(m7M_tl.a) to define __aeabi_fdiv.
+              definition:  __aeabi_fdiv
+Selecting member cmain.o(rt7M_tl.a) to define __cmain.
+              weak ref  :  __iar_data_init3
+              weak ref  :  __iar_argc_argv
+              reference :  __low_level_init
+              reference :  main
+              reference :  exit
+              definition:  __cmain
+              definition:  ?main
+              definition:  _main
+              definition:  _call_main
+Selecting member xprintffull.o(dl7M_tln.a) to define _PrintfFull.
+              reference :  __aeabi_cdcmple
+              reference :  __aeabi_cdrcmple
+              reference :  __aeabi_d2iz
+              reference :  __aeabi_d2uiz
+              reference :  __aeabi_ddiv
+              reference :  __aeabi_dmul
+              reference :  __aeabi_dsub
+              reference :  __aeabi_i2d
+              reference :  __aeabi_memcpy
+              reference :  __aeabi_ui2d
+              reference :  __aeabi_uldivmod
+              reference :  __iar_Dnorm
+              reference :  __iar_Dscale
+              reference :  __iar_Memchr
+              reference :  __iar_Strchr
+              reference :  div
+              reference :  strlen
+              definition:  _PrintfFull
+Selecting member xprout.o(dl7M_tln.a) to define _Prout.
+              reference :  putchar
+              definition:  _Prout
+Selecting member FltAdd.o(m7M_tl.a) to define __iar_fadd.
+              reference :  __iar_fsub
+              definition:  __aeabi_fadd
+              definition:  __iar_fadd
+Selecting member xlog.o(m7M_tl.a) to define __iar_Log.
+              reference :  __aeabi_cdcmple
+              reference :  __aeabi_dadd
+              reference :  __aeabi_ddiv
+              reference :  __aeabi_dmul
+              reference :  __aeabi_dsub
+              reference :  __aeabi_errno_addr
+              reference :  __aeabi_i2d
+              reference :  __iar_Dnorm
+              definition:  __iar_Log
+              definition:  __iar_Logpoly
+Selecting member errno.o(dl7M_tln.a) to define __aeabi_errno_addr.
+              reference :  __iar_dlib_perthread_access
+              definition:  __aeabi_EDOM
+              definition:  __aeabi_EFPOS
+              definition:  __aeabi_EILSEQ
+              definition:  __aeabi_ERANGE
+              definition:  __aeabi_ERRMAX
+              definition:  __aeabi_errno_addr
+              definition:  __iar_Errno
+Selecting member roundf.o(m7M_tl.a) to define roundf.
+              definition:  roundf
+Selecting member DblCmpEq.o(m7M_tl.a) to define __aeabi_cdcmpeq.
+              definition:  __aeabi_cdcmpeq
+Selecting member DblCmpLe.o(m7M_tl.a) to define __aeabi_cdcmple.
+              definition:  __aeabi_cdcmple
+Selecting member xdint.o(m7M_tl.a) to define __iar_Dint.
+              definition:  __iar_Dint
+Selecting member xdnorm.o(m7M_tl.a) to define __iar_Dnorm.
+              definition:  __iar_Dnorm
+Selecting member xexp.o(m7M_tl.a) to define __iar_Exp.
+              reference :  __aeabi_cdcmpeq
+              reference :  __aeabi_cdcmple
+              reference :  __aeabi_cdrcmple
+              reference :  __aeabi_d2iz
+              reference :  __aeabi_dadd
+              reference :  __aeabi_ddiv
+              reference :  __aeabi_dmul
+              reference :  __aeabi_dsub
+              reference :  __aeabi_errno_addr
+              reference :  __aeabi_i2d
+              reference :  __iar_Dscale
+              reference :  __iar_Dtest
+              definition:  __iar_Exp
+Selecting member low_level_init.o(dl7M_tln.a) to define __low_level_init.
+              definition:  __low_level_init
+Selecting member exit.o(dl7M_tln.a) to define exit.
+              reference :  _exit
+              definition:  exit
+Selecting member ABImemcpy_unaligned.o(rt7M_tl.a) to define __iar_unaligned___aeabi_memcpy.
+              definition:  __iar_unaligned___aeabi_memcpy
+              definition:  __iar_unaligned___aeabi_memcpy4
+              definition:  __iar_unaligned___aeabi_memcpy8
+Selecting member I64DivMod.o(rt7M_tl.a) to define __aeabi_uldivmod.
+              reference :  __aeabi_ldiv0
+              definition:  __aeabi_ldivmod
+              definition:  __aeabi_uldivmod
+Selecting member xdscale.o(m7M_tl.a) to define __iar_Dscale.
+              reference :  __iar_Dnorm
+              definition:  __iar_Dscale
+Selecting member memchr.o(rt7M_tl.a) to define __iar_Memchr.
+              definition:  memchr
+              definition:  __iar_Memchr
+Selecting member strchr.o(rt7M_tl.a) to define __iar_Strchr.
+              definition:  strchr
+              definition:  __iar_Strchr
+Selecting member div.o(dl7M_tln.a) to define div.
+              definition:  div
+Selecting member strlen.o(rt7M_tl.a) to define strlen.
+              definition:  strlen
+Selecting member putchar.o(dl7M_tln.a) to define putchar.
+              reference :  __write
+              definition:  putchar
+Selecting member xtls.o(dl7M_tln.a) to define __iar_dlib_perthread_access.
+              definition:  __iar_dlib_perthread_access
+Selecting member xdtest.o(m7M_tl.a) to define __iar_Dtest.
+              definition:  __iar_Dtest
+Selecting member cexit.o(rt7M_tl.a) to define _exit.
+              weak ref  :  __call_dtors
+              weak ref  :  _Close_all
+              weak ref  :  __iar_clearlocks
+              reference :  __exit
+              definition:  _exit
+              definition:  __cexit_call_dtors
+              definition:  __cexit_closeall
+              definition:  __cexit_clearlocks
+Selecting member I64DivZer.o(rt7M_tl.a) to define __aeabi_ldiv0.
+              definition:  __aeabi_ldiv0
+Selecting member exit.o(shb_l.a) to define __exit.
+              weak ref  :  __iar_close_ttio
+              definition:  __exit
+Selecting member data_init.o(rt7M_tl.a) to define __iar_data_init3 (optional).
+              definition:  __iar_data_init3
+              reference :  Region$$Table$$Base
+              reference :  Region$$Table$$Limit
+Selecting member zero_init3.o(rt7M_tl.a) to define __iar_zero_init3 (optional).
+              definition:  __iar_zero_init3
+Selecting member copy_init3.o(rt7M_tl.a) to define __iar_copy_init3 (optional).
+              definition:  __iar_copy_init3
+Selecting member rle_init.o(rt7M_tl.a) to define __iar_rle_init3 (optional).
+              reference :  abort
+              definition:  __iar_rle_init3
+Selecting member packbits_init.o(rt7M_tl.a) to define __iar_packbits_init3 (optional).
+              reference :  abort
+              definition:  __iar_packbits_init3
+Selecting member lzw_init.o(rt7M_tl.a) to define __iar_lzw_init3 (optional).
+              reference :  abort
+              definition:  __iar_lzw_init3
+Selecting member bwt_init.o(rt7M_tl.a) to define __iar_bwt_init3 (optional).
+              reference :  __aeabi_memclr4
+              reference :  abort
+              definition:  __iar_bwt_init3
+Selecting member lz77_init.o(rt7M_tl.a) to define __iar_lz77_init3 (optional).
+              reference :  abort
+              definition:  __iar_lz77_init3
+Selecting member abort.o(dl7M_tln.a) to define abort (optional).
+              reference :  __exit
+              definition:  abort
+Selecting member ABImemclr4.o(rt7M_tl.a) to define __aeabi_memclr4 (optional).
+              reference :  __iar_Memset4_word
+              definition:  __aeabi_memclr4
+Selecting member ABImemset48.o(rt7M_tl.a) to define __iar_Memset4_word (optional).
+              definition:  __aeabi_memset4
+              definition:  __aeabi_memset8
+              definition:  __iar_Memset4_word
+              definition:  __iar_Memset8_word
+
+  Module specific redirects:
+
+    unaligned access redirects:
+
+      Symbol            Redirected to
+      ------            -------------
+      __aeabi_memcpy    __iar_unaligned___aeabi_memcpy
+      __aeabi_memcpy4   __iar_unaligned___aeabi_memcpy4
+      __aeabi_memcpy8   __iar_unaligned___aeabi_memcpy8
+      __aeabi_memmove   __iar_unaligned___aeabi_memmove
+      __aeabi_memmove4  __iar_unaligned___aeabi_memmove4
+      __aeabi_memmove8  __iar_unaligned___aeabi_memmove8
+      memcmp            __iar_unaligned_memcmp
+      strcmp            __iar_unaligned_strcmp
+      strcpy            __iar_unaligned_strcpy
+      strncpy           __iar_unaligned_strncpy
+
+      xprintffull.o(dl7M_tln.a)
+
+Resolving duplicate symbol definitions
+  Picking DebugMon_Handler [s8 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_it.o]
+    Suppressing DebugMon_Handler [s15 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking HardFault_Handler [s8 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_it.o]
+    Suppressing HardFault_Handler [s10 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking EXTI9_5_IRQHandler [s17 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\End_Point.o]
+    Suppressing EXTI9_5_IRQHandler [s41 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking NMI_Handler [s8 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_it.o]
+    Suppressing NMI_Handler [s9 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking SVC_Handler [s8 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_it.o]
+    Suppressing SVC_Handler [s14 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking BusFault_Handler [s8 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_it.o]
+    Suppressing BusFault_Handler [s12 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking MemManage_Handler [s8 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_it.o]
+    Suppressing MemManage_Handler [s11 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking UsageFault_Handler [s8 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_it.o]
+    Suppressing UsageFault_Handler [s13 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking USB_LP_IRQHandler [s8 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_it.o]
+    Suppressing USB_LP_IRQHandler [s38 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking PendSV_Handler [s8 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_it.o]
+    Suppressing PendSV_Handler [s16 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking SysTick_Handler [s8 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_Timers.o]
+    Suppressing SysTick_Handler [s17 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking TIM3_IRQHandler [s15 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_SDK_Application.o]
+    Suppressing TIM3_IRQHandler [s47 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking TIM4_IRQHandler [s15 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_SDK_Application.o]
+    Suppressing TIM4_IRQHandler [s48 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking USART1_IRQHandler [s8 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\stm32l1xx_it.o]
+    Suppressing USART1_IRQHandler [s55 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\startup_stm32l1xx_hd.o]
+  Picking __iar_cc..N$YLd2vA0b1 [s94 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_PktStack.o]
+    Suppressing __iar_cc..N$YLd2vA0b1 [s284 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_PktCommon.o]
+  Picking __iar_cc..urTYDha1hn8 [s16 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Types.o]
+    Suppressing __iar_cc..urTYDha1hn8 [s58 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_Spi_Driver.o]
+    Suppressing __iar_cc..urTYDha1hn8 [s71 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Management.o]
+    Suppressing __iar_cc..urTYDha1hn8 [s517 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Radio.o]
+  Picking __iar_cc..vtMshdzy$K8 [s77 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_Gpio.o]
+    Suppressing __iar_cc..vtMshdzy$K8 [s31 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\End_Point.o]
+  Picking __iar_cc..h_YJNNaKgA9 [s92 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_PktStack.o]
+    Suppressing __iar_cc..h_YJNNaKgA9 [s28 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\End_Point.o]
+    Suppressing __iar_cc..h_YJNNaKgA9 [s72 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_PktBasic.o]
+    Suppressing __iar_cc..h_YJNNaKgA9 [s282 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_PktCommon.o]
+  Picking __iar_cc.IRQn.DM0OtXeBdq0 [s68 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SPIRIT_SDK_Application.o]
+    Suppressing __iar_cc.IRQn.DM0OtXeBdq0 [s58 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_Timers.o]
+    Suppressing __iar_cc.IRQn.DM0OtXeBdq0 [s126 \\tsclient\C\Users\bzdegluk.PLY\Desktop\ACQ_SYS\Projekt_po_poprawie\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\DZ-SBD-MB01\Obj\SDK_EVAL_VC_General.o]
