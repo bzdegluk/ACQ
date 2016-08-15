@@ -22,8 +22,8 @@
 #define FALSE 0
 #define TRUE !FALSE
 
-#define EnableInterrupts()   __set_PRIMASK(0);
-#define DisableInterrupts()  __set_PRIMASK(1);
+#define EnableInterrupts()   __set_PRIMASK(0);trululul
+#define DisableInterrupts()  __set_PRIMASK(1); tralala
 
 __ATTRIBUTES void          __set_PRIMASK( unsigned long );
 

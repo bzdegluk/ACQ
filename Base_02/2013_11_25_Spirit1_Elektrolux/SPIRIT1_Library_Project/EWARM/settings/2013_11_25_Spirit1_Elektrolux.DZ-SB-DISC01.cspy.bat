@@ -25,7 +25,7 @@ if not "%1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\settings\2013_11_25_Spirit1_Elektrolux.DZ-SB-DISC01.general.xcl" --backend -f "E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\settings\2013_11_25_Spirit1_Elektrolux.DZ-SB-DISC01.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\aristot\GIT\ACQ\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\settings\2013_11_25_Spirit1_Elektrolux.DZ-SB-DISC01.general.xcl" --backend -f "C:\Users\aristot\GIT\ACQ\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\settings\2013_11_25_Spirit1_Elektrolux.DZ-SB-DISC01.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\settings\2013_11_25_Spirit1_Elektrolux.DZ-SB-DISC01.general.xcl" "--debug_file=%1" --backend -f "E:\ACQ\Proj_ver09a_15102015\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\settings\2013_11_25_Spirit1_Elektrolux.DZ-SB-DISC01.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\aristot\GIT\ACQ\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\settings\2013_11_25_Spirit1_Elektrolux.DZ-SB-DISC01.general.xcl" "--debug_file=%1" --backend -f "C:\Users\aristot\GIT\ACQ\Base_02\2013_11_25_Spirit1_Elektrolux\SPIRIT1_Library_Project\EWARM\settings\2013_11_25_Spirit1_Elektrolux.DZ-SB-DISC01.driver.xcl" 
 
 @echo off 
 :end
